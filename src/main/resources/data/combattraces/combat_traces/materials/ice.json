@@ -1,0 +1,10 @@
+{
+  "material": "combattraces:ice",
+  "priority": 85,
+  "block_tags": [
+    "minecraft:ice"
+  ],
+  "particle": "minecraft:snowflake",
+  "color": "9edfff",
+  "particle_count": 5
+}

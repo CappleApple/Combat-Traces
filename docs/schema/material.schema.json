@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Combat Traces material",
+  "type": "object",
+  "properties": {
+    "material": {
+      "type": "string",
+      "pattern": "^[a-z0-9_.-]+:[a-z0-9/._-]+$"
+    },
+    "priority": {
+      "type": "integer",
+      "minimum": -10000,
+      "maximum": 10000
+    },
+    "block_tags": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9_.-]+:[a-z0-9/._-]+$"
+      }
+    },
+    "blocks": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9_.-]+:[a-z0-9/._-]+$"
+      }
+    },
+    "entity_tags": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9_.-]+:[a-z0-9/._-]+$"
+      }
+    },
+    "entities": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9_.-]+:[a-z0-9/._-]+$"
+      }
+    },
+    "armor_tags": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9_.-]+:[a-z0-9/._-]+$"
+      }
+    },
+    "particle": {
+      "type": "string",
+      "pattern": "^[a-z0-9_.-]+:[a-z0-9/._-]+$"
+    },
+    "particle_count": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 32
+    },
+    "color": {
+      "type": "string",
+      "pattern": "^#?[0-9a-fA-F]{6}$"
+    }
+  },
+  "additionalProperties": true
+}

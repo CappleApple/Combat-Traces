@@ -1,0 +1,11 @@
+{
+  "id": "combattraces:arcane",
+  "priority": 0,
+  "conditions": {
+    "item_tag": "combattraces:arcane_weapons"
+  },
+  "trail": "combattraces:arcane",
+  "impact": "combattraces:arcane_overlay",
+  "particle": "minecraft:enchanted_hit",
+  "color": "bd8bff"
+}

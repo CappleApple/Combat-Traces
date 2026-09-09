@@ -1,0 +1,11 @@
+# VFX artwork history
+
+Current 1.0.1 assets and the final generation prompt: [Pixel-art export](PIXEL_ART.md). The atlas described below is retained as 1.0.0 history.
+
+Generated with the built-in imagegen tool. The single source atlas is `vfx-atlas.png`; the exact grid cells were extracted into the mod's 16 standalone PNGs, preserving RGBA. No external mod artwork is shipped.
+
+Generation prompt:
+
+> Create ONE production-ready game VFX sprite atlas, exactly 1024x1024 pixels, a strict 4 by 4 grid of equal 256x256 cells with TRANSPARENT background (actual alpha), NO labels, NO grid lines, NO text. Each independent sprite entirely inside its cell with 20 px transparent padding. Pixel art with chunky deliberate pixels like Minecraft Dungeons combat effects, crisp readable tapered shapes, bright luminous center and softer low-alpha edge, no rectangular panels or backgrounds. This is an atlas to extract as exact 256px square tiles. Tile row 1, left to right: (1) white-silver long horizontal sword trail streak with subtle taper (2) broad warm-white heavy cleave trail with rough edges (3) pale gold soft compressed motion streak for blunt weapon (4) orange gold curling flame trail streak. Row 2: (1) icy cyan frosty horizontal trail (2) jagged white-blue lightning trail (3) violet arcane wispy trail (4) very thin pale white curved whip arc. Row 3: (1) elongated silver diagonal slash crescent, mostly horizontal (2) broad jagged white cleave impact (3) gold radial blunt impact flash with broken shock ring (4) compact white puncture impact with small central ring and narrow horizontal streak. Row 4: (1) three parallel diagonal pale silver claw scratches (2) compact white four-point generic magic impact flash (3) circular silver shock ring with transparent center (4) tiny golden sharp spark burst. All sprites isolated on transparency, no objects, no swords, no characters, no environmental scene. Consistent beautiful restrained pixel art, useful game assets rather than concept illustration.
+
+The image service returned 1254×1254 pixels. Extraction uses the actual image dimensions and rounded quarter-cell boundaries, producing 313/314-pixel tiles; Minecraft accepts these dimensions. The source is retained for reproducible extraction.

@@ -1,0 +1,13 @@
+PASS fresh-without-bettercombat: dedicated server reached Done
+There are 0 of a max of 20 players online:
+
+Reloading!
+
+PASS fresh-without-bettercombat: reload, save, and clean shutdown
+PASS restart-with-bettercombat: dedicated server reached Done
+There are 0 of a max of 20 players online:
+
+Reloading!
+
+PASS restart-with-bettercombat: reload, save, and clean shutdown
+COMBAT TRACES DEDICATED SERVER SMOKE PASS

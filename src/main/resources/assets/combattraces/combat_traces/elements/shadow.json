@@ -1,0 +1,11 @@
+{
+  "id": "combattraces:shadow",
+  "priority": 0,
+  "conditions": {
+    "item_tag": "combattraces:shadow_weapons"
+  },
+  "trail": "combattraces:arcane",
+  "impact": "combattraces:shadow_overlay",
+  "particle": "minecraft:smoke",
+  "color": "8258b0"
+}

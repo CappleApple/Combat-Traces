@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.cappleapple.combattraces.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "plugin": "com.cappleapple.combattraces.mixin.CombatTracesMixinPlugin",
+  "client": [
+    "ParticleEngineMixin",
+    "ItemRendererMixin",
+    "HeldItemContextMixin",
+    "bettercombat.BetterCombatPlayerMixin",
+    "bettercombat.AnimationClockAccessor",
+    "bettercombat.AttackStackAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

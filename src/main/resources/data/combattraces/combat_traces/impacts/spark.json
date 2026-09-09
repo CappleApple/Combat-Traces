@@ -1,0 +1,9 @@
+{
+  "texture": "combattraces:textures/vfx/impacts/spark.png",
+  "render_mode": "additive",
+  "lifetime_ms": 100,
+  "scale": 0.55,
+  "opacity": 1,
+  "camera_bias": 0.85,
+  "fade_curve": "linear"
+}

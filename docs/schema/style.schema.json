@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Combat Traces effect style",
+  "type": "object",
+  "properties": {
+    "texture": {
+      "type": "string",
+      "pattern": "^[a-z0-9_.-]+:[a-z0-9/._-]+$"
+    },
+    "render_mode": {
+      "enum": [
+        "translucent",
+        "additive"
+      ]
+    },
+    "lifetime_ms": {
+      "type": "number",
+      "minimum": 30,
+      "maximum": 1000
+    },
+    "width_multiplier": {
+      "type": "number",
+      "minimum": 0.05,
+      "maximum": 4
+    },
+    "opacity": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "intensity_multiplier": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 3
+    },
+    "uv_scroll_speed": {
+      "type": "number",
+      "minimum": -10,
+      "maximum": 10
+    },
+    "fade_curve": {
+      "enum": [
+        "linear",
+        "ease_out",
+        "smoothstep"
+      ]
+    },
+    "scale": {
+      "type": "number",
+      "minimum": 0.1,
+      "maximum": 3
+    },
+    "camera_bias": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "color": {
+      "type": "string",
+      "pattern": "^#?[0-9a-fA-F]{6}$"
+    },
+    "frames": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 64
+    },
+    "fps": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 120
+    },
+    "particle": {
+      "type": "string",
+      "pattern": "^[a-z0-9_.-]+:[a-z0-9/._-]+$"
+    },
+    "particle_rate": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 4
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "texture"
+  ]
+}

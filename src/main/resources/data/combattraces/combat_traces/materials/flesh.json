@@ -1,0 +1,7 @@
+{
+  "material": "combattraces:flesh",
+  "priority": -100,
+  "particle": "minecraft:crit",
+  "color": "fff1d6",
+  "particle_count": 2
+}

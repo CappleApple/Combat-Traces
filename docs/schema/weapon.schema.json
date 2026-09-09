@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Combat Traces weapon mapping",
+  "type": "object",
+  "properties": {
+    "priority": {
+      "type": "integer",
+      "minimum": -10000,
+      "maximum": 10000
+    },
+    "items": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9_.-]+:[a-z0-9/._-]+$"
+      }
+    },
+    "item_tags": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9_.-]+:[a-z0-9/._-]+$"
+      }
+    },
+    "weapon_class": {
+      "enum": [
+        "combattraces:slash",
+        "combattraces:cleave",
+        "combattraces:blunt",
+        "combattraces:pierce",
+        "combattraces:claw",
+        "combattraces:whip",
+        "combattraces:magic",
+        "combattraces:generic"
+      ]
+    },
+    "elements": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9_.-]+:[a-z0-9/._-]+$"
+      }
+    },
+    "trail": {
+      "type": "string",
+      "pattern": "^[a-z0-9_.-]+:[a-z0-9/._-]+$"
+    },
+    "emitters": {
+      "type": "array",
+      "maxItems": 32,
+      "items": {
+        "type": "object",
+        "required": [
+          "origin",
+          "tip"
+        ],
+        "properties": {
+          "origin": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "items": {
+              "type": "number",
+              "minimum": -16,
+              "maximum": 16
+            }
+          },
+          "tip": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "items": {
+              "type": "number",
+              "minimum": -16,
+              "maximum": 16
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "impact_scale": {
+      "type": "number",
+      "minimum": 0.1,
+      "maximum": 3
+    }
+  },
+  "additionalProperties": true,
+  "anyOf": [
+    {
+      "required": [
+        "items"
+      ]
+    },
+    {
+      "required": [
+        "item_tags"
+      ]
+    }
+  ]
+}

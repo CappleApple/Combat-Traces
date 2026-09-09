@@ -1,0 +1,11 @@
+{
+  "id": "combattraces:poison",
+  "priority": 0,
+  "conditions": {
+    "item_tag": "combattraces:poison_weapons"
+  },
+  "trail": "combattraces:slash",
+  "impact": "combattraces:poison_overlay",
+  "particle": "minecraft:spore_blossom_air",
+  "color": "81d646"
+}

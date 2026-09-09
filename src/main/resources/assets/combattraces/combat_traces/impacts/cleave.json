@@ -1,0 +1,9 @@
+{
+  "texture": "combattraces:textures/vfx/impacts/cleave.png",
+  "render_mode": "additive",
+  "lifetime_ms": 220,
+  "scale": 1.8,
+  "opacity": 1,
+  "camera_bias": 0.85,
+  "fade_curve": "linear"
+}

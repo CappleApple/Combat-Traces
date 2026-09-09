@@ -1,0 +1,19 @@
+PASS Fire Aspect resolves fire from synced enchantment
+PASS Client receives server effect definitions
+PASS Actual third-person animated poses: 39 tick observations, 11.28 blocks of tip travel
+PASS Server-confirmed entity hit reached client
+PASS Stone material via loaded tags
+PASS Wood material via loaded tags
+PASS Metal material via loaded tags
+PASS Ice material via loaded tags
+PASS Actual first-person custom-animation poses: 33 tick observations
+PASS Custom animation progress comes from Player Animator
+PASS RemotePlayer rendered custom animation: 34 tick observations
+PASS Worn metal armor changes entity material
+PASS Hard trail count survives 25-emitter burst
+PASS Hard total-sample budget survives burst
+PASS Budget retains local-player effects
+PASS Datapack enable/reload atomically synchronizes definitions
+PASS Reloaded explicit twin emitters override model inference
+PASS Multiple emitters create independent ribbons
+PASS Offhand animation is sampled at 20 FPS and 110 FOV

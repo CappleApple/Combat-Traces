@@ -1,0 +1,9 @@
+{
+  "texture": "combattraces:textures/vfx/impacts/whip.png",
+  "render_mode": "additive",
+  "lifetime_ms": 160,
+  "scale": 1.1,
+  "opacity": 1,
+  "camera_bias": 0.85,
+  "fade_curve": "linear"
+}

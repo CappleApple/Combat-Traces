@@ -1,0 +1,11 @@
+{
+  "id": "combattraces:holy",
+  "priority": 0,
+  "conditions": {
+    "item_tag": "combattraces:holy_weapons"
+  },
+  "trail": "combattraces:slash",
+  "impact": "combattraces:holy_overlay",
+  "particle": "minecraft:end_rod",
+  "color": "fff2b3"
+}

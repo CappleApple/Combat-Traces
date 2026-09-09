@@ -1,0 +1,11 @@
+{
+  "id": "combattraces:frost",
+  "priority": 0,
+  "conditions": {
+    "item_tag": "combattraces:frost_weapons"
+  },
+  "trail": "combattraces:frost",
+  "impact": "combattraces:frost_overlay",
+  "particle": "minecraft:snowflake",
+  "color": "94e5ff"
+}

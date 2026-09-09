@@ -1,0 +1,9 @@
+{
+  "texture": "combattraces:textures/vfx/impacts/blunt.png",
+  "render_mode": "additive",
+  "lifetime_ms": 200,
+  "scale": 1.3,
+  "opacity": 1,
+  "camera_bias": 0.85,
+  "fade_curve": "linear"
+}

@@ -1,0 +1,126 @@
+PASS diamond_longsword combo 0 equipped actual registered item
+PASS diamond_longsword combo 0 loaded Better Combat attack
+PASS diamond_longsword combo 0 dimensions, axes, and center match Better Combat at three aim pitches
+PASS diamond_longsword combo 0 hitbox proportions select HORIZONTAL
+PASS diamond_longsword combo 0 hitbox works without blade velocity samples
+PASS diamond_longsword combo 0 correct weapon family SLASH
+PASS diamond_longsword combo 0 emitter reaches full blade tip
+PASS diamond_longsword combo 0 emitter starts near guard
+PASS diamond_longsword combo 0 confirmed hit selects slash
+PASS diamond_longsword combo 0 impact height matches attack hitbox center
+PASS diamond_longsword combo 0 impact follows dominant hitbox axis
+PASS diamond_longsword combo 0 actual sprite matches hitbox-selected effect
+PASS diamond_longsword combo 0 sprite variation stays within seven degrees
+PASS diamond_longsword combo 0 samples real rendered animation
+PASS diamond_longsword combo 0 early windup has no ribbon
+PASS diamond_longsword combo 0 produces ribbon geometry
+PASS diamond_longsword combo 0 server-confirmed impact received
+PASS diamond_longsword combo 2 equipped actual registered item
+PASS diamond_longsword combo 2 loaded Better Combat attack
+PASS diamond_longsword combo 2 dimensions, axes, and center match Better Combat at three aim pitches
+PASS diamond_longsword combo 2 hitbox proportions select STAB
+PASS diamond_longsword combo 2 hitbox works without blade velocity samples
+PASS diamond_longsword combo 2 correct weapon family SLASH
+PASS diamond_longsword combo 2 emitter reaches full blade tip
+PASS diamond_longsword combo 2 emitter starts near guard
+PASS diamond_longsword combo 2 confirmed hit selects pierce
+PASS diamond_longsword combo 2 impact height matches attack hitbox center
+PASS diamond_longsword combo 2 impact follows dominant hitbox axis
+PASS diamond_longsword combo 2 actual sprite matches hitbox-selected effect
+PASS diamond_longsword combo 2 sprite variation stays within seven degrees
+PASS diamond_longsword combo 2 samples real rendered animation
+PASS diamond_longsword combo 2 early windup has no ribbon
+PASS diamond_longsword combo 2 produces ribbon geometry
+PASS diamond_longsword combo 2 server-confirmed impact received
+PASS diamond_longsword combo 2 depth-dominant volume identifies stab throughout combo
+PASS diamond_claymore combo 0 equipped actual registered item
+PASS diamond_claymore combo 0 loaded Better Combat attack
+PASS diamond_claymore combo 0 dimensions, axes, and center match Better Combat at three aim pitches
+PASS diamond_claymore combo 0 hitbox proportions select HORIZONTAL
+PASS diamond_claymore combo 0 hitbox works without blade velocity samples
+PASS diamond_claymore combo 0 correct weapon family CLEAVE
+PASS diamond_claymore combo 0 emitter reaches full blade tip
+PASS diamond_claymore combo 0 emitter starts near guard
+PASS diamond_claymore combo 0 confirmed hit selects cleave
+PASS diamond_claymore combo 0 impact height matches attack hitbox center
+PASS diamond_claymore combo 0 impact follows dominant hitbox axis
+PASS diamond_claymore combo 0 actual sprite matches hitbox-selected effect
+PASS diamond_claymore combo 0 sprite variation stays within seven degrees
+PASS diamond_claymore combo 0 samples real rendered animation
+PASS diamond_claymore combo 0 early windup has no ribbon
+PASS diamond_claymore combo 0 produces ribbon geometry
+PASS diamond_claymore combo 0 server-confirmed impact received
+PASS diamond_greathammer combo 0 equipped actual registered item
+PASS diamond_greathammer combo 0 loaded Better Combat attack
+PASS diamond_greathammer combo 0 dimensions, axes, and center match Better Combat at three aim pitches
+PASS diamond_greathammer combo 0 correct weapon family BLUNT
+PASS diamond_greathammer combo 0 both ribbon endpoints lie on 3D hammer head
+PASS diamond_greathammer combo 0 ribbon spans head width
+PASS diamond_greathammer combo 0 confirmed hit selects blunt
+PASS diamond_greathammer combo 0 impact height matches attack hitbox center
+PASS diamond_greathammer combo 0 blunt impact preserves its motion direction
+PASS diamond_greathammer combo 0 actual sprite matches hitbox-selected effect
+PASS diamond_greathammer combo 0 sprite variation stays within seven degrees
+PASS diamond_greathammer combo 0 samples real rendered animation
+PASS diamond_greathammer combo 0 early windup has no ribbon
+PASS diamond_greathammer combo 0 produces ribbon geometry
+PASS diamond_greathammer combo 0 server-confirmed impact received
+PASS diamond_greathammer combo 2 equipped actual registered item
+PASS diamond_greathammer combo 2 loaded Better Combat attack
+PASS diamond_greathammer combo 2 dimensions, axes, and center match Better Combat at three aim pitches
+PASS diamond_greathammer combo 2 correct weapon family BLUNT
+PASS diamond_greathammer combo 2 both ribbon endpoints lie on 3D hammer head
+PASS diamond_greathammer combo 2 ribbon spans head width
+PASS diamond_greathammer combo 2 confirmed hit selects blunt
+PASS diamond_greathammer combo 2 impact height matches attack hitbox center
+PASS diamond_greathammer combo 2 blunt impact preserves its motion direction
+PASS diamond_greathammer combo 2 actual sprite matches hitbox-selected effect
+PASS diamond_greathammer combo 2 sprite variation stays within seven degrees
+PASS diamond_greathammer combo 2 samples real rendered animation
+PASS diamond_greathammer combo 2 early windup has no ribbon
+PASS diamond_greathammer combo 2 produces ribbon geometry
+PASS diamond_greathammer combo 2 server-confirmed impact received
+PASS diamond_claymore combo 2 equipped actual registered item
+PASS diamond_claymore combo 2 loaded Better Combat attack
+PASS diamond_claymore combo 2 dimensions, axes, and center match Better Combat at three aim pitches
+PASS diamond_claymore combo 2 hitbox proportions select VERTICAL
+PASS diamond_claymore combo 2 hitbox works without blade velocity samples
+PASS diamond_claymore combo 2 correct weapon family CLEAVE
+PASS diamond_claymore combo 2 emitter reaches full blade tip
+PASS diamond_claymore combo 2 emitter starts near guard
+PASS diamond_claymore combo 2 confirmed hit selects cleave
+PASS diamond_claymore combo 2 impact height matches attack hitbox center
+PASS diamond_claymore combo 2 impact follows dominant hitbox axis
+PASS diamond_claymore combo 2 actual sprite matches hitbox-selected effect
+PASS diamond_claymore combo 2 sprite variation stays within seven degrees
+PASS diamond_claymore combo 2 samples real rendered animation
+PASS diamond_claymore combo 2 early windup has no ribbon
+PASS diamond_claymore combo 2 produces ribbon geometry
+PASS diamond_claymore combo 2 server-confirmed impact received
+PASS diamond_claymore combo 1 equipped actual registered item
+PASS diamond_claymore combo 1 loaded Better Combat attack
+PASS diamond_claymore combo 1 dimensions, axes, and center match Better Combat at three aim pitches
+PASS diamond_claymore combo 1 hitbox proportions select STAB
+PASS diamond_claymore combo 1 hitbox works without blade velocity samples
+PASS diamond_claymore combo 1 correct weapon family CLEAVE
+PASS diamond_claymore combo 1 emitter reaches full blade tip
+PASS diamond_claymore combo 1 emitter starts near guard
+PASS diamond_claymore combo 1 confirmed hit selects pierce
+PASS diamond_claymore combo 1 impact height matches attack hitbox center
+PASS diamond_claymore combo 1 impact follows dominant hitbox axis
+PASS diamond_claymore combo 1 actual sprite matches hitbox-selected effect
+PASS diamond_claymore combo 1 sprite variation stays within seven degrees
+PASS diamond_claymore combo 1 samples real rendered animation
+PASS diamond_claymore combo 1 early windup has no ribbon
+PASS diamond_claymore combo 1 produces ribbon geometry
+PASS diamond_claymore combo 1 server-confirmed impact received
+PASS diamond_claymore combo 1 depth-dominant volume identifies stab throughout combo
+PASS Block contact creates neither impact sprites nor accent particles
+PASS Framebuffer: behind-target cut hidden at normal depth (0 pixels), visible with priority (1011 pixels)
+PASS Target depth priority enabled
+PASS AsyncParticles worker ticking is enabled
+PASS AsyncParticles GPU rendering is enabled
+PASS Accent stress spawned particles before reload
+PASS Accent stress actually spawned particles: 600
+PASS Resource reload completed during particle stress
+PASS Effect producers remain on Minecraft client thread

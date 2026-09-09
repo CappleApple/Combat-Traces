@@ -1,0 +1,11 @@
+{
+  "material": "combattraces:glass",
+  "priority": 90,
+  "block_tags": [
+    "c:glass_blocks",
+    "c:glass_panes"
+  ],
+  "particle": "minecraft:end_rod",
+  "color": "c3f5ff",
+  "particle_count": 4
+}

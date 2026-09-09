@@ -1,0 +1,39 @@
+{
+  "priority": 100,
+  "items": [
+    "minecraft:diamond_sword"
+  ],
+  "weapon_class": "combattraces:slash",
+  "elements": [
+    "combattraces:fire",
+    "combattraces:lightning"
+  ],
+  "trail": "combattraces_example:bright_slash",
+  "impact_scale": 1.15,
+  "emitters": [
+    {
+      "origin": [
+        -0.1,
+        -0.1,
+        0
+      ],
+      "tip": [
+        0.45,
+        0.45,
+        0
+      ]
+    },
+    {
+      "origin": [
+        0.1,
+        0.1,
+        0
+      ],
+      "tip": [
+        -0.45,
+        -0.45,
+        0
+      ]
+    }
+  ]
+}

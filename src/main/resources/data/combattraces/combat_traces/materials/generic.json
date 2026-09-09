@@ -1,0 +1,7 @@
+{
+  "material": "combattraces:generic",
+  "priority": -1000,
+  "particle": "minecraft:crit",
+  "color": "ffffff",
+  "particle_count": 2
+}

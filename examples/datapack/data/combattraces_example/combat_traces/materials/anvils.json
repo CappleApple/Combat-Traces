@@ -1,0 +1,10 @@
+{
+  "material": "combattraces:metal",
+  "priority": 150,
+  "block_tags": [
+    "minecraft:anvil"
+  ],
+  "particle": "minecraft:electric_spark",
+  "particle_count": 8,
+  "color": "ffd188"
+}

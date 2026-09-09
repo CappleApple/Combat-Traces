@@ -1,0 +1,48 @@
+{
+  "artifact": "build/libs/combattraces-1.0.3.jar",
+  "sha256": "593d7ad8e6b0bc13338e65a14c2f1fe0ce51a9c94527f66df77b3f7e6024d081",
+  "bytes": 250321,
+  "unit_tests": 52,
+  "unit_failures": 0,
+  "gametests_with_bettercombat": 5,
+  "gametests_without_bettercombat": 5,
+  "live_client_checks": 19,
+  "client_without_bettercombat": "passed",
+  "simplyswords_asyncparticles_live_checks": 126,
+  "depth_comparison_changed_pixels": {
+    "normal": 0,
+    "priority": 1011
+  },
+  "async_particle_ticking": true,
+  "async_gpu_particles": true,
+  "accent_particles_created_after_resource_reload": 600,
+  "dedicated_fresh_reload_restart": {
+    "status": "passed",
+    "tested_version": "1.0.0",
+    "note": "Earlier baseline; 1.0.3 server-side regression uses GameTests with and without Better Combat."
+  },
+  "definition_files_validated": 101,
+  "rgba_textures": 16,
+  "texture_size": [
+    32,
+    32
+  ],
+  "minecraft": "1.21.1",
+  "neoforge": "21.1.248",
+  "bettercombat": "2.4.0+1.21.1",
+  "playeranimator": "2.0.4+1.21.1",
+  "simplyswords": "1.70.2",
+  "asyncparticles": "21.1.4.2+1.21.1",
+  "manual_multi_user_session": "not performed",
+  "full_within_modpack_and_shader_packs": "not tested",
+  "trail_velocity_threshold_tested": 4,
+  "aimed_hitbox_center_pitches": [
+    -30,
+    0,
+    30
+  ],
+  "block_contacts": "disabled",
+  "hitbox_proportion_selection": "passed",
+  "blunt_hitbox_exemption": "passed",
+  "maximum_slash_variation_degrees": 7
+}

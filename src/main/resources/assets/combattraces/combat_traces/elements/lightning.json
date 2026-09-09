@@ -1,0 +1,11 @@
+{
+  "id": "combattraces:lightning",
+  "priority": 0,
+  "conditions": {
+    "item_tag": "combattraces:lightning_weapons"
+  },
+  "trail": "combattraces:lightning",
+  "impact": "combattraces:lightning_overlay",
+  "particle": "minecraft:electric_spark",
+  "color": "bedaff"
+}

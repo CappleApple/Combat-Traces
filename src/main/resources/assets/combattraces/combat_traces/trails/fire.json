@@ -1,0 +1,11 @@
+{
+  "texture": "combattraces:textures/vfx/trails/fire.png",
+  "render_mode": "additive",
+  "lifetime_ms": 220,
+  "width_multiplier": 1.04,
+  "opacity": 0.62,
+  "uv_scroll_speed": 0.8,
+  "fade_curve": "ease_out",
+  "particle": "minecraft:small_flame",
+  "particle_rate": 0.15
+}

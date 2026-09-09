@@ -1,0 +1,11 @@
+{
+  "material": "combattraces:water",
+  "priority": 80,
+  "blocks": [
+    "minecraft:water",
+    "minecraft:bubble_column"
+  ],
+  "particle": "minecraft:splash",
+  "color": "75b5f5",
+  "particle_count": 4
+}

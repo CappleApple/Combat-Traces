@@ -1,0 +1,11 @@
+{
+  "id": "combattraces:physical",
+  "priority": 0,
+  "conditions": {
+    "item_tag": "combattraces:physical_weapons"
+  },
+  "trail": "combattraces:slash",
+  "impact": "combattraces:physical_overlay",
+  "particle": "minecraft:crit",
+  "color": "ffffff"
+}

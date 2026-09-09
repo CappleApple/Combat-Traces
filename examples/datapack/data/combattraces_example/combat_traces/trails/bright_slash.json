@@ -1,0 +1,8 @@
+{
+  "texture": "combattraces:textures/vfx/trails/slash.png",
+  "render_mode": "additive",
+  "lifetime_ms": 220,
+  "width_multiplier": 1,
+  "opacity": 0.85,
+  "fade_curve": "ease_out"
+}

@@ -1,0 +1,7 @@
+{
+  "priority": -100,
+  "item_tags": [
+    "minecraft:axes"
+  ],
+  "weapon_class": "combattraces:cleave"
+}

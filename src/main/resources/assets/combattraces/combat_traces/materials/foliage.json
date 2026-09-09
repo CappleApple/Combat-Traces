@@ -1,0 +1,12 @@
+{
+  "material": "combattraces:foliage",
+  "priority": 80,
+  "block_tags": [
+    "minecraft:leaves",
+    "minecraft:flowers",
+    "minecraft:saplings"
+  ],
+  "particle": "minecraft:spore_blossom_air",
+  "color": "8cc266",
+  "particle_count": 4
+}

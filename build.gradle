@@ -1,0 +1,45 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.143'
+    id 'idea'
+}
+version = mod_version
+group = mod_group_id
+base { archivesName = mod_id }
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+repositories {
+    maven { url = 'https://api.modrinth.com/maven' }
+    maven { url = 'https://maven.kosmx.dev/' }
+    maven { url = 'https://maven.shedaniel.me/' }
+}
+neoForge {
+    version = neo_version
+    parchment { minecraftVersion = '1.21.1'; mappingsVersion = '2024.11.17' }
+    runs {
+        configureEach { systemProperty 'neoforge.enabledGameTestNamespaces', 'combattraces,minecraft' }
+        client { client(); if (project.hasProperty('validateSimplySwords')) { systemProperty 'combattraces.validateSimplySwords', 'true' }; gameDirectory = layout.projectDirectory.dir('run-client'); if (project.hasProperty('validateEmptyClient')) { systemProperty 'combattraces.validateEmpty', 'true' }; if (project.hasProperty('validateClient')) { systemProperty 'combattraces.validate', 'true' } }
+        server { server(); programArgument '--nogui'; gameDirectory = layout.projectDirectory.dir('run-server') }
+        gameTestServer { type = 'gameTestServer'; gameDirectory = layout.projectDirectory.dir('run-gametest') }
+    }
+    mods { combattraces { sourceSet sourceSets.main } }
+    unitTest { enable(); testedMod = mods.combattraces }
+}
+dependencies {
+    compileOnly 'maven.modrinth:better-combat:2.4.0+1.21.1-neoforge'
+    compileOnly 'dev.kosmx.player-anim:player-animation-lib-forge:2.0.4+1.21.1'
+    if (!project.hasProperty('withoutBetterCombat')) {
+        runtimeOnly 'maven.modrinth:better-combat:2.4.0+1.21.1-neoforge'
+        runtimeOnly 'dev.kosmx.player-anim:player-animation-lib-forge:2.0.4+1.21.1'
+        runtimeOnly 'me.shedaniel.cloth:cloth-config-neoforge:15.0.140'
+    }
+    if (project.hasProperty('simplySwordsDir')) {
+        runtimeOnly fileTree(dir: project.property('simplySwordsDir'), include: '*.jar')
+    }
+    testImplementation platform('org.junit:junit-bom:5.11.4')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+tasks.named('test', Test) { useJUnitPlatform() }
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8'; options.release = 21 }
+tasks.named('processResources') { inputs.property 'version', project.version; filesMatching('META-INF/neoforge.mods.toml') { expand version: project.version } }
+tasks.named('jar') { exclude 'com/cappleapple/combattraces/validation/**'; exclude 'assets/combattraces_validation/**' }

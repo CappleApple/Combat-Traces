@@ -1,0 +1,17 @@
+{
+  "material": "combattraces:wood",
+  "priority": 20,
+  "block_tags": [
+    "minecraft:logs",
+    "minecraft:planks",
+    "minecraft:wooden_fences",
+    "minecraft:wooden_slabs",
+    "minecraft:mineable/axe"
+  ],
+  "entities": [
+    "minecraft:armor_stand"
+  ],
+  "particle": "minecraft:crit",
+  "color": "bf976d",
+  "particle_count": 5
+}

@@ -1,0 +1,9 @@
+{
+  "texture": "combattraces:textures/vfx/impacts/ring.png",
+  "render_mode": "additive",
+  "lifetime_ms": 150,
+  "scale": 0.8,
+  "opacity": 1,
+  "camera_bias": 0.85,
+  "fade_curve": "linear"
+}

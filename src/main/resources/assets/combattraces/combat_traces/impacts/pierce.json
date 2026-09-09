@@ -1,0 +1,9 @@
+{
+  "texture": "combattraces:textures/vfx/impacts/pierce.png",
+  "render_mode": "additive",
+  "lifetime_ms": 180,
+  "scale": 1,
+  "opacity": 1,
+  "camera_bias": 0.85,
+  "fade_curve": "linear"
+}

@@ -1,0 +1,11 @@
+{
+  "material": "combattraces:dirt",
+  "priority": 15,
+  "block_tags": [
+    "minecraft:dirt",
+    "minecraft:sand"
+  ],
+  "particle": "minecraft:poof",
+  "color": "a88c6b",
+  "particle_count": 4
+}

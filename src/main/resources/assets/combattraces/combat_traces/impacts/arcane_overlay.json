@@ -1,0 +1,10 @@
+{
+  "texture": "combattraces:textures/vfx/impacts/generic.png",
+  "render_mode": "additive",
+  "lifetime_ms": 200,
+  "scale": 1.08,
+  "opacity": 0.5,
+  "color": "bd8bff",
+  "camera_bias": 0.3,
+  "fade_curve": "ease_out"
+}

@@ -1,0 +1,9 @@
+{
+  "texture": "combattraces:textures/vfx/impacts/slash.png",
+  "render_mode": "additive",
+  "lifetime_ms": 200,
+  "scale": 1.55,
+  "opacity": 1,
+  "camera_bias": 0.85,
+  "fade_curve": "linear"
+}

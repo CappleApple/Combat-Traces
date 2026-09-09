@@ -1,0 +1,10 @@
+{
+  "material": "combattraces:stone",
+  "priority": -50,
+  "block_tags": [
+    "minecraft:mineable/pickaxe"
+  ],
+  "particle": "minecraft:crit",
+  "color": "bab6ad",
+  "particle_count": 6
+}
