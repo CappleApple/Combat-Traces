@@ -1,11 +1,29 @@
-# VFX artwork history
+# VFX artwork
 
-Current 1.0.1 assets and the final generation prompt: [Pixel-art export](PIXEL_ART.md). The atlas described below is retained as 1.0.0 history.
+The source atlases in this directory are kept so the shipped VFX tiles can be reproduced and adjusted without editing every sprite separately.
 
-Generated with the built-in imagegen tool. The single source atlas is `vfx-atlas.png`; the exact grid cells were extracted into the mod's 16 standalone PNGs, preserving RGBA. No external mod artwork is shipped.
+## Current atlas
 
-Generation prompt:
+`vfx-atlas-pixel.png` is the source for the current 32x32 trail and impact textures.
 
-> Create ONE production-ready game VFX sprite atlas, exactly 1024x1024 pixels, a strict 4 by 4 grid of equal 256x256 cells with TRANSPARENT background (actual alpha), NO labels, NO grid lines, NO text. Each independent sprite entirely inside its cell with 20 px transparent padding. Pixel art with chunky deliberate pixels like Minecraft Dungeons combat effects, crisp readable tapered shapes, bright luminous center and softer low-alpha edge, no rectangular panels or backgrounds. This is an atlas to extract as exact 256px square tiles. Tile row 1, left to right: (1) white-silver long horizontal sword trail streak with subtle taper (2) broad warm-white heavy cleave trail with rough edges (3) pale gold soft compressed motion streak for blunt weapon (4) orange gold curling flame trail streak. Row 2: (1) icy cyan frosty horizontal trail (2) jagged white-blue lightning trail (3) violet arcane wispy trail (4) very thin pale white curved whip arc. Row 3: (1) elongated silver diagonal slash crescent, mostly horizontal (2) broad jagged white cleave impact (3) gold radial blunt impact flash with broken shock ring (4) compact white puncture impact with small central ring and narrow horizontal streak. Row 4: (1) three parallel diagonal pale silver claw scratches (2) compact white four-point generic magic impact flash (3) circular silver shock ring with transparent center (4) tiny golden sharp spark burst. All sprites isolated on transparency, no objects, no swords, no characters, no environmental scene. Consistent beautiful restrained pixel art, useful game assets rather than concept illustration.
+Run:
 
-The image service returned 1254×1254 pixels. Extraction uses the actual image dimensions and rounded quarter-cell boundaries, producing 313/314-pixel tiles; Minecraft accepts these dimensions. The source is retained for reproducible extraction.
+```text
+python tools/export_pixel_atlas.py
+```
+
+to extract the individual tiles into:
+
+```text
+src/main/resources/assets/combattraces/textures/vfx/
+```
+
+The export uses nearest-neighbor sampling so the sprites keep hard pixel edges. `pixel-effects-preview.png` is an enlarged preview of the exported tiles, also without smoothing.
+
+Trail tiles use the dense center band of their cell so ribbon coverage follows the inferred weapon span. Impact tiles keep their isolated silhouette and transparent surroundings. Runtime texture filtering is disabled for these effects.
+
+## Legacy atlas
+
+`vfx-atlas.png` is the older 1.0.0 source atlas. It is retained only as artwork history and is not used by the current export pipeline.
+
+No third-party weapon-mod textures or animations are included in these source files.

@@ -1,101 +1,125 @@
-# Validation record
+# Testing and QA
 
-## Automated and runtime checks
+Combat Traces depends heavily on rendered transforms, animation timing, and optional combat mods, so the test setup is split between unit/GameTests and disposable client runs.
 
-- Java 21 / NeoForge 21.1.248 build and **52 unit tests**.
-- **5 GameTests** with Better Combat installed and the same **5 GameTests without Better Combat**.
-- Dedicated server (1.0.0 baseline): fresh startup without Better Combat, normal `/reload`, save/stop, restart with Better Combat, reload, save/stop. Both reached `Done` and shut down cleanly.
-- Actual development client: captured weapon positions and screenshots, verified custom animation clock/state, first/third person, a rendered `RemotePlayer`, Fire Aspect, an integrated-server-confirmed entity hit, loaded stone/wood/metal/ice tags, metal armor, a 25-emitter budget burst, live datapack enable/reload, and independent twin ribbons.
-- Client startup without Better Combat passed. The final live harness passed **19 checks**, including an offhand animation at **20 FPS / 110 FOV**. See `validation/client-validation.txt`.
-- The production JAR excludes validation classes, validation animations, and all third-party JARs.
+Raw runtime evidence is kept in `validation/` for regression debugging. Passing those fixtures is useful coverage, not a substitute for checking new combat/renderer combinations in-game.
 
-The `RemotePlayer` scenario exercises the actual remote-player render/lifecycle path in one client. It is **not** a two-user network session or a production modpack compatibility test.
+## Automated tests
 
-## 1.0.3 hitbox selection gate
-
-The current Simply Swords / AsyncParticles client passed **126 checks**. Geometry comparisons cover the center, full dimensions, and all oriented axes at three aim pitches. Confirmed hits select stab/horizontal/vertical effects from volume proportions while both hammer attacks remain blunt. Per-hit sprite variation stays within seven degrees; depth priority, windup suppression, entity-only impacts, and particle reload checks also pass. See [current evidence](../validation/README.md).
-
-New unit regressions cover absent/contradictory motion, yaw-rotated local dimensions, depth ties in spin boxes, invalid geometry, blunt exemptions, and bounded stable variation.
-
-## 1.0.2 contact and trail baseline
-
-The 1.0.2 Simply Swords / AsyncParticles harness passed **109 checks**, including the existing blade/head, depth, particle-thread, and resource-reload checks. Added checks compare attack centers at three aim pitches, verify incoming-direction rotation and entity-only impacts, reject early windup ribbons, and exercise claymore stab/overhead attacks. The speed threshold was set to 4 blocks/second. See [current evidence](../validation/README.md).
-
-Unit regressions cover angled/short stabs, recovery direction retention, pure retractions, horizontal position preservation, screen projection, and configurable speed gating for explicit animation windows.
-
-## 1.0.1 visual and compatibility baseline
-
-The dedicated Simply Swords harness passed **54 checks** with Simply Swords 1.70.2 and AsyncParticles 21.1.4.2 installed. Its real Better Combat animations cover longsword slash/stab, claymore, greathammer swing, and greathammer slam. The model assertions use actual baked blade coordinates and ensure both hammer emitter endpoints lie on the 3-D head.
-
-A framebuffer test places a sword cut behind an opaque iron golem. In the central target region it changes **0 pixels** with normal depth and **1011 pixels** with priority enabled. The check reads RGB channels directly and excludes the alpha channel from comparisons.
-
-AsyncParticles worker ticking and GPU rendering are asserted active. Bursts exercise all built-in accent particle families before and after a resource reload, including **600 successfully created particles after reload**, with no observed particle-thread, rendering, or OpenGL errors. This is an isolated real client, not the full Within modpack or a multi-user session. See [compatibility scope and reproduction](COMPATIBILITY.md).
-
-The 16 production sprites are all RGBA **32x32** textures, sampled without smoothing. The generated atlas and reproducible export are documented in [art notes](../art/PIXEL_ART.md).
-
-## Reproduce
+Run:
 
 ```powershell
 .\gradlew.bat clean test build
 .\gradlew.bat runGameTestServer
 .\gradlew.bat runGameTestServer -PwithoutBetterCombat
+```
+
+The automated suite covers things such as:
+
+- motion/history math and discontinuities;
+- emitter/model geometry inference;
+- stab/slash/blunt classification;
+- oriented hit geometry;
+- stable bounded impact variation;
+- resource/datapack parsing;
+- element/material mappings;
+- effect budgets; and
+- behavior with Better Combat absent.
+
+GameTests are run both with and without the Better Combat development runtime so the optional dependency stays optional.
+
+## Client validation
+
+Focused development-client runs are available with:
+
+```powershell
 .\gradlew.bat runClient -PvalidateClient
 .\gradlew.bat runClient -PwithoutBetterCombat -PvalidateEmptyClient
+```
+
+The validation client has been used to exercise first- and third-person trails, remote-player rendering, custom Better Combat animations, entity impacts, elemental overlays, datapack reloads, model-geometry inference, multi-emitter weapons, and the global effect budget.
+
+For the current test fixture, results are written to:
+
+```text
+run-client/client-validation.txt
+run-client/screenshots/
+```
+
+The `validation/` directory contains retained release/regression artifacts.
+
+## Dedicated server smoke check
+
+Run:
+
+```powershell
 python tools/server_smoke.py
 ```
 
-Client results are written to `run-client/client-validation.txt` and screenshots to `run-client/screenshots/`. Server smoke logs are under `.work/`. These runtime directories are ignored by Git.
+The smoke server is intended to catch accidental client-only class loading and basic reload/save/restart problems. It is not a multiplayer combat test.
 
-## Phase gates
+## Important manual scenarios
 
-| Phase | Implementation | Validation |
-|---|---|---|
-| 1 | Provider, real item-matrix capture, debug endpoints | Compile, transform tests, actual animated sword screenshot and motion travel |
-| 2 | Ribbon geometry, histories, adaptive sampling | Compile, bounds/discontinuity tests, actual ribbon rendering |
-| 3 | Confirmed entity hits, oriented impact quads | Compile, orientation tests, integrated-server hit receipt and client screenshot |
-| 4 | Classification, geometry inference, pack overrides | Compile, geometry/schema tests, client catalog and model inference |
-| 5 | Element resolution and overlays | Compile, live enchanted Fire Aspect weapon |
-| 6 | Material mappings and entity armor accents | Compile and loaded tag/armor client checks; terrain does not emit hits |
-| 7 | LOD, budgets, first person, client-only fallback | Compile, both cameras, remote render path, budget burst |
-| 8 | API, reload, debug/config UI, docs | Compile, live datapack synchronization/twin emitters, optionality and server gates |
+Use `/combattraces debug on` when checking motion. The debug view shows inferred emitter geometry, sample paths, velocity, hit orientation/family, element/material information, and other useful state.
 
-## Manual release checklist
+### Weapons and motion
 
-Use `/combattraces debug on` to inspect origins, tips, blade lines, sample paths, velocity, hit point/normal, family, elements, material, and strength.
+Check a representative mix rather than only a vanilla sword:
 
-### Motion and weapons
+- horizontal and vertical sword cuts;
+- thrust/stab animations;
+- axe/cleave and hammer/mace attacks;
+- a long polearm;
+- twinblade or other multi-emitter model;
+- offhand/left-handed motion;
+- rapid combo restarts and attack cancellation; and
+- at least one animation supplied by an external datapack/mod.
 
-- [ ] Horizontal sword slash; upward/downward/overhead variants.
-- [ ] Arbitrary diagonal animation from a real external pack.
-- [ ] Spear/rapier thrust and puncture-style impact.
-- [ ] Axe/cleave and hammer/mace blunt impacts visibly differ from sword impacts.
-- [ ] Dagger, claw, whip, twinblade, asymmetric custom model.
-- [ ] Left-handed player and offhand combos.
-- [ ] Attack cancel, weapon swap, rapid combo restart, teleport, respawn, dimension change.
+If emitter inference is changed, include an asymmetric/custom model instead of testing only clean vanilla geometry.
 
-### Targets and composition
+### Hits
 
-- [ ] Blade crosses terrain without emitting contact impacts; entity material and armor effects remain distinct.
-- [ ] Moving entity impact remains attached for its short lifetime.
-- [ ] Real shield block; partially blocked hit; critical modifier on/off.
-- [ ] Fire + lightning; custom element; element and material toggles.
-- [ ] No spurious entity effects after a miss or rejected/invulnerable hit.
+- Verify slash, stab, and blunt effects remain visibly distinct.
+- Check a moving target so the short-lived effect attachment is obvious.
+- Test a shield block and an armored target.
+- Confirm misses and terrain crossings do not create entity impacts.
+- Test at least one element overlay and one material mapping.
 
-### Camera and compatibility
+### Camera/rendering
 
-- [ ] First/third person in the user's actual modpack and preferred FOV.
-- [ ] Spectator camera observing another player.
-- [ ] Custom camera, shader, renderer, and held-item replacement mods.
-- [ ] Resource-pack texture replacement and resource reload during combat.
-- [ ] Client with Combat Traces on a server without it; joining a modded server with unmodded clients.
+- First and third person at the user's normal FOV.
+- A remote player rendered by the client.
+- Resource reload while effects are active.
+- Resource-pack texture replacement.
+- Any shader/custom-camera/held-item renderer used by the target pack.
 
-### Multiplayer and performance
+### Optional-mod compatibility
 
-- [ ] Two real users see the same animation and correctly attributed hit.
-- [ ] 1, 10, and 25 simultaneously attacking players; measure frame times.
-- [ ] Low FPS, high FPS, network latency, packet jitter/loss, repeated combat.
-- [ ] Observe LOD transitions at 24/48/64 blocks.
-- [ ] Confirm local/recent effects survive overload while distant effects degrade.
-- [ ] Disconnect/reconnect and datapack reload do not retain old trails or mappings.
+The maintained compatibility profiles include Better Combat, Simply Swords, and AsyncParticles. When changing hooks that touch these paths, rerun the relevant profile rather than assuming the generic path covers it.
 
-Do not mark these manual checks passed solely because the automated harness passes.
+Client startup without Better Combat should remain part of release QA.
+
+### Multiplayer
+
+A single-client `RemotePlayer` fixture exercises remote rendering but does **not** prove real network behavior. For changes to server hit attribution or synchronization, test with two actual users/clients and verify that both see the expected swing and that confirmed impacts are attributed to the correct attacker/target.
+
+### Performance
+
+For changes to trail/effect budgets, try several simultaneous attackers and observe frame times at near and far LOD ranges. Check that overload drops/downgrades distant effects before destroying recent local effects.
+
+## Art/resource checks
+
+The shipped VFX textures are small pixel-art sprites and should remain nearest-sampled. Source/export notes are kept under `art/`.
+
+Optional asset/schema checks can be run with:
+
+```powershell
+python -m pip install -r tools/requirements.txt
+python tools/check_assets.py
+```
+
+## Scope
+
+The automated/client fixtures cover the combinations documented above. They do not certify every shader, animation pack, weapon model, combat overhaul, network condition, or full modpack.
+
+When a new integration is added, document the specific scenario needed to reproduce it rather than only increasing a generic “checks passed” count.

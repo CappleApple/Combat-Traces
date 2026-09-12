@@ -1,73 +1,75 @@
 # Combat Traces
 
-Motion-derived weapon ribbons and directional combat impacts for **Minecraft 1.21.1 / NeoForge 21.1.248+ / Java 21**.
+Combat Traces adds weapon trails and directional hit effects that follow the motion of the weapon you are actually swinging.
 
-- Mod ID: `combattraces`
-- Java namespace: `com.cappleapple.combattraces`
-- Version: `1.0.3`
-- Tested integration: **Better Combat 2.4.0 + Player Animator 2.0.4**
-- License: MIT
+Rather than defining a trail path for every attack animation, the mod samples the rendered item transform and builds a ribbon from that motion. With Better Combat, this means custom Player Animator attacks can usually produce trails without a Combat Traces-specific animation file.
 
-Combat Traces samples the held item's actual rendered matrix **after Player Animator and the item model's display transform**. It builds temporary ribbon geometry between blade samples. Custom attack animations need no Combat Traces path definition.
+Built for Minecraft 1.21.1 / NeoForge 21.1.248+.
 
-## Install
+## What it adds
 
-Download [Combat Traces 1.0.3](https://github.com/CappleApple/Combat-Traces/releases/download/v1.0.3/combattraces-1.0.3.jar) and place it in your instance's `mods/` folder. Install Better Combat and its required Player Animator and Cloth Config dependencies to use the included motion provider.
+- Motion-following weapon ribbons for swords, axes, hammers, polearms, twinblades, and other custom models.
+- Geometry-based blade/head inference with datapack overrides when automatic detection is not enough.
+- Directional slash, cleave, blunt, pierce, claw, whip, and generic/magic impact styles.
+- Element overlays for fire, frost, lightning, poison, arcane, holy, and shadow.
+- Material/armor responses for entity impacts, including shields.
+- First- and third-person rendering with configurable width/opacity and distance LOD.
+- Resource-packable trail/impact textures.
+- Datapack-driven weapon, material, element, and effect mappings.
+- A public API for other animation/combat systems to provide motion and impact data.
 
-The mod safely loads without Better Combat; it then waits for another registered motion provider. Better Combat integration is isolated in `compat/bettercombat` and conditionally enabled client mixins.
+Terrain contact does not create hit effects; impacts are tied to entity hits.
 
-Install Combat Traces on the server too for **confirmed, attributed entity impacts**, shield/critical metadata, and synchronized datapack definitions. Clients without Combat Traces can still connect. No weapon-transform packets are sent.
+## Better Combat
 
-On a server without Combat Traces, local hit candidates can produce approximate impacts when vanilla hurt feedback arrives. Remote players' synchronized animations still produce trails; reliable remote hit attribution requires the optional server component.
+The included motion provider targets Better Combat + Player Animator.
 
-## Included
+Combat Traces reads the held item's rendered transform after the animation and item display transform have been applied. The result is that a datapack/custom Better Combat swing can naturally change the trail shape without needing a second set of trail coordinates.
 
-- Frame-sampled ribbons, adaptive subdivisions, fading, scrolling/flipbook textures, alpha-weighted additive and translucent styles.
-- Model-geometry emitter inference, optional item-model metadata, configurable multi-emitter weapons.
-- Slash, cleave, blunt, pierce, claw, whip, magic/generic impact families.
-- Pixel-art hit flashes with target depth priority, distinct blunt bursts, and detected sword-stab punctures.
-- Full blade and hammer-head ribbon inference from visible model geometry.
-- Hitbox-driven stab/slash selection and horizontal/vertical cut orientation with small, stable variation. Blunt impacts remain distinct.
-- Entity-only hit effects placed at Better Combat's hitbox-center height, with short-lived entity-relative attachment.
-- Configurable minimum swing speed and windup suppression for weapon trails.
-- Composited fire, frost, lightning, poison, arcane, holy, and shadow overlays. Fire Aspect selects fire automatically.
-- Configurable entity material and armor responses, including shields. Terrain contacts do not create hit effects.
-- First-person opacity/width controls, camera guard, distance LOD, global sample/effect/particle limits.
-- Datapack reload/synchronization, resource-pack textures, debug geometry/HUD, client configuration screen, public extension API.
+Better Combat is optional at load time. Without it, Combat Traces waits for another registered motion provider.
 
-## Build and run
+## Server support
 
-Use Java 21. The Gradle wrapper downloads the pinned build and development dependencies.
+Combat Traces can be used client-side for trails and approximate local impacts, but installing it on the server enables the most reliable hit information:
 
-```powershell
-.\gradlew.bat test build
-.\gradlew.bat runClient
-.\gradlew.bat runGameTestServer
-.\gradlew.bat runGameTestServer -PwithoutBetterCombat
+- confirmed entity-hit attribution;
+- shield/critical metadata; and
+- synchronized datapack definitions.
+
+Clients without Combat Traces can still join a server that has it. Weapon transforms are not streamed over the network; each client renders trails from the animation it already sees.
+
+## Weapon geometry
+
+For ordinary models, Combat Traces can infer useful emitter lines from the visible item geometry. Swords can trace the blade, while hammer-like weapons can use the head rather than treating the entire item as a blade.
+
+Packs can override the automatic result or define multiple emitters for unusual weapons.
+
+This is especially useful for twinblades, double-ended weapons, asymmetric models, or items whose visual shape does not match their registry/category name.
+
+## Impacts
+
+Confirmed entity hits choose an impact family using weapon/model information and the attack direction. Stabs can produce puncture-style effects, horizontal/vertical cuts orient to the swing, and blunt weapons keep a visibly different burst.
+
+Effects are short-lived and can follow the struck entity briefly instead of remaining frozen at a world coordinate while the target moves.
+
+Fire Aspect automatically selects the fire element. Other element/material mappings can be supplied through datapacks.
+
+## Configuration
+
+Use the NeoForge Mods config screen or edit:
+
+```text
+config/combattraces-client.toml
 ```
 
-The artifact is `build/libs/combattraces-1.0.3.jar`. Better Combat, Player Animator, Cloth Config, development tests, and the validation animation are **not bundled**.
-
-Development-only acceptance runs create disposable flat worlds in `run-client/` and close the client when finished:
-
-```powershell
-.\gradlew.bat runClient -PvalidateClient
-.\gradlew.bat runClient -PwithoutBetterCombat -PvalidateEmptyClient
-python tools/server_smoke.py
-```
-
-The smoke script uses `run-server/`, binds only to loopback on ports 25598/25599, writes its isolated EULA/config, tests reload and restart, then shuts down through RCON. It uses Java 21 from `JAVA_HOME` or `PATH`.
-
-## Configure
-
-Use the NeoForge Mods configuration screen or `config/combattraces-client.toml`.
+Useful references:
 
 - [Client settings](docs/CONFIGURATION.md)
-- [Pack definitions and examples](docs/DATAPACKS.md)
-- [Integration API](docs/API.md)
-- [Validation results and manual checklist](docs/TESTING.md)
-- [Simply Swords and AsyncParticles checks](docs/COMPATIBILITY.md)
-- [Implementation and known limits](docs/ARCHITECTURE.md)
+- [Datapack format and examples](docs/DATAPACKS.md)
+- [Public integration API](docs/API.md)
+- [Compatibility notes](docs/COMPATIBILITY.md)
+- [Architecture](docs/ARCHITECTURE.md)
+- [Testing and QA](docs/TESTING.md)
 
 Commands:
 
@@ -78,18 +80,43 @@ Commands:
 /reload
 ```
 
-The first three are client commands. `/combattraces reload` reloads client resources and model caches; the server's normal `/reload` refreshes datapack mappings and sends the completed snapshot to connected clients.
+`/combattraces reload` refreshes client resources/model caches. The server's normal `/reload` refreshes synchronized datapack mappings.
 
 ## Pack examples
 
-`examples/combattraces-example-datapack.zip` is installable in a world's `datapacks/` folder. It demonstrates a deliberately double-ended diamond-sword emitter override, combined fire/lightning, a custom trail style, and a material mapping. It is optional and does not change damage or recipes.
+The repository includes optional example packs:
 
-`examples/combattraces-example-resourcepack.zip` is installable in `resourcepacks/`. It demonstrates replacing the default slash texture. Neither example is automatically installed.
+```text
+examples/combattraces-example-datapack.zip
+examples/combattraces-example-resourcepack.zip
+```
 
-## Visual evidence
+They demonstrate a double-ended emitter, combined elements, a custom trail style, material mapping, and texture replacement. They are examples only and are not installed automatically.
 
-The implementation was exercised in an actual development client, including arbitrary custom animation, first-person and third-person capture, a rendered `RemotePlayer`, entity hits, Fire Aspect, live datapack reload, and multi-emitter rendering. See [the test record](docs/TESTING.md) for exactly what was checked and the remaining manual scenarios.
+The source art for the bundled pixel-style effects is kept under `art/` so the shipped textures can be reproduced or replaced without treating the PNGs as unexplained generated assets.
 
-The included textures were generated as a single pixel-art VFX atlas using the built-in image tool, then extracted into replaceable PNG tiles. The source atlas and prompt are retained under `art/`.
+## Requirements
 
-Optional asset/schema verification: `python -m pip install -r tools/requirements.txt`, then `python tools/check_assets.py`.
+- Minecraft 1.21.1
+- NeoForge 21.1.248 or newer compatible 21.1 build
+- Java 21
+- Better Combat / Player Animator for the included motion provider
+
+Better Combat itself is optional if another mod registers a motion provider through the API.
+
+## Building
+
+```powershell
+.\gradlew.bat test build
+.\gradlew.bat runClient
+.\gradlew.bat runGameTestServer
+.\gradlew.bat runGameTestServer -PwithoutBetterCombat
+```
+
+The release jar is written to `build/libs/`.
+
+Development validation tasks and third-party development dependencies are not bundled in the release artifact.
+
+## License
+
+Combat Traces is available under the MIT License.
