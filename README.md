@@ -119,4 +119,4 @@ Development validation tasks and third-party development dependencies are not bu
 
 ## License
 
-Combat Traces is available under the MIT License.
+Combat Traces is licensed under [CC BY-NC-SA 4.0 with a Modpack/Server Exception](LICENSE). Modpacks and Minecraft servers, including monetized ones, may use it under the additional permission in the LICENSE.
