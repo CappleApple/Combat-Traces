@@ -10,7 +10,20 @@ import net.minecraft.world.entity.LivingEntity;
 
 public final class TrailManager {
   public record Key(
-      int entity, boolean offhand, long attack, int emitter, boolean firstPerson, String layer) {}
+      int entity,
+      boolean offhand,
+      long attack,
+      int emitter,
+      boolean firstPerson,
+      String layer,
+      long stroke) {
+    public Key(
+        int entity, boolean offhand, long attack, int emitter, boolean firstPerson, String layer) {
+      this(entity, offhand, attack, emitter, firstPerson, layer, 0);
+    }
+  }
+
+  private static long strokeSequence;
 
   private static final Map<Key, TrailInstance> TRAILS = new LinkedHashMap<>();
 
@@ -20,6 +33,7 @@ public final class TrailManager {
 
   public static void clear() {
     TRAILS.clear();
+    strokeSequence = 0;
   }
 
   public static void sample(
@@ -47,6 +61,21 @@ public final class TrailManager {
             firstPerson,
             layer);
     var trail = TRAILS.get(key);
+    if (trail != null && trail.paused) {
+      // Retire the completed stroke without deleting its fading geometry.
+      TRAILS.remove(key);
+      TRAILS.put(
+          new Key(
+              key.entity(),
+              key.offhand(),
+              key.attack(),
+              key.emitter(),
+              key.firstPerson(),
+              key.layer(),
+              ++strokeSequence),
+          trail);
+      trail = null;
+    }
     if (trail == null) {
       while (TRAILS.size() >= ClientConfig.MAX_TRAILS.get()) {
         var worst =
@@ -55,8 +84,9 @@ public final class TrailManager {
                 .orElseThrow();
         double incoming =
             entity == mc.player
-                ? -1000
-                : entity.distanceToSqr(mc.gameRenderer.getMainCamera().getPosition());
+                ? -1000 - sample.time() * .0001
+                : entity.distanceToSqr(mc.gameRenderer.getMainCamera().getPosition())
+                    - sample.time() * .0001;
         if (incoming > priority(worst.getValue(), mc)) return;
         TRAILS.remove(worst.getKey());
       }
@@ -64,17 +94,37 @@ public final class TrailManager {
       trail = new TrailInstance(entity, motion.attackId(), firstPerson, style, cap);
       TRAILS.put(key, trail);
     }
-    if (trail.paused) {
-      trail.history.clear();
-      trail.paused = false;
-    }
+    trail.family =
+        com.cappleapple.combattraces.client.weapon.WeaponResolver.classify(entity, motion, null);
+    // Element styles already carry their own color, including enchantment-selected elements.
+    trail.enchanted = layer.equals("base") && motion.weapon().isEnchanted();
+    var shape = HitboxImpact.kind(motion.hitbox());
+    var observation =
+        com.cappleapple.combattraces.client.WeaponMotionTracker.latest(
+            entity.getId(), motion.hand(), emitter);
+    trail.thrust =
+        trail.family != WeaponClass.BLUNT
+            && (shape == HitboxImpact.Kind.STAB
+                || (shape == HitboxImpact.Kind.UNKNOWN
+                    && observation != null
+                    && observation.state().type() == MotionAnalysis.Type.THRUST));
+    trail.thrustAxis =
+        motion.hitbox() == null
+            ? sample.tip().subtract(sample.origin()).normalize()
+            : motion.hitbox().depthAxis();
     trail.touched = sample.time();
+    double spacing = ClientConfig.MIN_DISTANCE.get() * (reduced ? 2 : 1) / sampleMultiplier;
+    if (style.swept())
+      spacing =
+          Math.max(spacing, sample.origin().distanceTo(sample.tip()) * .09 * (reduced ? 2 : 1));
     trail.history.add(
         sample,
-        ClientConfig.MIN_DISTANCE.get() * (reduced ? 2 : 1) / sampleMultiplier,
-        ClientConfig.MAX_DISTANCE.get() * (reduced ? 2 : 1) / sampleMultiplier,
+        spacing,
+        Math.max(
+            ClientConfig.MAX_DISTANCE.get() * (reduced ? 2 : 1) / sampleMultiplier, spacing * 1.5),
         ClientConfig.SUBDIVISIONS.get(),
-        ClientConfig.DISCONTINUITY.get());
+        ClientConfig.DISCONTINUITY.get(),
+        style.swept());
     enforceBudget(mc);
   }
 
@@ -95,7 +145,12 @@ public final class TrailManager {
         .values()
         .removeIf(
             t -> {
-              t.history.prune(now - t.style.lifetime() * ClientConfig.TRAIL_LIFETIME.get());
+              double lifetime = t.style.lifetime() * ClientConfig.TRAIL_LIFETIME.get();
+              // Generated sweeps fade as a complete shape after the last sample, like a slash
+              // sprite.
+              if (t.style.swept()) {
+                if (now - t.touched >= lifetime) return true;
+              } else t.history.prune(now - lifetime);
               return t.owner.isRemoved() || t.history.size() == 0;
             });
   }

@@ -1,14 +1,14 @@
 {
-  "artifact": "build/libs/combattraces-1.0.3.jar",
-  "sha256": "593d7ad8e6b0bc13338e65a14c2f1fe0ce51a9c94527f66df77b3f7e6024d081",
-  "bytes": 250321,
-  "unit_tests": 52,
+  "artifact": "build/libs/combattraces-1.1.0.jar",
+  "sha256": "6c5e4d1eae1bf6aa481441d2478e397e1428433d4ad9433a98fe324a4fa7780a",
+  "bytes": 294762,
+  "unit_tests": 123,
   "unit_failures": 0,
   "gametests_with_bettercombat": 5,
   "gametests_without_bettercombat": 5,
   "live_client_checks": 19,
   "client_without_bettercombat": "passed",
-  "simplyswords_asyncparticles_live_checks": 126,
+  "simplyswords_asyncparticles_live_checks": 324,
   "depth_comparison_changed_pixels": {
     "normal": 0,
     "priority": 1011
@@ -19,7 +19,7 @@
   "dedicated_fresh_reload_restart": {
     "status": "passed",
     "tested_version": "1.0.0",
-    "note": "Earlier baseline; 1.0.3 server-side regression uses GameTests with and without Better Combat."
+    "note": "Earlier baseline; 1.1.0 server-side regression uses GameTests with and without Better Combat."
   },
   "definition_files_validated": 101,
   "rgba_textures": 16,
@@ -44,5 +44,63 @@
   "block_contacts": "disabled",
   "hitbox_proportion_selection": "passed",
   "blunt_hitbox_exemption": "passed",
-  "maximum_slash_variation_degrees": 7
+  "maximum_slash_variation_degrees": 7,
+  "tested_date": "2026-09-13",
+  "generated_trails": {
+    "blunt_wakes": "Captured head endpoints; unchanged from 1.0.4",
+    "thrusts": "Crossed tip wakes for detected stabs; unchanged from 1.0.4",
+    "silhouette_width_steps": 12,
+    "native_duplicate_suppression": "passed, including opt-out and disabled-trail fallback",
+    "retired_stroke_lifetime": "passed",
+    "copied_bettercombat_assets": false,
+    "blade_tracking": "Captured 3D origins/tips; emitted vertices checked against real samples",
+    "elemental_geometry": "All built-in styles use generated geometry",
+    "elemental_color": "Configured color is independent of physical enchantment tint",
+    "live_enchanted_cases": [
+      "Fire Aspect longsword slash",
+      "Fire Aspect claymore stab",
+      "Fire Aspect greathammer swing"
+    ]
+  },
+  "strike_timing": {
+    "source": "Contiguous substantial arm/item/torso keyframes with contact preference; no explicit damage-phase marker in Better Combat",
+    "windup": "No emission outside the detected interval",
+    "recovery": "Boundary-clipped geometry only; no new recovery strokes or accents",
+    "minimum_start_speed": 4,
+    "speed_source": "Fastest captured endpoint across all emitters; latched for the strike",
+    "interframe_boundaries": "Clipped at entry and exit, including post-end animation clock",
+    "two_pose_mesh": "passed for slash, blunt and stab geometry",
+    "capacity": "Generated strokes retain first/current endpoints under per-trail cap; global budgets still apply",
+    "old_provider_fallback": "Contact hint +/- 0.12 animation progress",
+    "explicit_animation_windows": "Override automatic estimate; starting speed gate still applies"
+  },
+  "simplymore": "1.3.0_alpha",
+  "multi_weapon_live_checks": 1328,
+  "multi_weapon_cases": 47,
+  "multi_weapon_families": 24,
+  "multi_weapon_animations": 18,
+  "multi_emitter_geometry": {
+    "double_blade_emitters": 2,
+    "quarterstaff_end_caps": 2,
+    "chakram_rim_segments": 8,
+    "recorded_emitter_cases": 98,
+    "minimum_observed_retained_fraction": 0.9331930760336618,
+    "low_fps": 20,
+    "offhand_and_first_person": "passed",
+    "fire_aspect_geometry": "Matches every base emitter sample and preserves element color",
+    "all_unique_models": "Not individually tested"
+  },
+  "development_client_safety": {
+    "master_volume": 0,
+    "mouse_captured": false,
+    "glfw_cursor_mode": "NORMAL",
+    "menu_and_world_checks": "passed continuously",
+    "guard_classes_in_release": false
+  },
+  "publication_build": {
+    "date": "2026-09-19",
+    "license_source_commit": "64a4791b8d6fad909f045833280eff83cdd77d2c",
+    "bundled_license": "CC BY-NC-SA 4.0 with Modpack/Server Exception",
+    "runtime_source_matches_client_tested_snapshot": true
+  }
 }

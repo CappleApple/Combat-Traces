@@ -66,7 +66,7 @@ Empty extension tags are provided for blunt, piercing, claw, whip, magic, and ev
 
 This animation ID belongs to the development fixture and is excluded from the shipped mod. Use an installed animation's actual ID in a real pack.
 
-Windows are optional. Without one, measured weapon velocity controls activation. Progress comes from the active Player Animator keyframe player after Better Combat speed modifiers. `sample_multiplier` is clamped to 0.25–3.
+Windows are optional and override automatic strike timing. Better Combat automatically estimates the striking interval from the loaded animation keyframes; other motion providers can supply an interval or use the bounded contact-phase fallback. Use an explicit window when an unusual animation has several similar movements. All windows require `trail_velocity_threshold` to start a stroke; a started stroke remains continuous until the window ends. Progress comes from the active Player Animator keyframe player after Better Combat speed modifiers. `sample_multiplier` is clamped to 0.25–3.
 
 ## Trail and impact styles
 
@@ -89,6 +89,7 @@ Windows are optional. Without one, measured weapon velocity controls activation.
 
 Impact styles use the same common fields plus `scale`; trail width and accent rate are irrelevant to impact quads. `camera_bias` remains accepted for pack compatibility, but impact sprites now face the camera and, when hitbox geometry is available, rotate to its dominant width/height axis with a small fixed variation per hit.
 
+- `trail_geometry`: `textured` (default for custom styles) or `swept`. All built-in trail styles, including elemental overlays, select `swept`. Generated trails use layered mesh colors, a stepped silhouette, and a complete-shape fade; `texture`, scrolling, and flipbook fields are unused in that mode. Width, opacity, color, lifetime, render mode, and accents still apply. Impact styles ignore this option.
 - Render modes: `translucent`, `additive`. Additive blending respects alpha.
 - Fade curves: `linear`, `ease_out` (quadratic remaining alpha), `smoothstep`.
 - `color`: optional six-digit RGB hex, such as `"ff9d42"`.

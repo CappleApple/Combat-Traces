@@ -1,120 +1,318 @@
 PASS diamond_longsword combo 0 equipped actual registered item
 PASS diamond_longsword combo 0 loaded Better Combat attack
+PASS diamond_longsword combo 0 supplies damaging keyframe interval
 PASS diamond_longsword combo 0 dimensions, axes, and center match Better Combat at three aim pitches
 PASS diamond_longsword combo 0 hitbox proportions select HORIZONTAL
 PASS diamond_longsword combo 0 hitbox works without blade velocity samples
 PASS diamond_longsword combo 0 correct weapon family SLASH
 PASS diamond_longsword combo 0 emitter reaches full blade tip
 PASS diamond_longsword combo 0 emitter starts near guard
+PASS diamond_longsword combo 0 generated geometry uses weapon family
+PASS diamond_longsword combo 0 generated thrust matches hitbox
+PASS diamond_longsword combo 0 emitted slash vertices follow the captured 3D blade at both ends
+PASS diamond_longsword combo 0 native trails replaced for captured attack
+PASS diamond_longsword combo 0 opt-out restores native trails
+PASS diamond_longsword combo 0 disabling trails restores native effects
+PASS diamond_longsword combo 0 actual native particle spawn intercepted
 PASS diamond_longsword combo 0 confirmed hit selects slash
 PASS diamond_longsword combo 0 impact height matches attack hitbox center
 PASS diamond_longsword combo 0 impact follows dominant hitbox axis
 PASS diamond_longsword combo 0 actual sprite matches hitbox-selected effect
 PASS diamond_longsword combo 0 sprite variation stays within seven degrees
 PASS diamond_longsword combo 0 samples real rendered animation
-PASS diamond_longsword combo 0 early windup has no ribbon
+PASS diamond_longsword combo 0 complete observed windup has no ribbon
+PASS diamond_longsword combo 0 observes the damaging keyframe interval
+PASS diamond_longsword combo 0 recovery appends no samples and permits completed trails to fade
+PASS diamond_longsword combo 0 all physical and elemental trail samples stay inside damaging keyframes
 PASS diamond_longsword combo 0 produces ribbon geometry
 PASS diamond_longsword combo 0 server-confirmed impact received
 PASS diamond_longsword combo 2 equipped actual registered item
 PASS diamond_longsword combo 2 loaded Better Combat attack
+PASS diamond_longsword combo 2 supplies damaging keyframe interval
 PASS diamond_longsword combo 2 dimensions, axes, and center match Better Combat at three aim pitches
 PASS diamond_longsword combo 2 hitbox proportions select STAB
 PASS diamond_longsword combo 2 hitbox works without blade velocity samples
 PASS diamond_longsword combo 2 correct weapon family SLASH
 PASS diamond_longsword combo 2 emitter reaches full blade tip
 PASS diamond_longsword combo 2 emitter starts near guard
+PASS diamond_longsword combo 2 generated geometry uses weapon family
+PASS diamond_longsword combo 2 generated thrust matches hitbox
+PASS diamond_longsword combo 2 native trails replaced for captured attack
+PASS diamond_longsword combo 2 opt-out restores native trails
+PASS diamond_longsword combo 2 disabling trails restores native effects
+PASS diamond_longsword combo 2 actual native particle spawn intercepted
 PASS diamond_longsword combo 2 confirmed hit selects pierce
 PASS diamond_longsword combo 2 impact height matches attack hitbox center
 PASS diamond_longsword combo 2 impact follows dominant hitbox axis
 PASS diamond_longsword combo 2 actual sprite matches hitbox-selected effect
 PASS diamond_longsword combo 2 sprite variation stays within seven degrees
 PASS diamond_longsword combo 2 samples real rendered animation
-PASS diamond_longsword combo 2 early windup has no ribbon
+PASS diamond_longsword combo 2 complete observed windup has no ribbon
+PASS diamond_longsword combo 2 observes the damaging keyframe interval
+PASS diamond_longsword combo 2 recovery appends no samples and permits completed trails to fade
+PASS diamond_longsword combo 2 all physical and elemental trail samples stay inside damaging keyframes
 PASS diamond_longsword combo 2 produces ribbon geometry
 PASS diamond_longsword combo 2 server-confirmed impact received
 PASS diamond_longsword combo 2 depth-dominant volume identifies stab throughout combo
 PASS diamond_claymore combo 0 equipped actual registered item
 PASS diamond_claymore combo 0 loaded Better Combat attack
+PASS diamond_claymore combo 0 supplies damaging keyframe interval
 PASS diamond_claymore combo 0 dimensions, axes, and center match Better Combat at three aim pitches
 PASS diamond_claymore combo 0 hitbox proportions select HORIZONTAL
 PASS diamond_claymore combo 0 hitbox works without blade velocity samples
 PASS diamond_claymore combo 0 correct weapon family CLEAVE
 PASS diamond_claymore combo 0 emitter reaches full blade tip
 PASS diamond_claymore combo 0 emitter starts near guard
+PASS diamond_claymore combo 0 generated geometry uses weapon family
+PASS diamond_claymore combo 0 generated thrust matches hitbox
+PASS diamond_claymore combo 0 emitted slash vertices follow the captured 3D blade at both ends
+PASS diamond_claymore combo 0 native trails replaced for captured attack
+PASS diamond_claymore combo 0 opt-out restores native trails
+PASS diamond_claymore combo 0 disabling trails restores native effects
+PASS diamond_claymore combo 0 actual native particle spawn intercepted
 PASS diamond_claymore combo 0 confirmed hit selects cleave
 PASS diamond_claymore combo 0 impact height matches attack hitbox center
 PASS diamond_claymore combo 0 impact follows dominant hitbox axis
 PASS diamond_claymore combo 0 actual sprite matches hitbox-selected effect
 PASS diamond_claymore combo 0 sprite variation stays within seven degrees
 PASS diamond_claymore combo 0 samples real rendered animation
-PASS diamond_claymore combo 0 early windup has no ribbon
+PASS diamond_claymore combo 0 complete observed windup has no ribbon
+PASS diamond_claymore combo 0 observes the damaging keyframe interval
+PASS diamond_claymore combo 0 recovery appends no samples and permits completed trails to fade
+PASS diamond_claymore combo 0 all physical and elemental trail samples stay inside damaging keyframes
 PASS diamond_claymore combo 0 produces ribbon geometry
 PASS diamond_claymore combo 0 server-confirmed impact received
 PASS diamond_greathammer combo 0 equipped actual registered item
 PASS diamond_greathammer combo 0 loaded Better Combat attack
+PASS diamond_greathammer combo 0 supplies damaging keyframe interval
 PASS diamond_greathammer combo 0 dimensions, axes, and center match Better Combat at three aim pitches
 PASS diamond_greathammer combo 0 correct weapon family BLUNT
 PASS diamond_greathammer combo 0 both ribbon endpoints lie on 3D hammer head
 PASS diamond_greathammer combo 0 ribbon spans head width
+PASS diamond_greathammer combo 0 generated geometry uses weapon family
+PASS diamond_greathammer combo 0 generated thrust matches hitbox
+PASS diamond_greathammer combo 0 native trails replaced for captured attack
+PASS diamond_greathammer combo 0 opt-out restores native trails
+PASS diamond_greathammer combo 0 disabling trails restores native effects
+PASS diamond_greathammer combo 0 actual native particle spawn intercepted
 PASS diamond_greathammer combo 0 confirmed hit selects blunt
 PASS diamond_greathammer combo 0 impact height matches attack hitbox center
 PASS diamond_greathammer combo 0 blunt impact preserves its motion direction
 PASS diamond_greathammer combo 0 actual sprite matches hitbox-selected effect
 PASS diamond_greathammer combo 0 sprite variation stays within seven degrees
 PASS diamond_greathammer combo 0 samples real rendered animation
-PASS diamond_greathammer combo 0 early windup has no ribbon
+PASS diamond_greathammer combo 0 complete observed windup has no ribbon
+PASS diamond_greathammer combo 0 observes the damaging keyframe interval
+PASS diamond_greathammer combo 0 recovery appends no samples and permits completed trails to fade
+PASS diamond_greathammer combo 0 all physical and elemental trail samples stay inside damaging keyframes
 PASS diamond_greathammer combo 0 produces ribbon geometry
 PASS diamond_greathammer combo 0 server-confirmed impact received
 PASS diamond_greathammer combo 2 equipped actual registered item
 PASS diamond_greathammer combo 2 loaded Better Combat attack
+PASS diamond_greathammer combo 2 supplies damaging keyframe interval
 PASS diamond_greathammer combo 2 dimensions, axes, and center match Better Combat at three aim pitches
 PASS diamond_greathammer combo 2 correct weapon family BLUNT
 PASS diamond_greathammer combo 2 both ribbon endpoints lie on 3D hammer head
 PASS diamond_greathammer combo 2 ribbon spans head width
+PASS diamond_greathammer combo 2 generated geometry uses weapon family
+PASS diamond_greathammer combo 2 generated thrust matches hitbox
+PASS diamond_greathammer combo 2 native trails replaced for captured attack
+PASS diamond_greathammer combo 2 opt-out restores native trails
+PASS diamond_greathammer combo 2 disabling trails restores native effects
+PASS diamond_greathammer combo 2 actual native particle spawn intercepted
 PASS diamond_greathammer combo 2 confirmed hit selects blunt
 PASS diamond_greathammer combo 2 impact height matches attack hitbox center
 PASS diamond_greathammer combo 2 blunt impact preserves its motion direction
 PASS diamond_greathammer combo 2 actual sprite matches hitbox-selected effect
 PASS diamond_greathammer combo 2 sprite variation stays within seven degrees
 PASS diamond_greathammer combo 2 samples real rendered animation
-PASS diamond_greathammer combo 2 early windup has no ribbon
+PASS diamond_greathammer combo 2 complete observed windup has no ribbon
+PASS diamond_greathammer combo 2 observes the damaging keyframe interval
+PASS diamond_greathammer combo 2 recovery appends no samples and permits completed trails to fade
+PASS diamond_greathammer combo 2 all physical and elemental trail samples stay inside damaging keyframes
 PASS diamond_greathammer combo 2 produces ribbon geometry
 PASS diamond_greathammer combo 2 server-confirmed impact received
 PASS diamond_claymore combo 2 equipped actual registered item
 PASS diamond_claymore combo 2 loaded Better Combat attack
+PASS diamond_claymore combo 2 supplies damaging keyframe interval
 PASS diamond_claymore combo 2 dimensions, axes, and center match Better Combat at three aim pitches
 PASS diamond_claymore combo 2 hitbox proportions select VERTICAL
 PASS diamond_claymore combo 2 hitbox works without blade velocity samples
 PASS diamond_claymore combo 2 correct weapon family CLEAVE
 PASS diamond_claymore combo 2 emitter reaches full blade tip
 PASS diamond_claymore combo 2 emitter starts near guard
+PASS diamond_claymore combo 2 generated geometry uses weapon family
+PASS diamond_claymore combo 2 generated thrust matches hitbox
+PASS diamond_claymore combo 2 emitted slash vertices follow the captured 3D blade at both ends
+PASS diamond_claymore combo 2 native trails replaced for captured attack
+PASS diamond_claymore combo 2 opt-out restores native trails
+PASS diamond_claymore combo 2 disabling trails restores native effects
+PASS diamond_claymore combo 2 actual native particle spawn intercepted
 PASS diamond_claymore combo 2 confirmed hit selects cleave
 PASS diamond_claymore combo 2 impact height matches attack hitbox center
 PASS diamond_claymore combo 2 impact follows dominant hitbox axis
 PASS diamond_claymore combo 2 actual sprite matches hitbox-selected effect
 PASS diamond_claymore combo 2 sprite variation stays within seven degrees
 PASS diamond_claymore combo 2 samples real rendered animation
-PASS diamond_claymore combo 2 early windup has no ribbon
+PASS diamond_claymore combo 2 complete observed windup has no ribbon
+PASS diamond_claymore combo 2 observes the damaging keyframe interval
+PASS diamond_claymore combo 2 recovery appends no samples and permits completed trails to fade
+PASS diamond_claymore combo 2 all physical and elemental trail samples stay inside damaging keyframes
 PASS diamond_claymore combo 2 produces ribbon geometry
 PASS diamond_claymore combo 2 server-confirmed impact received
 PASS diamond_claymore combo 1 equipped actual registered item
 PASS diamond_claymore combo 1 loaded Better Combat attack
+PASS diamond_claymore combo 1 supplies damaging keyframe interval
 PASS diamond_claymore combo 1 dimensions, axes, and center match Better Combat at three aim pitches
 PASS diamond_claymore combo 1 hitbox proportions select STAB
 PASS diamond_claymore combo 1 hitbox works without blade velocity samples
 PASS diamond_claymore combo 1 correct weapon family CLEAVE
 PASS diamond_claymore combo 1 emitter reaches full blade tip
 PASS diamond_claymore combo 1 emitter starts near guard
+PASS diamond_claymore combo 1 generated geometry uses weapon family
+PASS diamond_claymore combo 1 generated thrust matches hitbox
+PASS diamond_claymore combo 1 native trails replaced for captured attack
+PASS diamond_claymore combo 1 opt-out restores native trails
+PASS diamond_claymore combo 1 disabling trails restores native effects
+PASS diamond_claymore combo 1 actual native particle spawn intercepted
 PASS diamond_claymore combo 1 confirmed hit selects pierce
 PASS diamond_claymore combo 1 impact height matches attack hitbox center
 PASS diamond_claymore combo 1 impact follows dominant hitbox axis
 PASS diamond_claymore combo 1 actual sprite matches hitbox-selected effect
 PASS diamond_claymore combo 1 sprite variation stays within seven degrees
 PASS diamond_claymore combo 1 samples real rendered animation
-PASS diamond_claymore combo 1 early windup has no ribbon
+PASS diamond_claymore combo 1 complete observed windup has no ribbon
+PASS diamond_claymore combo 1 observes the damaging keyframe interval
+PASS diamond_claymore combo 1 recovery appends no samples and permits completed trails to fade
+PASS diamond_claymore combo 1 all physical and elemental trail samples stay inside damaging keyframes
 PASS diamond_claymore combo 1 produces ribbon geometry
 PASS diamond_claymore combo 1 server-confirmed impact received
 PASS diamond_claymore combo 1 depth-dominant volume identifies stab throughout combo
+PASS diamond_longsword combo 0 Fire Aspect equipped actual registered item
+PASS diamond_longsword combo 0 Fire Aspect loaded Better Combat attack
+PASS diamond_longsword combo 0 Fire Aspect supplies damaging keyframe interval
+PASS diamond_longsword combo 0 Fire Aspect dimensions, axes, and center match Better Combat at three aim pitches
+PASS diamond_longsword combo 0 Fire Aspect hitbox proportions select HORIZONTAL
+PASS diamond_longsword combo 0 Fire Aspect hitbox works without blade velocity samples
+PASS diamond_longsword combo 0 Fire Aspect correct weapon family SLASH
+PASS diamond_longsword combo 0 Fire Aspect emitter reaches full blade tip
+PASS diamond_longsword combo 0 Fire Aspect emitter starts near guard
+PASS diamond_longsword combo 0 Fire Aspect generated geometry uses weapon family
+PASS diamond_longsword combo 0 Fire Aspect generated thrust matches hitbox
+PASS diamond_longsword combo 0 Fire Aspect emitted slash vertices follow the captured 3D blade at both ends
+PASS diamond_longsword combo 0 Fire Aspect physical and Fire Aspect layers both use generated geometry
+PASS diamond_longsword combo 0 Fire Aspect elemental layer keeps the same slash, head, or stab shape
+PASS diamond_longsword combo 0 Fire Aspect elemental color is independent of the physical enchantment tint
+PASS diamond_longsword combo 0 Fire Aspect emitted elemental edge retains the configured fire color
+PASS diamond_longsword combo 0 Fire Aspect native trails replaced for captured attack
+PASS diamond_longsword combo 0 Fire Aspect opt-out restores native trails
+PASS diamond_longsword combo 0 Fire Aspect disabling trails restores native effects
+PASS diamond_longsword combo 0 Fire Aspect actual native particle spawn intercepted
+PASS diamond_longsword combo 0 Fire Aspect confirmed hit selects slash
+PASS diamond_longsword combo 0 Fire Aspect impact height matches attack hitbox center
+PASS diamond_longsword combo 0 Fire Aspect impact follows dominant hitbox axis
+PASS diamond_longsword combo 0 Fire Aspect actual sprite matches hitbox-selected effect
+PASS diamond_longsword combo 0 Fire Aspect sprite variation stays within seven degrees
+PASS diamond_longsword combo 0 Fire Aspect samples real rendered animation
+PASS diamond_longsword combo 0 Fire Aspect complete observed windup has no ribbon
+PASS diamond_longsword combo 0 Fire Aspect observes the damaging keyframe interval
+PASS diamond_longsword combo 0 Fire Aspect recovery appends no samples and permits completed trails to fade
+PASS diamond_longsword combo 0 Fire Aspect all physical and elemental trail samples stay inside damaging keyframes
+PASS diamond_longsword combo 0 Fire Aspect produces ribbon geometry
+PASS diamond_longsword combo 0 Fire Aspect server-confirmed impact received
+PASS diamond_claymore combo 1 Fire Aspect equipped actual registered item
+PASS diamond_claymore combo 1 Fire Aspect loaded Better Combat attack
+PASS diamond_claymore combo 1 Fire Aspect supplies damaging keyframe interval
+PASS diamond_claymore combo 1 Fire Aspect dimensions, axes, and center match Better Combat at three aim pitches
+PASS diamond_claymore combo 1 Fire Aspect hitbox proportions select STAB
+PASS diamond_claymore combo 1 Fire Aspect hitbox works without blade velocity samples
+PASS diamond_claymore combo 1 Fire Aspect correct weapon family CLEAVE
+PASS diamond_claymore combo 1 Fire Aspect emitter reaches full blade tip
+PASS diamond_claymore combo 1 Fire Aspect emitter starts near guard
+PASS diamond_claymore combo 1 Fire Aspect generated geometry uses weapon family
+PASS diamond_claymore combo 1 Fire Aspect generated thrust matches hitbox
+PASS diamond_claymore combo 1 Fire Aspect physical and Fire Aspect layers both use generated geometry
+PASS diamond_claymore combo 1 Fire Aspect elemental layer keeps the same slash, head, or stab shape
+PASS diamond_claymore combo 1 Fire Aspect elemental color is independent of the physical enchantment tint
+PASS diamond_claymore combo 1 Fire Aspect emitted elemental edge retains the configured fire color
+PASS diamond_claymore combo 1 Fire Aspect native trails replaced for captured attack
+PASS diamond_claymore combo 1 Fire Aspect opt-out restores native trails
+PASS diamond_claymore combo 1 Fire Aspect disabling trails restores native effects
+PASS diamond_claymore combo 1 Fire Aspect actual native particle spawn intercepted
+PASS diamond_claymore combo 1 Fire Aspect confirmed hit selects pierce
+PASS diamond_claymore combo 1 Fire Aspect impact height matches attack hitbox center
+PASS diamond_claymore combo 1 Fire Aspect impact follows dominant hitbox axis
+PASS diamond_claymore combo 1 Fire Aspect actual sprite matches hitbox-selected effect
+PASS diamond_claymore combo 1 Fire Aspect sprite variation stays within seven degrees
+PASS diamond_claymore combo 1 Fire Aspect samples real rendered animation
+PASS diamond_claymore combo 1 Fire Aspect complete observed windup has no ribbon
+PASS diamond_claymore combo 1 Fire Aspect observes the damaging keyframe interval
+PASS diamond_claymore combo 1 Fire Aspect recovery appends no samples and permits completed trails to fade
+PASS diamond_claymore combo 1 Fire Aspect all physical and elemental trail samples stay inside damaging keyframes
+PASS diamond_claymore combo 1 Fire Aspect produces ribbon geometry
+PASS diamond_claymore combo 1 Fire Aspect server-confirmed impact received
+PASS diamond_claymore combo 1 Fire Aspect depth-dominant volume identifies stab throughout combo
+PASS diamond_greathammer combo 0 Fire Aspect equipped actual registered item
+PASS diamond_greathammer combo 0 Fire Aspect loaded Better Combat attack
+PASS diamond_greathammer combo 0 Fire Aspect supplies damaging keyframe interval
+PASS diamond_greathammer combo 0 Fire Aspect dimensions, axes, and center match Better Combat at three aim pitches
+PASS diamond_greathammer combo 0 Fire Aspect correct weapon family BLUNT
+PASS diamond_greathammer combo 0 Fire Aspect both ribbon endpoints lie on 3D hammer head
+PASS diamond_greathammer combo 0 Fire Aspect ribbon spans head width
+PASS diamond_greathammer combo 0 Fire Aspect generated geometry uses weapon family
+PASS diamond_greathammer combo 0 Fire Aspect generated thrust matches hitbox
+PASS diamond_greathammer combo 0 Fire Aspect physical and Fire Aspect layers both use generated geometry
+PASS diamond_greathammer combo 0 Fire Aspect elemental layer keeps the same slash, head, or stab shape
+PASS diamond_greathammer combo 0 Fire Aspect elemental color is independent of the physical enchantment tint
+PASS diamond_greathammer combo 0 Fire Aspect emitted elemental edge retains the configured fire color
+PASS diamond_greathammer combo 0 Fire Aspect native trails replaced for captured attack
+PASS diamond_greathammer combo 0 Fire Aspect opt-out restores native trails
+PASS diamond_greathammer combo 0 Fire Aspect disabling trails restores native effects
+PASS diamond_greathammer combo 0 Fire Aspect actual native particle spawn intercepted
+PASS diamond_greathammer combo 0 Fire Aspect confirmed hit selects blunt
+PASS diamond_greathammer combo 0 Fire Aspect impact height matches attack hitbox center
+PASS diamond_greathammer combo 0 Fire Aspect blunt impact preserves its motion direction
+PASS diamond_greathammer combo 0 Fire Aspect actual sprite matches hitbox-selected effect
+PASS diamond_greathammer combo 0 Fire Aspect sprite variation stays within seven degrees
+PASS diamond_greathammer combo 0 Fire Aspect samples real rendered animation
+PASS diamond_greathammer combo 0 Fire Aspect complete observed windup has no ribbon
+PASS diamond_greathammer combo 0 Fire Aspect observes the damaging keyframe interval
+PASS diamond_greathammer combo 0 Fire Aspect recovery appends no samples and permits completed trails to fade
+PASS diamond_greathammer combo 0 Fire Aspect all physical and elemental trail samples stay inside damaging keyframes
+PASS diamond_greathammer combo 0 Fire Aspect produces ribbon geometry
+PASS diamond_greathammer combo 0 Fire Aspect server-confirmed impact received
+PASS diamond_spear combo 0 equipped actual registered item
+PASS diamond_spear combo 0 loaded Better Combat attack
+PASS diamond_spear combo 0 supplies damaging keyframe interval
+PASS diamond_spear combo 0 dimensions, axes, and center match Better Combat at three aim pitches
+PASS diamond_spear combo 0 hitbox proportions select STAB
+PASS diamond_spear combo 0 hitbox works without blade velocity samples
+PASS diamond_spear combo 0 correct weapon family PIERCE
+PASS diamond_spear combo 0 detects spear emitter from actual model silhouette
+PASS diamond_spear combo 0 spear emitter spans shaft toward its tip
+PASS diamond_spear combo 0 generated geometry uses weapon family
+PASS diamond_spear combo 0 generated thrust matches hitbox
+PASS diamond_spear combo 0 native trails replaced for captured attack
+PASS diamond_spear combo 0 opt-out restores native trails
+PASS diamond_spear combo 0 disabling trails restores native effects
+PASS diamond_spear combo 0 actual native particle spawn intercepted
+PASS diamond_spear combo 0 confirmed hit selects pierce
+PASS diamond_spear combo 0 impact height matches attack hitbox center
+PASS diamond_spear combo 0 impact follows dominant hitbox axis
+PASS diamond_spear combo 0 actual sprite matches hitbox-selected effect
+PASS diamond_spear combo 0 sprite variation stays within seven degrees
+PASS diamond_spear combo 0 samples real rendered animation
+PASS diamond_spear combo 0 complete observed windup has no ribbon
+PASS diamond_spear combo 0 observes the damaging keyframe interval
+PASS diamond_spear combo 0 recovery appends no samples and permits completed trails to fade
+PASS diamond_spear combo 0 all physical and elemental trail samples stay inside damaging keyframes
+PASS diamond_spear combo 0 produces ribbon geometry
+PASS diamond_spear combo 0 server-confirmed impact received
+PASS diamond_spear combo 0 depth-dominant volume identifies stab throughout combo
+PASS All built-in elemental styles use generated geometry after server synchronization
+PASS Resuming a stroke preserves the earlier sweep without connecting across slow motion
+PASS Completed sweep fades as a full shape
+PASS All retired sweeps expire within the configured lifetime
 PASS Block contact creates neither impact sprites nor accent particles
 PASS Framebuffer: behind-target cut hidden at normal depth (0 pixels), visible with priority (1011 pixels)
 PASS Target depth priority enabled

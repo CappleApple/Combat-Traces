@@ -19,6 +19,20 @@ public final class HeldItemCapture {
   private static final Deque<LivingEntity> CONTEXT = new ArrayDeque<>();
   public static final Map<Integer, TrailSample> LATEST = new HashMap<>();
 
+  private record Key(int entity, boolean offhand, boolean firstPerson, int emitter) {}
+
+  private static final Map<Key, StrokeSampler> STROKES = new HashMap<>();
+
+  public static void clear() {
+    LATEST.clear();
+    STROKES.clear();
+  }
+
+  public static void prune(double now) {
+    LATEST.entrySet().removeIf(e -> now - e.getValue().time() > 1);
+    STROKES.values().removeIf(s -> now - s.lastTime() > 1);
+  }
+
   public static void push(LivingEntity entity) {
     CONTEXT.push(entity);
   }
@@ -64,6 +78,8 @@ public final class HeldItemCapture {
     Matrix4f transform =
         display.firstPerson() ? new Matrix4f().rotation(camera.rotation()).mul(pose) : pose;
     double now = VisualClock.now();
+    var samples = new ArrayList<TrailSample>(resolved.emitters().size());
+    double speed = 0;
     for (int i = 0; i < resolved.emitters().size(); i++) {
       var emitter = resolved.emitters().get(i);
       var origin =
@@ -73,6 +89,13 @@ public final class HeldItemCapture {
           PoseTransforms.toWorld(transform, emitter.tip().add(0.5, 0.5, 0.5), camera.getPosition());
       var sample = new TrailSample(origin, tip, now, motion.progress());
       var observation = WeaponMotionTracker.record(entity, motion, i, sample, partial);
+      samples.add(sample);
+      speed =
+          Math.max(
+              speed,
+              Math.max(
+                  observation.state().tipVelocity().length(),
+                  observation.state().originVelocity().length()));
       if (i == 0) {
         LATEST.put(entity.getId(), sample);
         if (DebugRenderer.active() && entity == mc.player) {
@@ -81,25 +104,50 @@ public final class HeldItemCapture {
           DebugState.state = observation.state();
         }
       }
-      boolean active =
-          TrailActivation.active(
-              motion, window, observation.state().speed(), ClientConfig.SPEED_THRESHOLD.get());
-      if (!visible || !active) TrailManager.pause(entity, motion, i, first);
-      if (visible && active) {
+    }
+    var bounds = TrailActivation.window(motion, window);
+    for (int i = 0; i < samples.size(); i++) {
+      var key = new Key(entity.getId(), motion.hand() == InteractionHand.OFF_HAND, first, i);
+      if (!visible) {
+        STROKES.remove(key);
+        TrailManager.pause(entity, motion, i, first);
+        continue;
+      }
+      if (!STROKES.containsKey(key) && STROKES.size() >= 2048) prune(now);
+      if (!STROKES.containsKey(key) && STROKES.size() >= 2048) continue;
+      var sampler = STROKES.computeIfAbsent(key, k -> new StrokeSampler());
+      var emitted =
+          sampler.advance(
+              motion.attackId(),
+              samples.get(i),
+              bounds,
+              speed,
+              ClientConfig.SPEED_THRESHOLD.get(),
+              ClientConfig.DISCONTINUITY.get());
+      var style = ClientDefinitions.current.trail(resolved.trail());
+      for (var sample : emitted) {
         TrailManager.sample(
+            entity, motion, i, first, sample, style, "base", window.sampleMultiplier());
+        com.cappleapple.combattraces.client.element.ElementEffects.trails(
             entity,
             motion,
             i,
             first,
             sample,
-            ClientDefinitions.current.trail(resolved.trail()),
-            "base",
-            window.sampleMultiplier());
-        com.cappleapple.combattraces.client.trail.TrailAccents.emit(
-            entity, i, first, sample, ClientDefinitions.current.trail(resolved.trail()), "base");
-        com.cappleapple.combattraces.client.element.ElementEffects.trails(
-            entity, motion, i, first, sample, resolved.elements(), window.sampleMultiplier());
+            resolved.elements(),
+            window.sampleMultiplier(),
+            false);
       }
+      // Reconstructed boundary poses add geometry, not delayed accent bursts in recovery.
+      if (!emitted.isEmpty() && bounds != null && bounds.contains(motion.progress())) {
+        var sample = emitted.getLast();
+        com.cappleapple.combattraces.client.trail.TrailAccents.emit(
+            entity, i, first, sample, style, "base", samples.size());
+        com.cappleapple.combattraces.client.element.ElementEffects.accents(
+            entity, i, first, sample, resolved.elements(), samples.size());
+      }
+      if (bounds == null || motion.progress() >= bounds.end())
+        TrailManager.pause(entity, motion, i, first);
     }
   }
 }

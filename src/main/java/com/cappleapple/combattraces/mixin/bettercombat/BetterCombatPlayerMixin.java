@@ -21,6 +21,7 @@ public abstract class BetterCombatPlayerMixin implements BetterCombatState {
 
   @Unique private CombatMotion combatTraces$attack;
   @Unique private long combatTraces$sequence;
+  @Unique private com.cappleapple.combattraces.api.SwingWindow combatTraces$swingWindow;
   @Unique private net.bettercombat.api.WeaponAttributes.Attack combatTraces$geometry;
 
   @Dynamic("Added by Better Combat")
@@ -45,6 +46,16 @@ public abstract class BetterCombatPlayerMixin implements BetterCombatState {
                 ? com.cappleapple.combattraces.api.AttackShape.FORWARD
                 : com.cappleapple.combattraces.api.AttackShape.SWEEP;
     combatTraces$geometry = selected != null && name.equals(selected.animation()) ? selected : null;
+    // Better Combat's passed upswing is cooldown time; our progress uses keyframe time.
+    float contact = (float) net.bettercombat.BetterCombatMod.config.getUpswingMultiplier();
+    var animation = ((AttackStackAccessor) this).combatTraces$stack().base.getAnimation();
+    combatTraces$swingWindow =
+        animation instanceof KeyframeAnimationPlayer keyframes
+            ? com.cappleapple.combattraces.compat.bettercombat.BetterCombatSwingTiming.resolve(
+                keyframes.getData(),
+                contact,
+                combatTraces$geometry != null && combatTraces$geometry.angle() > 180)
+            : com.cappleapple.combattraces.api.SwingWindow.around(contact);
     combatTraces$attack =
         new CombatMotion(
             ++combatTraces$sequence,
@@ -52,7 +63,7 @@ public abstract class BetterCombatPlayerMixin implements BetterCombatState {
             hand.isOffHand() ? InteractionHand.OFF_HAND : InteractionHand.MAIN_HAND,
             ResourceLocation.parse(name),
             0,
-            upswing,
+            contact,
             attack == null ? combo : attack.combo().current(),
             attack == null ? 1 : attack.combo().total(),
             selected == null ? 1 : selected.damageMultiplier(),
@@ -74,13 +85,14 @@ public abstract class BetterCombatPlayerMixin implements BetterCombatState {
         || !(((AttackStackAccessor) this).combatTraces$stack().base.getAnimation()
             instanceof KeyframeAnimationPlayer player)
         || !player.isActive()
-        || player.getTick() > player.getData().endTick) return Optional.empty();
+        || player.getTick() > player.getData().stopTick) return Optional.empty();
+    // Keep the post-end clock for boundary interpolation; clamping would label a recovery pose
+    // as the authored final pose when the render frame skips over endTick.
     float progress =
-        Math.clamp(
-            (player.getTick() + ((AnimationClockAccessor) player).combatTraces$partialTick())
-                / Math.max(1, player.getData().endTick),
+        Math.max(
             0,
-            1);
+            (player.getTick() + ((AnimationClockAccessor) player).combatTraces$partialTick())
+                / Math.max(1, player.getData().endTick));
     var hitbox =
         com.cappleapple.combattraces.compat.bettercombat.BetterCombatGeometry.hitbox(
             (AbstractClientPlayer) (Object) this, m.weapon(), combatTraces$geometry);
@@ -99,6 +111,7 @@ public abstract class BetterCombatPlayerMixin implements BetterCombatState {
             m.pose(),
             m.shape(),
             hitbox == null ? null : hitbox.center(),
-            hitbox));
+            hitbox,
+            combatTraces$swingWindow));
   }
 }

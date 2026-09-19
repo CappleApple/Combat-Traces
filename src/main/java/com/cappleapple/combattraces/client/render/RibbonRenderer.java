@@ -13,6 +13,10 @@ public final class RibbonRenderer {
     if (!ClientConfig.TRAILS.get()) return;
     for (var trail : TrailManager.trails()) {
       if (trail.history.size() < 2) continue;
+      if (trail.style.swept()) {
+        SweptTrailRenderer.render(trail, buffers, camera, now);
+        continue;
+      }
       var consumer =
           buffers.getBuffer(VfxRenderTypes.get(trail.style.texture(), trail.style.additive()));
       var style = trail.style;

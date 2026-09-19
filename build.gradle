@@ -17,7 +17,7 @@ neoForge {
     parchment { minecraftVersion = '1.21.1'; mappingsVersion = '2024.11.17' }
     runs {
         configureEach { systemProperty 'neoforge.enabledGameTestNamespaces', 'combattraces,minecraft' }
-        client { client(); if (project.hasProperty('validateSimplySwords')) { systemProperty 'combattraces.validateSimplySwords', 'true' }; gameDirectory = layout.projectDirectory.dir('run-client'); if (project.hasProperty('validateEmptyClient')) { systemProperty 'combattraces.validateEmpty', 'true' }; if (project.hasProperty('validateClient')) { systemProperty 'combattraces.validate', 'true' } }
+        client { client(); systemProperty 'combattraces.developmentSafeClient', 'true'; if (project.hasProperty('validateMultiWeapons')) { systemProperty 'combattraces.validateMultiWeapons', 'true' }; if (project.hasProperty('referenceBetterCombat')) { systemProperty 'combattraces.referenceBetterCombat', 'true' }; if (project.hasProperty('validateSimplySwords')) { systemProperty 'combattraces.validateSimplySwords', 'true' }; gameDirectory = layout.projectDirectory.dir('run-client'); if (project.hasProperty('validateEmptyClient')) { systemProperty 'combattraces.validateEmpty', 'true' }; if (project.hasProperty('validateClient')) { systemProperty 'combattraces.validate', 'true' } }
         server { server(); programArgument '--nogui'; gameDirectory = layout.projectDirectory.dir('run-server') }
         gameTestServer { type = 'gameTestServer'; gameDirectory = layout.projectDirectory.dir('run-gametest') }
     }
@@ -27,6 +27,8 @@ neoForge {
 dependencies {
     compileOnly 'maven.modrinth:better-combat:2.4.0+1.21.1-neoforge'
     compileOnly 'dev.kosmx.player-anim:player-animation-lib-forge:2.0.4+1.21.1'
+    compileOnly 'me.shedaniel.cloth:cloth-config-neoforge:15.0.140'
+    testImplementation 'dev.kosmx.player-anim:player-animation-lib-forge:2.0.4+1.21.1'
     if (!project.hasProperty('withoutBetterCombat')) {
         runtimeOnly 'maven.modrinth:better-combat:2.4.0+1.21.1-neoforge'
         runtimeOnly 'dev.kosmx.player-anim:player-animation-lib-forge:2.0.4+1.21.1'
@@ -42,4 +44,20 @@ dependencies {
 tasks.named('test', Test) { useJUnitPlatform() }
 tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8'; options.release = 21 }
 tasks.named('processResources') { inputs.property 'version', project.version; filesMatching('META-INF/neoforge.mods.toml') { expand version: project.version } }
-tasks.named('jar') { exclude 'com/cappleapple/combattraces/validation/**'; exclude 'assets/combattraces_validation/**' }
+tasks.named('jar') { from('LICENSE'); exclude 'com/cappleapple/combattraces/validation/**'; exclude 'com/cappleapple/combattraces/mixin/validation/**'; exclude 'assets/combattraces_validation/**' }
+
+// Keep every local Gradle client muted before Minecraft loads its sound system.
+def prepareClientSafety = tasks.register('prepareClientSafety') {
+    def optionsFile = layout.projectDirectory.file('run-client/options.txt')
+    outputs.upToDateWhen { false }
+    doLast {
+        def target = optionsFile.asFile
+        target.parentFile.mkdirs()
+        def values = [soundCategory_master: '0.0', pauseOnLostFocus: 'false', fullscreen: 'false']
+        def lines = target.exists() ? target.readLines('UTF-8') : []
+        lines = lines.findAll { line -> !values.keySet().any { key -> line.startsWith(key + ':') } }
+        values.each { key, value -> lines.add(key + ':' + value) }
+        target.setText(lines.join(System.lineSeparator()) + System.lineSeparator(), 'UTF-8')
+    }
+}
+tasks.named('runClient') { dependsOn prepareClientSafety }

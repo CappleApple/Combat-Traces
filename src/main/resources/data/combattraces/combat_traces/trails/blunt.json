@@ -1,11 +1,12 @@
 {
   "texture": "combattraces:textures/vfx/trails/blunt.png",
   "render_mode": "translucent",
-  "lifetime_ms": 220,
+  "lifetime_ms": 300,
   "width_multiplier": 1,
-  "opacity": 0.75,
+  "opacity": 0.8,
   "uv_scroll_speed": 0,
-  "fade_curve": "ease_out",
+  "fade_curve": "smoothstep",
   "particle": "minecraft:enchanted_hit",
-  "particle_rate": 0
+  "particle_rate": 0,
+  "trail_geometry": "swept"
 }

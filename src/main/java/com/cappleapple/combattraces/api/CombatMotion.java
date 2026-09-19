@@ -20,7 +20,42 @@ public record CombatMotion(
     String pose,
     AttackShape shape,
     Vec3 hitboxCenter,
-    AttackHitbox hitbox) {
+    AttackHitbox hitbox,
+    SwingWindow swingWindow) {
+  /** Retains the full-hitbox constructor used by existing motion providers. */
+  public CombatMotion(
+      long attackId,
+      ItemStack weapon,
+      InteractionHand hand,
+      ResourceLocation animation,
+      float progress,
+      float hitProgress,
+      int comboIndex,
+      int comboLength,
+      double damageMultiplier,
+      String category,
+      String pose,
+      AttackShape shape,
+      Vec3 hitboxCenter,
+      AttackHitbox hitbox) {
+    this(
+        attackId,
+        weapon,
+        hand,
+        animation,
+        progress,
+        hitProgress,
+        comboIndex,
+        comboLength,
+        damageMultiplier,
+        category,
+        pose,
+        shape,
+        hitboxCenter,
+        hitbox,
+        null);
+  }
+
   /** Retains the center-only constructor used by existing motion providers. */
   public CombatMotion(
       long attackId,

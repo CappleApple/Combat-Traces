@@ -87,4 +87,43 @@ class TrailHistoryTest {
                 a, new TrailSample(Vec3.ZERO, new Vec3(0.3, -0.3, 1), 1.05, 0), Vec3.ZERO)
             .type());
   }
+
+  @Test
+  void generatedStrokeKeepsItsStartAndEndAtCapacity() {
+    var h = new TrailHistory(8);
+    for (int i = 0; i <= 100; i++) {
+      double angle = i * Math.PI / 100;
+      h.add(
+          new TrailSample(
+              Vec3.ZERO, new Vec3(Math.cos(angle), Math.sin(angle), 0), 1 + i * .01, i / 100f),
+          .001,
+          .2,
+          3,
+          5,
+          true);
+    }
+    assertEquals(8, h.size());
+    assertEquals(0, h.get(0).progress());
+    assertEquals(1, h.get(h.size() - 1).progress());
+    for (int i = 1; i < h.size(); i++) assertTrue(h.get(i).time() > h.get(i - 1).time());
+    assertTrue(java.util.stream.IntStream.range(0, h.size()).anyMatch(i -> h.get(i).tip().y > .9));
+  }
+
+  @Test
+  void smallGeneratedMovementsAccumulateAndKeepTheFinalPose() {
+    var h = new TrailHistory(24);
+    for (int i = 0; i <= 100; i++) h.add(at(i * .002, 1 + i * .01), .02, .2, 3, 5, true);
+    assertTrue(h.size() > 5);
+    assertEquals(0, h.get(0).tip().x);
+    assertEquals(.2, h.get(h.size() - 1).tip().x, 1e-7);
+    assertEquals(2, h.latest().time());
+  }
+
+  @Test
+  void twoSmallPosesAreEnoughToKeepAShortStroke() {
+    var h = new TrailHistory(24);
+    h.add(at(0, 1), .1, .2, 3, 5, true);
+    h.add(at(.01, 1.02), .1, .2, 3, 5, true);
+    assertEquals(2, h.size());
+  }
 }

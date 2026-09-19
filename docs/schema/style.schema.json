@@ -77,6 +77,12 @@
       "type": "number",
       "minimum": 0,
       "maximum": 4
+    },
+    "trail_geometry": {
+      "enum": [
+        "textured",
+        "swept"
+      ]
     }
   },
   "additionalProperties": true,

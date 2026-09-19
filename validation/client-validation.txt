@@ -1,6 +1,6 @@
 PASS Fire Aspect resolves fire from synced enchantment
 PASS Client receives server effect definitions
-PASS Actual third-person animated poses: 39 tick observations, 11.28 blocks of tip travel
+PASS Actual third-person animated poses: 39 tick observations, 11.38 blocks of tip travel
 PASS Server-confirmed entity hit reached client
 PASS Stone material via loaded tags
 PASS Wood material via loaded tags

@@ -1,0 +1,1328 @@
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS equipped registered item
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS loaded actual Better Combat combo
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS uses actual equipped attack cooldown
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS animation provider starts current attack
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS supplies strike interval
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS uses selected combo hand
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS resolves 2 weapon emitters
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS classifies SLASH
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS all emitters have finite nonzero model spans
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS emitter geometry comes from actual baked model
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS two emitters extend toward opposing ends
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS outer ends are separated across the weapon
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS observed actual rendered attack frames
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS windup emits no trail
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS recovery appends no samples
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS every base and elemental pose stays in strike interval
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS every weapon end or rim segment emits a base trail
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS emitter 0 exists
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS emitter 0 retains at least half of complete striking motion
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS emitter 0 reaches end of strike
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS emitter 0 remains one continuous strike
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS emitter 1 exists
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS emitter 1 generates finite visible mesh at 120 FPS
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS emitter 1 retains at least half of complete striking motion
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS emitter 1 reaches end of strike
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS emitter 1 starts promptly when weapon reaches configured speed
+PASS [0] simplyswords:diamond_twinblade combo 0 120FPS emitter 1 remains one continuous strike
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS equipped registered item
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS loaded actual Better Combat combo
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS uses actual equipped attack cooldown
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS animation provider starts current attack
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS supplies strike interval
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS uses selected combo hand
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS resolves 2 weapon emitters
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS classifies SLASH
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS all emitters have finite nonzero model spans
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS emitter geometry comes from actual baked model
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS two emitters extend toward opposing ends
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS outer ends are separated across the weapon
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS observed actual rendered attack frames
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS windup emits no trail
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS recovery appends no samples
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS every base and elemental pose stays in strike interval
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS every weapon end or rim segment emits a base trail
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS emitter 0 exists
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS emitter 0 retains at least half of complete striking motion
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS emitter 0 reaches end of strike
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS emitter 0 remains one continuous strike
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS emitter 1 exists
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS emitter 1 generates finite visible mesh at 120 FPS
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS emitter 1 retains at least half of complete striking motion
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS emitter 1 reaches end of strike
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS emitter 1 starts promptly when weapon reaches configured speed
+PASS [1] simplyswords:diamond_twinblade combo 1 120FPS emitter 1 remains one continuous strike
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS equipped registered item
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS loaded actual Better Combat combo
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS uses actual equipped attack cooldown
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS animation provider starts current attack
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS supplies strike interval
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS uses selected combo hand
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS resolves 2 weapon emitters
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS classifies SLASH
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS all emitters have finite nonzero model spans
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS emitter geometry comes from actual baked model
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS two emitters extend toward opposing ends
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS outer ends are separated across the weapon
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS observed actual rendered attack frames
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS windup emits no trail
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS recovery appends no samples
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS every base and elemental pose stays in strike interval
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS every weapon end or rim segment emits a base trail
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS emitter 0 exists
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS emitter 0 retains at least half of complete striking motion
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS emitter 0 reaches end of strike
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS emitter 0 remains one continuous strike
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS emitter 1 exists
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS emitter 1 generates finite visible mesh at 120 FPS
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS emitter 1 retains at least half of complete striking motion
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS emitter 1 reaches end of strike
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS emitter 1 starts promptly when weapon reaches configured speed
+PASS [2] simplyswords:diamond_twinblade combo 2 120FPS emitter 1 remains one continuous strike
+PASS [3] simplymore:diamond_quarterstaff combo 0 120FPS equipped registered item
+PASS [3] simplymore:diamond_quarterstaff combo 0 120FPS loaded actual Better Combat combo
+PASS [3] simplymore:diamond_quarterstaff combo 0 120FPS uses actual equipped attack cooldown
+PASS [3] simplymore:diamond_quarterstaff combo 0 120FPS animation provider starts current attack
+PASS [3] simplymore:diamond_quarterstaff combo 0 120FPS supplies strike interval
+PASS [3] simplymore:diamond_quarterstaff combo 0 120FPS uses selected combo hand
+PASS [3] simplymore:diamond_quarterstaff combo 0 120FPS resolves 2 weapon emitters
+PASS [3] simplymore:diamond_quarterstaff combo 0 120FPS classifies BLUNT
+PASS [3] simplymore:diamond_quarterstaff combo 0 120FPS all emitters have finite nonzero model spans
+PASS [3] simplymore:diamond_quarterstaff combo 0 120FPS emitter geometry comes from actual baked model
+PASS [3] simplymore:diamond_quarterstaff combo 0 120FPS blunt end caps lie at separate shaft ends
+PASS [3] simplymore:diamond_quarterstaff combo 0 120FPS observed actual rendered attack frames
+PASS [3] simplymore:diamond_quarterstaff combo 0 120FPS windup emits no trail
+PASS [3] simplymore:diamond_quarterstaff combo 0 120FPS recovery appends no samples
+PASS [3] simplymore:diamond_quarterstaff combo 0 120FPS every base and elemental pose stays in strike interval
+PASS [3] simplymore:diamond_quarterstaff combo 0 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [3] simplymore:diamond_quarterstaff combo 0 120FPS every weapon end or rim segment emits a base trail
+PASS [3] simplymore:diamond_quarterstaff combo 0 120FPS emitter 0 exists
+PASS [3] simplymore:diamond_quarterstaff combo 0 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [3] simplymore:diamond_quarterstaff combo 0 120FPS emitter 0 retains at least half of complete striking motion
+PASS [3] simplymore:diamond_quarterstaff combo 0 120FPS emitter 0 reaches end of strike
+PASS [3] simplymore:diamond_quarterstaff combo 0 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [3] simplymore:diamond_quarterstaff combo 0 120FPS emitter 0 remains one continuous strike
+PASS [3] simplymore:diamond_quarterstaff combo 0 120FPS emitter 1 exists
+PASS [3] simplymore:diamond_quarterstaff combo 0 120FPS emitter 1 generates finite visible mesh at 120 FPS
+PASS [3] simplymore:diamond_quarterstaff combo 0 120FPS emitter 1 retains at least half of complete striking motion
+PASS [3] simplymore:diamond_quarterstaff combo 0 120FPS emitter 1 reaches end of strike
+PASS [3] simplymore:diamond_quarterstaff combo 0 120FPS emitter 1 starts promptly when weapon reaches configured speed
+PASS [3] simplymore:diamond_quarterstaff combo 0 120FPS emitter 1 remains one continuous strike
+PASS [4] simplymore:diamond_quarterstaff combo 1 120FPS equipped registered item
+PASS [4] simplymore:diamond_quarterstaff combo 1 120FPS loaded actual Better Combat combo
+PASS [4] simplymore:diamond_quarterstaff combo 1 120FPS uses actual equipped attack cooldown
+PASS [4] simplymore:diamond_quarterstaff combo 1 120FPS animation provider starts current attack
+PASS [4] simplymore:diamond_quarterstaff combo 1 120FPS supplies strike interval
+PASS [4] simplymore:diamond_quarterstaff combo 1 120FPS uses selected combo hand
+PASS [4] simplymore:diamond_quarterstaff combo 1 120FPS resolves 2 weapon emitters
+PASS [4] simplymore:diamond_quarterstaff combo 1 120FPS classifies BLUNT
+PASS [4] simplymore:diamond_quarterstaff combo 1 120FPS all emitters have finite nonzero model spans
+PASS [4] simplymore:diamond_quarterstaff combo 1 120FPS emitter geometry comes from actual baked model
+PASS [4] simplymore:diamond_quarterstaff combo 1 120FPS blunt end caps lie at separate shaft ends
+PASS [4] simplymore:diamond_quarterstaff combo 1 120FPS observed actual rendered attack frames
+PASS [4] simplymore:diamond_quarterstaff combo 1 120FPS windup emits no trail
+PASS [4] simplymore:diamond_quarterstaff combo 1 120FPS recovery appends no samples
+PASS [4] simplymore:diamond_quarterstaff combo 1 120FPS every base and elemental pose stays in strike interval
+PASS [4] simplymore:diamond_quarterstaff combo 1 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [4] simplymore:diamond_quarterstaff combo 1 120FPS every weapon end or rim segment emits a base trail
+PASS [4] simplymore:diamond_quarterstaff combo 1 120FPS emitter 0 exists
+PASS [4] simplymore:diamond_quarterstaff combo 1 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [4] simplymore:diamond_quarterstaff combo 1 120FPS emitter 0 retains at least half of complete striking motion
+PASS [4] simplymore:diamond_quarterstaff combo 1 120FPS emitter 0 reaches end of strike
+PASS [4] simplymore:diamond_quarterstaff combo 1 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [4] simplymore:diamond_quarterstaff combo 1 120FPS emitter 0 remains one continuous strike
+PASS [4] simplymore:diamond_quarterstaff combo 1 120FPS emitter 1 exists
+PASS [4] simplymore:diamond_quarterstaff combo 1 120FPS emitter 1 generates finite visible mesh at 120 FPS
+PASS [4] simplymore:diamond_quarterstaff combo 1 120FPS emitter 1 retains at least half of complete striking motion
+PASS [4] simplymore:diamond_quarterstaff combo 1 120FPS emitter 1 reaches end of strike
+PASS [4] simplymore:diamond_quarterstaff combo 1 120FPS emitter 1 starts promptly when weapon reaches configured speed
+PASS [4] simplymore:diamond_quarterstaff combo 1 120FPS emitter 1 remains one continuous strike
+PASS [5] simplymore:diamond_quarterstaff combo 2 120FPS equipped registered item
+PASS [5] simplymore:diamond_quarterstaff combo 2 120FPS loaded actual Better Combat combo
+PASS [5] simplymore:diamond_quarterstaff combo 2 120FPS uses actual equipped attack cooldown
+PASS [5] simplymore:diamond_quarterstaff combo 2 120FPS animation provider starts current attack
+PASS [5] simplymore:diamond_quarterstaff combo 2 120FPS supplies strike interval
+PASS [5] simplymore:diamond_quarterstaff combo 2 120FPS uses selected combo hand
+PASS [5] simplymore:diamond_quarterstaff combo 2 120FPS resolves 2 weapon emitters
+PASS [5] simplymore:diamond_quarterstaff combo 2 120FPS classifies BLUNT
+PASS [5] simplymore:diamond_quarterstaff combo 2 120FPS all emitters have finite nonzero model spans
+PASS [5] simplymore:diamond_quarterstaff combo 2 120FPS emitter geometry comes from actual baked model
+PASS [5] simplymore:diamond_quarterstaff combo 2 120FPS blunt end caps lie at separate shaft ends
+PASS [5] simplymore:diamond_quarterstaff combo 2 120FPS observed actual rendered attack frames
+PASS [5] simplymore:diamond_quarterstaff combo 2 120FPS windup emits no trail
+PASS [5] simplymore:diamond_quarterstaff combo 2 120FPS recovery appends no samples
+PASS [5] simplymore:diamond_quarterstaff combo 2 120FPS every base and elemental pose stays in strike interval
+PASS [5] simplymore:diamond_quarterstaff combo 2 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [5] simplymore:diamond_quarterstaff combo 2 120FPS every weapon end or rim segment emits a base trail
+PASS [5] simplymore:diamond_quarterstaff combo 2 120FPS emitter 0 exists
+PASS [5] simplymore:diamond_quarterstaff combo 2 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [5] simplymore:diamond_quarterstaff combo 2 120FPS emitter 0 retains at least half of complete striking motion
+PASS [5] simplymore:diamond_quarterstaff combo 2 120FPS emitter 0 reaches end of strike
+PASS [5] simplymore:diamond_quarterstaff combo 2 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [5] simplymore:diamond_quarterstaff combo 2 120FPS emitter 0 remains one continuous strike
+PASS [5] simplymore:diamond_quarterstaff combo 2 120FPS emitter 1 exists
+PASS [5] simplymore:diamond_quarterstaff combo 2 120FPS emitter 1 generates finite visible mesh at 120 FPS
+PASS [5] simplymore:diamond_quarterstaff combo 2 120FPS emitter 1 retains at least half of complete striking motion
+PASS [5] simplymore:diamond_quarterstaff combo 2 120FPS emitter 1 reaches end of strike
+PASS [5] simplymore:diamond_quarterstaff combo 2 120FPS emitter 1 starts promptly when weapon reaches configured speed
+PASS [5] simplymore:diamond_quarterstaff combo 2 120FPS emitter 1 remains one continuous strike
+PASS [6] simplymore:diamond_quarterstaff combo 3 120FPS equipped registered item
+PASS [6] simplymore:diamond_quarterstaff combo 3 120FPS loaded actual Better Combat combo
+PASS [6] simplymore:diamond_quarterstaff combo 3 120FPS uses actual equipped attack cooldown
+PASS [6] simplymore:diamond_quarterstaff combo 3 120FPS animation provider starts current attack
+PASS [6] simplymore:diamond_quarterstaff combo 3 120FPS supplies strike interval
+PASS [6] simplymore:diamond_quarterstaff combo 3 120FPS uses selected combo hand
+PASS [6] simplymore:diamond_quarterstaff combo 3 120FPS resolves 2 weapon emitters
+PASS [6] simplymore:diamond_quarterstaff combo 3 120FPS classifies BLUNT
+PASS [6] simplymore:diamond_quarterstaff combo 3 120FPS all emitters have finite nonzero model spans
+PASS [6] simplymore:diamond_quarterstaff combo 3 120FPS emitter geometry comes from actual baked model
+PASS [6] simplymore:diamond_quarterstaff combo 3 120FPS blunt end caps lie at separate shaft ends
+PASS [6] simplymore:diamond_quarterstaff combo 3 120FPS observed actual rendered attack frames
+PASS [6] simplymore:diamond_quarterstaff combo 3 120FPS windup emits no trail
+PASS [6] simplymore:diamond_quarterstaff combo 3 120FPS recovery appends no samples
+PASS [6] simplymore:diamond_quarterstaff combo 3 120FPS every base and elemental pose stays in strike interval
+PASS [6] simplymore:diamond_quarterstaff combo 3 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [6] simplymore:diamond_quarterstaff combo 3 120FPS every weapon end or rim segment emits a base trail
+PASS [6] simplymore:diamond_quarterstaff combo 3 120FPS emitter 0 exists
+PASS [6] simplymore:diamond_quarterstaff combo 3 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [6] simplymore:diamond_quarterstaff combo 3 120FPS emitter 0 retains at least half of complete striking motion
+PASS [6] simplymore:diamond_quarterstaff combo 3 120FPS emitter 0 reaches end of strike
+PASS [6] simplymore:diamond_quarterstaff combo 3 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [6] simplymore:diamond_quarterstaff combo 3 120FPS emitter 0 remains one continuous strike
+PASS [6] simplymore:diamond_quarterstaff combo 3 120FPS emitter 1 exists
+PASS [6] simplymore:diamond_quarterstaff combo 3 120FPS emitter 1 generates finite visible mesh at 120 FPS
+PASS [6] simplymore:diamond_quarterstaff combo 3 120FPS emitter 1 retains at least half of complete striking motion
+PASS [6] simplymore:diamond_quarterstaff combo 3 120FPS emitter 1 reaches end of strike
+PASS [6] simplymore:diamond_quarterstaff combo 3 120FPS emitter 1 starts promptly when weapon reaches configured speed
+PASS [6] simplymore:diamond_quarterstaff combo 3 120FPS emitter 1 remains one continuous strike
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS equipped registered item
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS loaded actual Better Combat combo
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS uses actual equipped attack cooldown
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS animation provider starts current attack
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS supplies strike interval
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS uses selected combo hand
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS resolves 2 weapon emitters
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS classifies SLASH
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS all emitters have finite nonzero model spans
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS emitter geometry comes from actual baked model
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS two emitters extend toward opposing ends
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS outer ends are separated across the weapon
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS observed actual rendered attack frames
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS windup emits no trail
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS recovery appends no samples
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS every base and elemental pose stays in strike interval
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS every weapon end or rim segment emits a base trail
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS emitter 0 exists
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS emitter 0 retains at least half of complete striking motion
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS emitter 0 reaches end of strike
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS emitter 0 remains one continuous strike
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS emitter 1 exists
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS emitter 1 generates finite visible mesh at 120 FPS
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS emitter 1 retains at least half of complete striking motion
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS emitter 1 reaches end of strike
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS emitter 1 starts promptly when weapon reaches configured speed
+PASS [7] simplyswords:diamond_warglaive combo 0 120FPS emitter 1 remains one continuous strike
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS equipped registered item
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS loaded actual Better Combat combo
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS uses actual equipped attack cooldown
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS animation provider starts current attack
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS supplies strike interval
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS uses selected combo hand
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS resolves 2 weapon emitters
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS classifies SLASH
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS all emitters have finite nonzero model spans
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS emitter geometry comes from actual baked model
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS two emitters extend toward opposing ends
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS outer ends are separated across the weapon
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS observed actual rendered attack frames
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS windup emits no trail
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS recovery appends no samples
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS every base and elemental pose stays in strike interval
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS every weapon end or rim segment emits a base trail
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS emitter 0 exists
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS emitter 0 retains at least half of complete striking motion
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS emitter 0 reaches end of strike
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS emitter 0 remains one continuous strike
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS emitter 1 exists
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS emitter 1 generates finite visible mesh at 120 FPS
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS emitter 1 retains at least half of complete striking motion
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS emitter 1 reaches end of strike
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS emitter 1 starts promptly when weapon reaches configured speed
+PASS [8] simplyswords:diamond_warglaive combo 1 120FPS emitter 1 remains one continuous strike
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS equipped registered item
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS loaded actual Better Combat combo
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS uses actual equipped attack cooldown
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS animation provider starts current attack
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS supplies strike interval
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS uses selected combo hand
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS resolves 2 weapon emitters
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS classifies SLASH
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS all emitters have finite nonzero model spans
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS emitter geometry comes from actual baked model
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS two emitters extend toward opposing ends
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS outer ends are separated across the weapon
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS observed actual rendered attack frames
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS windup emits no trail
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS recovery appends no samples
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS every base and elemental pose stays in strike interval
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS every weapon end or rim segment emits a base trail
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS emitter 0 exists
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS emitter 0 retains at least half of complete striking motion
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS emitter 0 reaches end of strike
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS emitter 0 remains one continuous strike
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS emitter 1 exists
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS emitter 1 generates finite visible mesh at 120 FPS
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS emitter 1 retains at least half of complete striking motion
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS emitter 1 reaches end of strike
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS emitter 1 starts promptly when weapon reaches configured speed
+PASS [9] simplyswords:diamond_warglaive combo 2 dual 120FPS emitter 1 remains one continuous strike
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS equipped registered item
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS loaded actual Better Combat combo
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS uses actual equipped attack cooldown
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS animation provider starts current attack
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS supplies strike interval
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS uses selected combo hand
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS resolves 2 weapon emitters
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS classifies SLASH
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS all emitters have finite nonzero model spans
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS emitter geometry comes from actual baked model
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS two emitters extend toward opposing ends
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS outer ends are separated across the weapon
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS observed actual rendered attack frames
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS windup emits no trail
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS recovery appends no samples
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS every base and elemental pose stays in strike interval
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS every weapon end or rim segment emits a base trail
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS emitter 0 exists
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS emitter 0 retains at least half of complete striking motion
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS emitter 0 reaches end of strike
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS emitter 0 remains one continuous strike
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS emitter 1 exists
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS emitter 1 generates finite visible mesh at 120 FPS
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS emitter 1 retains at least half of complete striking motion
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS emitter 1 reaches end of strike
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS emitter 1 starts promptly when weapon reaches configured speed
+PASS [10] simplyswords:diamond_warglaive combo 3 dual 120FPS emitter 1 remains one continuous strike
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS equipped registered item
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS loaded actual Better Combat combo
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS uses actual equipped attack cooldown
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS animation provider starts current attack
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS supplies strike interval
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS uses selected combo hand
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS resolves 8 weapon emitters
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS classifies SLASH
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS all emitters have finite nonzero model spans
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter geometry comes from actual baked model
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS circular segments join into a closed rim
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS rim has eight distinct boundary points
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS observed actual rendered attack frames
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS windup emits no trail
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS recovery appends no samples
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS every base and elemental pose stays in strike interval
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS every weapon end or rim segment emits a base trail
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 0 exists
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 0 retains at least half of complete striking motion
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 0 reaches end of strike
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 0 remains one continuous strike
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 1 exists
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 1 generates finite visible mesh at 120 FPS
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 1 retains at least half of complete striking motion
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 1 reaches end of strike
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 1 starts promptly when weapon reaches configured speed
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 1 remains one continuous strike
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 2 exists
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 2 generates finite visible mesh at 120 FPS
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 2 retains at least half of complete striking motion
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 2 reaches end of strike
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 2 starts promptly when weapon reaches configured speed
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 2 remains one continuous strike
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 3 exists
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 3 generates finite visible mesh at 120 FPS
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 3 retains at least half of complete striking motion
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 3 reaches end of strike
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 3 starts promptly when weapon reaches configured speed
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 3 remains one continuous strike
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 4 exists
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 4 generates finite visible mesh at 120 FPS
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 4 retains at least half of complete striking motion
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 4 reaches end of strike
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 4 starts promptly when weapon reaches configured speed
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 4 remains one continuous strike
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 5 exists
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 5 generates finite visible mesh at 120 FPS
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 5 retains at least half of complete striking motion
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 5 reaches end of strike
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 5 starts promptly when weapon reaches configured speed
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 5 remains one continuous strike
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 6 exists
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 6 generates finite visible mesh at 120 FPS
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 6 retains at least half of complete striking motion
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 6 reaches end of strike
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 6 starts promptly when weapon reaches configured speed
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 6 remains one continuous strike
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 7 exists
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 7 generates finite visible mesh at 120 FPS
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 7 retains at least half of complete striking motion
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 7 reaches end of strike
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 7 starts promptly when weapon reaches configured speed
+PASS [11] simplyswords:diamond_chakram combo 0 120FPS emitter 7 remains one continuous strike
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS equipped registered item
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS loaded actual Better Combat combo
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS uses actual equipped attack cooldown
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS animation provider starts current attack
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS supplies strike interval
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS uses selected combo hand
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS resolves 8 weapon emitters
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS classifies SLASH
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS all emitters have finite nonzero model spans
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter geometry comes from actual baked model
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS circular segments join into a closed rim
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS rim has eight distinct boundary points
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS observed actual rendered attack frames
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS windup emits no trail
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS recovery appends no samples
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS every base and elemental pose stays in strike interval
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS every weapon end or rim segment emits a base trail
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 0 exists
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 0 retains at least half of complete striking motion
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 0 reaches end of strike
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 0 remains one continuous strike
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 1 exists
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 1 generates finite visible mesh at 120 FPS
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 1 retains at least half of complete striking motion
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 1 reaches end of strike
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 1 starts promptly when weapon reaches configured speed
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 1 remains one continuous strike
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 2 exists
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 2 generates finite visible mesh at 120 FPS
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 2 retains at least half of complete striking motion
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 2 reaches end of strike
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 2 starts promptly when weapon reaches configured speed
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 2 remains one continuous strike
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 3 exists
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 3 generates finite visible mesh at 120 FPS
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 3 retains at least half of complete striking motion
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 3 reaches end of strike
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 3 starts promptly when weapon reaches configured speed
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 3 remains one continuous strike
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 4 exists
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 4 generates finite visible mesh at 120 FPS
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 4 retains at least half of complete striking motion
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 4 reaches end of strike
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 4 starts promptly when weapon reaches configured speed
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 4 remains one continuous strike
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 5 exists
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 5 generates finite visible mesh at 120 FPS
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 5 retains at least half of complete striking motion
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 5 reaches end of strike
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 5 starts promptly when weapon reaches configured speed
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 5 remains one continuous strike
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 6 exists
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 6 generates finite visible mesh at 120 FPS
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 6 retains at least half of complete striking motion
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 6 reaches end of strike
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 6 starts promptly when weapon reaches configured speed
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 6 remains one continuous strike
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 7 exists
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 7 generates finite visible mesh at 120 FPS
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 7 retains at least half of complete striking motion
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 7 reaches end of strike
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 7 starts promptly when weapon reaches configured speed
+PASS [12] simplyswords:diamond_chakram combo 2 dual 120FPS emitter 7 remains one continuous strike
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS equipped registered item
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS loaded actual Better Combat combo
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS uses actual equipped attack cooldown
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS animation provider starts current attack
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS supplies strike interval
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS uses selected combo hand
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS resolves 8 weapon emitters
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS classifies SLASH
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS all emitters have finite nonzero model spans
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter geometry comes from actual baked model
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS circular segments join into a closed rim
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS rim has eight distinct boundary points
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS observed actual rendered attack frames
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS windup emits no trail
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS recovery appends no samples
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS every base and elemental pose stays in strike interval
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS every weapon end or rim segment emits a base trail
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 0 exists
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 0 retains at least half of complete striking motion
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 0 reaches end of strike
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 0 remains one continuous strike
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 1 exists
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 1 generates finite visible mesh at 120 FPS
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 1 retains at least half of complete striking motion
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 1 reaches end of strike
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 1 starts promptly when weapon reaches configured speed
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 1 remains one continuous strike
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 2 exists
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 2 generates finite visible mesh at 120 FPS
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 2 retains at least half of complete striking motion
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 2 reaches end of strike
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 2 starts promptly when weapon reaches configured speed
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 2 remains one continuous strike
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 3 exists
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 3 generates finite visible mesh at 120 FPS
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 3 retains at least half of complete striking motion
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 3 reaches end of strike
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 3 starts promptly when weapon reaches configured speed
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 3 remains one continuous strike
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 4 exists
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 4 generates finite visible mesh at 120 FPS
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 4 retains at least half of complete striking motion
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 4 reaches end of strike
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 4 starts promptly when weapon reaches configured speed
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 4 remains one continuous strike
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 5 exists
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 5 generates finite visible mesh at 120 FPS
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 5 retains at least half of complete striking motion
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 5 reaches end of strike
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 5 starts promptly when weapon reaches configured speed
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 5 remains one continuous strike
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 6 exists
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 6 generates finite visible mesh at 120 FPS
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 6 retains at least half of complete striking motion
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 6 reaches end of strike
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 6 starts promptly when weapon reaches configured speed
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 6 remains one continuous strike
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 7 exists
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 7 generates finite visible mesh at 120 FPS
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 7 retains at least half of complete striking motion
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 7 reaches end of strike
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 7 starts promptly when weapon reaches configured speed
+PASS [13] simplyswords:diamond_chakram combo 3 dual 120FPS emitter 7 remains one continuous strike
+PASS [14] simplyswords:diamond_longsword combo 0 120FPS equipped registered item
+PASS [14] simplyswords:diamond_longsword combo 0 120FPS loaded actual Better Combat combo
+PASS [14] simplyswords:diamond_longsword combo 0 120FPS uses actual equipped attack cooldown
+PASS [14] simplyswords:diamond_longsword combo 0 120FPS animation provider starts current attack
+PASS [14] simplyswords:diamond_longsword combo 0 120FPS supplies strike interval
+PASS [14] simplyswords:diamond_longsword combo 0 120FPS uses selected combo hand
+PASS [14] simplyswords:diamond_longsword combo 0 120FPS resolves 1 weapon emitters
+PASS [14] simplyswords:diamond_longsword combo 0 120FPS all emitters have finite nonzero model spans
+PASS [14] simplyswords:diamond_longsword combo 0 120FPS observed actual rendered attack frames
+PASS [14] simplyswords:diamond_longsword combo 0 120FPS windup emits no trail
+PASS [14] simplyswords:diamond_longsword combo 0 120FPS recovery appends no samples
+PASS [14] simplyswords:diamond_longsword combo 0 120FPS every base and elemental pose stays in strike interval
+PASS [14] simplyswords:diamond_longsword combo 0 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [14] simplyswords:diamond_longsword combo 0 120FPS every weapon end or rim segment emits a base trail
+PASS [14] simplyswords:diamond_longsword combo 0 120FPS emitter 0 exists
+PASS [14] simplyswords:diamond_longsword combo 0 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [14] simplyswords:diamond_longsword combo 0 120FPS emitter 0 retains at least half of complete striking motion
+PASS [14] simplyswords:diamond_longsword combo 0 120FPS emitter 0 reaches end of strike
+PASS [14] simplyswords:diamond_longsword combo 0 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [14] simplyswords:diamond_longsword combo 0 120FPS emitter 0 remains one continuous strike
+PASS [15] simplyswords:diamond_longsword combo 1 120FPS equipped registered item
+PASS [15] simplyswords:diamond_longsword combo 1 120FPS loaded actual Better Combat combo
+PASS [15] simplyswords:diamond_longsword combo 1 120FPS uses actual equipped attack cooldown
+PASS [15] simplyswords:diamond_longsword combo 1 120FPS animation provider starts current attack
+PASS [15] simplyswords:diamond_longsword combo 1 120FPS supplies strike interval
+PASS [15] simplyswords:diamond_longsword combo 1 120FPS uses selected combo hand
+PASS [15] simplyswords:diamond_longsword combo 1 120FPS resolves 1 weapon emitters
+PASS [15] simplyswords:diamond_longsword combo 1 120FPS all emitters have finite nonzero model spans
+PASS [15] simplyswords:diamond_longsword combo 1 120FPS observed actual rendered attack frames
+PASS [15] simplyswords:diamond_longsword combo 1 120FPS windup emits no trail
+PASS [15] simplyswords:diamond_longsword combo 1 120FPS recovery appends no samples
+PASS [15] simplyswords:diamond_longsword combo 1 120FPS every base and elemental pose stays in strike interval
+PASS [15] simplyswords:diamond_longsword combo 1 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [15] simplyswords:diamond_longsword combo 1 120FPS every weapon end or rim segment emits a base trail
+PASS [15] simplyswords:diamond_longsword combo 1 120FPS emitter 0 exists
+PASS [15] simplyswords:diamond_longsword combo 1 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [15] simplyswords:diamond_longsword combo 1 120FPS emitter 0 retains at least half of complete striking motion
+PASS [15] simplyswords:diamond_longsword combo 1 120FPS emitter 0 reaches end of strike
+PASS [15] simplyswords:diamond_longsword combo 1 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [15] simplyswords:diamond_longsword combo 1 120FPS emitter 0 remains one continuous strike
+PASS [16] simplyswords:diamond_longsword combo 2 120FPS equipped registered item
+PASS [16] simplyswords:diamond_longsword combo 2 120FPS loaded actual Better Combat combo
+PASS [16] simplyswords:diamond_longsword combo 2 120FPS uses actual equipped attack cooldown
+PASS [16] simplyswords:diamond_longsword combo 2 120FPS animation provider starts current attack
+PASS [16] simplyswords:diamond_longsword combo 2 120FPS supplies strike interval
+PASS [16] simplyswords:diamond_longsword combo 2 120FPS uses selected combo hand
+PASS [16] simplyswords:diamond_longsword combo 2 120FPS resolves 1 weapon emitters
+PASS [16] simplyswords:diamond_longsword combo 2 120FPS all emitters have finite nonzero model spans
+PASS [16] simplyswords:diamond_longsword combo 2 120FPS observed actual rendered attack frames
+PASS [16] simplyswords:diamond_longsword combo 2 120FPS windup emits no trail
+PASS [16] simplyswords:diamond_longsword combo 2 120FPS recovery appends no samples
+PASS [16] simplyswords:diamond_longsword combo 2 120FPS every base and elemental pose stays in strike interval
+PASS [16] simplyswords:diamond_longsword combo 2 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [16] simplyswords:diamond_longsword combo 2 120FPS every weapon end or rim segment emits a base trail
+PASS [16] simplyswords:diamond_longsword combo 2 120FPS emitter 0 exists
+PASS [16] simplyswords:diamond_longsword combo 2 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [16] simplyswords:diamond_longsword combo 2 120FPS emitter 0 retains at least half of complete striking motion
+PASS [16] simplyswords:diamond_longsword combo 2 120FPS emitter 0 reaches end of strike
+PASS [16] simplyswords:diamond_longsword combo 2 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [16] simplyswords:diamond_longsword combo 2 120FPS emitter 0 remains one continuous strike
+PASS [17] simplyswords:diamond_claymore combo 0 120FPS equipped registered item
+PASS [17] simplyswords:diamond_claymore combo 0 120FPS loaded actual Better Combat combo
+PASS [17] simplyswords:diamond_claymore combo 0 120FPS uses actual equipped attack cooldown
+PASS [17] simplyswords:diamond_claymore combo 0 120FPS animation provider starts current attack
+PASS [17] simplyswords:diamond_claymore combo 0 120FPS supplies strike interval
+PASS [17] simplyswords:diamond_claymore combo 0 120FPS uses selected combo hand
+PASS [17] simplyswords:diamond_claymore combo 0 120FPS resolves 1 weapon emitters
+PASS [17] simplyswords:diamond_claymore combo 0 120FPS all emitters have finite nonzero model spans
+PASS [17] simplyswords:diamond_claymore combo 0 120FPS observed actual rendered attack frames
+PASS [17] simplyswords:diamond_claymore combo 0 120FPS windup emits no trail
+PASS [17] simplyswords:diamond_claymore combo 0 120FPS recovery appends no samples
+PASS [17] simplyswords:diamond_claymore combo 0 120FPS every base and elemental pose stays in strike interval
+PASS [17] simplyswords:diamond_claymore combo 0 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [17] simplyswords:diamond_claymore combo 0 120FPS every weapon end or rim segment emits a base trail
+PASS [17] simplyswords:diamond_claymore combo 0 120FPS emitter 0 exists
+PASS [17] simplyswords:diamond_claymore combo 0 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [17] simplyswords:diamond_claymore combo 0 120FPS emitter 0 retains at least half of complete striking motion
+PASS [17] simplyswords:diamond_claymore combo 0 120FPS emitter 0 reaches end of strike
+PASS [17] simplyswords:diamond_claymore combo 0 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [17] simplyswords:diamond_claymore combo 0 120FPS emitter 0 remains one continuous strike
+PASS [18] simplyswords:diamond_claymore combo 1 120FPS equipped registered item
+PASS [18] simplyswords:diamond_claymore combo 1 120FPS loaded actual Better Combat combo
+PASS [18] simplyswords:diamond_claymore combo 1 120FPS uses actual equipped attack cooldown
+PASS [18] simplyswords:diamond_claymore combo 1 120FPS animation provider starts current attack
+PASS [18] simplyswords:diamond_claymore combo 1 120FPS supplies strike interval
+PASS [18] simplyswords:diamond_claymore combo 1 120FPS uses selected combo hand
+PASS [18] simplyswords:diamond_claymore combo 1 120FPS resolves 1 weapon emitters
+PASS [18] simplyswords:diamond_claymore combo 1 120FPS all emitters have finite nonzero model spans
+PASS [18] simplyswords:diamond_claymore combo 1 120FPS observed actual rendered attack frames
+PASS [18] simplyswords:diamond_claymore combo 1 120FPS windup emits no trail
+PASS [18] simplyswords:diamond_claymore combo 1 120FPS recovery appends no samples
+PASS [18] simplyswords:diamond_claymore combo 1 120FPS every base and elemental pose stays in strike interval
+PASS [18] simplyswords:diamond_claymore combo 1 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [18] simplyswords:diamond_claymore combo 1 120FPS every weapon end or rim segment emits a base trail
+PASS [18] simplyswords:diamond_claymore combo 1 120FPS emitter 0 exists
+PASS [18] simplyswords:diamond_claymore combo 1 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [18] simplyswords:diamond_claymore combo 1 120FPS emitter 0 retains at least half of complete striking motion
+PASS [18] simplyswords:diamond_claymore combo 1 120FPS emitter 0 reaches end of strike
+PASS [18] simplyswords:diamond_claymore combo 1 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [18] simplyswords:diamond_claymore combo 1 120FPS emitter 0 remains one continuous strike
+PASS [19] simplyswords:diamond_claymore combo 2 120FPS equipped registered item
+PASS [19] simplyswords:diamond_claymore combo 2 120FPS loaded actual Better Combat combo
+PASS [19] simplyswords:diamond_claymore combo 2 120FPS uses actual equipped attack cooldown
+PASS [19] simplyswords:diamond_claymore combo 2 120FPS animation provider starts current attack
+PASS [19] simplyswords:diamond_claymore combo 2 120FPS supplies strike interval
+PASS [19] simplyswords:diamond_claymore combo 2 120FPS uses selected combo hand
+PASS [19] simplyswords:diamond_claymore combo 2 120FPS resolves 1 weapon emitters
+PASS [19] simplyswords:diamond_claymore combo 2 120FPS all emitters have finite nonzero model spans
+PASS [19] simplyswords:diamond_claymore combo 2 120FPS observed actual rendered attack frames
+PASS [19] simplyswords:diamond_claymore combo 2 120FPS windup emits no trail
+PASS [19] simplyswords:diamond_claymore combo 2 120FPS recovery appends no samples
+PASS [19] simplyswords:diamond_claymore combo 2 120FPS every base and elemental pose stays in strike interval
+PASS [19] simplyswords:diamond_claymore combo 2 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [19] simplyswords:diamond_claymore combo 2 120FPS every weapon end or rim segment emits a base trail
+PASS [19] simplyswords:diamond_claymore combo 2 120FPS emitter 0 exists
+PASS [19] simplyswords:diamond_claymore combo 2 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [19] simplyswords:diamond_claymore combo 2 120FPS emitter 0 retains at least half of complete striking motion
+PASS [19] simplyswords:diamond_claymore combo 2 120FPS emitter 0 reaches end of strike
+PASS [19] simplyswords:diamond_claymore combo 2 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [19] simplyswords:diamond_claymore combo 2 120FPS emitter 0 remains one continuous strike
+PASS [20] simplyswords:diamond_greathammer combo 0 120FPS equipped registered item
+PASS [20] simplyswords:diamond_greathammer combo 0 120FPS loaded actual Better Combat combo
+PASS [20] simplyswords:diamond_greathammer combo 0 120FPS uses actual equipped attack cooldown
+PASS [20] simplyswords:diamond_greathammer combo 0 120FPS animation provider starts current attack
+PASS [20] simplyswords:diamond_greathammer combo 0 120FPS supplies strike interval
+PASS [20] simplyswords:diamond_greathammer combo 0 120FPS uses selected combo hand
+PASS [20] simplyswords:diamond_greathammer combo 0 120FPS all emitters have finite nonzero model spans
+PASS [20] simplyswords:diamond_greathammer combo 0 120FPS observed actual rendered attack frames
+PASS [20] simplyswords:diamond_greathammer combo 0 120FPS windup emits no trail
+PASS [20] simplyswords:diamond_greathammer combo 0 120FPS recovery appends no samples
+PASS [20] simplyswords:diamond_greathammer combo 0 120FPS every base and elemental pose stays in strike interval
+PASS [20] simplyswords:diamond_greathammer combo 0 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [20] simplyswords:diamond_greathammer combo 0 120FPS every weapon end or rim segment emits a base trail
+PASS [20] simplyswords:diamond_greathammer combo 0 120FPS emitter 0 exists
+PASS [20] simplyswords:diamond_greathammer combo 0 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [20] simplyswords:diamond_greathammer combo 0 120FPS emitter 0 retains at least half of complete striking motion
+PASS [20] simplyswords:diamond_greathammer combo 0 120FPS emitter 0 reaches end of strike
+PASS [20] simplyswords:diamond_greathammer combo 0 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [20] simplyswords:diamond_greathammer combo 0 120FPS emitter 0 remains one continuous strike
+PASS [21] simplyswords:diamond_spear combo 0 120FPS equipped registered item
+PASS [21] simplyswords:diamond_spear combo 0 120FPS loaded actual Better Combat combo
+PASS [21] simplyswords:diamond_spear combo 0 120FPS uses actual equipped attack cooldown
+PASS [21] simplyswords:diamond_spear combo 0 120FPS animation provider starts current attack
+PASS [21] simplyswords:diamond_spear combo 0 120FPS supplies strike interval
+PASS [21] simplyswords:diamond_spear combo 0 120FPS uses selected combo hand
+PASS [21] simplyswords:diamond_spear combo 0 120FPS all emitters have finite nonzero model spans
+PASS [21] simplyswords:diamond_spear combo 0 120FPS observed actual rendered attack frames
+PASS [21] simplyswords:diamond_spear combo 0 120FPS windup emits no trail
+PASS [21] simplyswords:diamond_spear combo 0 120FPS recovery appends no samples
+PASS [21] simplyswords:diamond_spear combo 0 120FPS every base and elemental pose stays in strike interval
+PASS [21] simplyswords:diamond_spear combo 0 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [21] simplyswords:diamond_spear combo 0 120FPS every weapon end or rim segment emits a base trail
+PASS [21] simplyswords:diamond_spear combo 0 120FPS emitter 0 exists
+PASS [21] simplyswords:diamond_spear combo 0 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [21] simplyswords:diamond_spear combo 0 120FPS emitter 0 retains at least half of complete striking motion
+PASS [21] simplyswords:diamond_spear combo 0 120FPS emitter 0 reaches end of strike
+PASS [21] simplyswords:diamond_spear combo 0 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [21] simplyswords:diamond_spear combo 0 120FPS emitter 0 remains one continuous strike
+PASS [22] simplyswords:diamond_cutlass combo 0 120FPS equipped registered item
+PASS [22] simplyswords:diamond_cutlass combo 0 120FPS loaded actual Better Combat combo
+PASS [22] simplyswords:diamond_cutlass combo 0 120FPS uses actual equipped attack cooldown
+PASS [22] simplyswords:diamond_cutlass combo 0 120FPS animation provider starts current attack
+PASS [22] simplyswords:diamond_cutlass combo 0 120FPS supplies strike interval
+PASS [22] simplyswords:diamond_cutlass combo 0 120FPS uses selected combo hand
+PASS [22] simplyswords:diamond_cutlass combo 0 120FPS all emitters have finite nonzero model spans
+PASS [22] simplyswords:diamond_cutlass combo 0 120FPS observed actual rendered attack frames
+PASS [22] simplyswords:diamond_cutlass combo 0 120FPS windup emits no trail
+PASS [22] simplyswords:diamond_cutlass combo 0 120FPS recovery appends no samples
+PASS [22] simplyswords:diamond_cutlass combo 0 120FPS every base and elemental pose stays in strike interval
+PASS [22] simplyswords:diamond_cutlass combo 0 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [22] simplyswords:diamond_cutlass combo 0 120FPS every weapon end or rim segment emits a base trail
+PASS [22] simplyswords:diamond_cutlass combo 0 120FPS emitter 0 exists
+PASS [22] simplyswords:diamond_cutlass combo 0 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [22] simplyswords:diamond_cutlass combo 0 120FPS emitter 0 retains at least half of complete striking motion
+PASS [22] simplyswords:diamond_cutlass combo 0 120FPS emitter 0 reaches end of strike
+PASS [22] simplyswords:diamond_cutlass combo 0 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [22] simplyswords:diamond_cutlass combo 0 120FPS emitter 0 remains one continuous strike
+PASS [23] simplyswords:diamond_glaive combo 0 120FPS equipped registered item
+PASS [23] simplyswords:diamond_glaive combo 0 120FPS loaded actual Better Combat combo
+PASS [23] simplyswords:diamond_glaive combo 0 120FPS uses actual equipped attack cooldown
+PASS [23] simplyswords:diamond_glaive combo 0 120FPS animation provider starts current attack
+PASS [23] simplyswords:diamond_glaive combo 0 120FPS supplies strike interval
+PASS [23] simplyswords:diamond_glaive combo 0 120FPS uses selected combo hand
+PASS [23] simplyswords:diamond_glaive combo 0 120FPS all emitters have finite nonzero model spans
+PASS [23] simplyswords:diamond_glaive combo 0 120FPS observed actual rendered attack frames
+PASS [23] simplyswords:diamond_glaive combo 0 120FPS windup emits no trail
+PASS [23] simplyswords:diamond_glaive combo 0 120FPS recovery appends no samples
+PASS [23] simplyswords:diamond_glaive combo 0 120FPS every base and elemental pose stays in strike interval
+PASS [23] simplyswords:diamond_glaive combo 0 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [23] simplyswords:diamond_glaive combo 0 120FPS every weapon end or rim segment emits a base trail
+PASS [23] simplyswords:diamond_glaive combo 0 120FPS emitter 0 exists
+PASS [23] simplyswords:diamond_glaive combo 0 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [23] simplyswords:diamond_glaive combo 0 120FPS emitter 0 retains at least half of complete striking motion
+PASS [23] simplyswords:diamond_glaive combo 0 120FPS emitter 0 reaches end of strike
+PASS [23] simplyswords:diamond_glaive combo 0 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [23] simplyswords:diamond_glaive combo 0 120FPS emitter 0 remains one continuous strike
+PASS [24] simplyswords:diamond_greataxe combo 0 120FPS equipped registered item
+PASS [24] simplyswords:diamond_greataxe combo 0 120FPS loaded actual Better Combat combo
+PASS [24] simplyswords:diamond_greataxe combo 0 120FPS uses actual equipped attack cooldown
+PASS [24] simplyswords:diamond_greataxe combo 0 120FPS animation provider starts current attack
+PASS [24] simplyswords:diamond_greataxe combo 0 120FPS supplies strike interval
+PASS [24] simplyswords:diamond_greataxe combo 0 120FPS uses selected combo hand
+PASS [24] simplyswords:diamond_greataxe combo 0 120FPS all emitters have finite nonzero model spans
+PASS [24] simplyswords:diamond_greataxe combo 0 120FPS observed actual rendered attack frames
+PASS [24] simplyswords:diamond_greataxe combo 0 120FPS windup emits no trail
+PASS [24] simplyswords:diamond_greataxe combo 0 120FPS recovery appends no samples
+PASS [24] simplyswords:diamond_greataxe combo 0 120FPS every base and elemental pose stays in strike interval
+PASS [24] simplyswords:diamond_greataxe combo 0 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [24] simplyswords:diamond_greataxe combo 0 120FPS every weapon end or rim segment emits a base trail
+PASS [24] simplyswords:diamond_greataxe combo 0 120FPS emitter 0 exists
+PASS [24] simplyswords:diamond_greataxe combo 0 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [24] simplyswords:diamond_greataxe combo 0 120FPS emitter 0 retains at least half of complete striking motion
+PASS [24] simplyswords:diamond_greataxe combo 0 120FPS emitter 0 reaches end of strike
+PASS [24] simplyswords:diamond_greataxe combo 0 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [24] simplyswords:diamond_greataxe combo 0 120FPS emitter 0 remains one continuous strike
+PASS [25] simplyswords:diamond_halberd combo 0 120FPS equipped registered item
+PASS [25] simplyswords:diamond_halberd combo 0 120FPS loaded actual Better Combat combo
+PASS [25] simplyswords:diamond_halberd combo 0 120FPS uses actual equipped attack cooldown
+PASS [25] simplyswords:diamond_halberd combo 0 120FPS animation provider starts current attack
+PASS [25] simplyswords:diamond_halberd combo 0 120FPS supplies strike interval
+PASS [25] simplyswords:diamond_halberd combo 0 120FPS uses selected combo hand
+PASS [25] simplyswords:diamond_halberd combo 0 120FPS all emitters have finite nonzero model spans
+PASS [25] simplyswords:diamond_halberd combo 0 120FPS observed actual rendered attack frames
+PASS [25] simplyswords:diamond_halberd combo 0 120FPS windup emits no trail
+PASS [25] simplyswords:diamond_halberd combo 0 120FPS recovery appends no samples
+PASS [25] simplyswords:diamond_halberd combo 0 120FPS every base and elemental pose stays in strike interval
+PASS [25] simplyswords:diamond_halberd combo 0 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [25] simplyswords:diamond_halberd combo 0 120FPS every weapon end or rim segment emits a base trail
+PASS [25] simplyswords:diamond_halberd combo 0 120FPS emitter 0 exists
+PASS [25] simplyswords:diamond_halberd combo 0 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [25] simplyswords:diamond_halberd combo 0 120FPS emitter 0 retains at least half of complete striking motion
+PASS [25] simplyswords:diamond_halberd combo 0 120FPS emitter 0 reaches end of strike
+PASS [25] simplyswords:diamond_halberd combo 0 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [25] simplyswords:diamond_halberd combo 0 120FPS emitter 0 remains one continuous strike
+PASS [26] simplyswords:diamond_katana combo 0 120FPS equipped registered item
+PASS [26] simplyswords:diamond_katana combo 0 120FPS loaded actual Better Combat combo
+PASS [26] simplyswords:diamond_katana combo 0 120FPS uses actual equipped attack cooldown
+PASS [26] simplyswords:diamond_katana combo 0 120FPS animation provider starts current attack
+PASS [26] simplyswords:diamond_katana combo 0 120FPS supplies strike interval
+PASS [26] simplyswords:diamond_katana combo 0 120FPS uses selected combo hand
+PASS [26] simplyswords:diamond_katana combo 0 120FPS all emitters have finite nonzero model spans
+PASS [26] simplyswords:diamond_katana combo 0 120FPS observed actual rendered attack frames
+PASS [26] simplyswords:diamond_katana combo 0 120FPS windup emits no trail
+PASS [26] simplyswords:diamond_katana combo 0 120FPS recovery appends no samples
+PASS [26] simplyswords:diamond_katana combo 0 120FPS every base and elemental pose stays in strike interval
+PASS [26] simplyswords:diamond_katana combo 0 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [26] simplyswords:diamond_katana combo 0 120FPS every weapon end or rim segment emits a base trail
+PASS [26] simplyswords:diamond_katana combo 0 120FPS emitter 0 exists
+PASS [26] simplyswords:diamond_katana combo 0 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [26] simplyswords:diamond_katana combo 0 120FPS emitter 0 retains at least half of complete striking motion
+PASS [26] simplyswords:diamond_katana combo 0 120FPS emitter 0 reaches end of strike
+PASS [26] simplyswords:diamond_katana combo 0 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [26] simplyswords:diamond_katana combo 0 120FPS emitter 0 remains one continuous strike
+PASS [27] simplyswords:diamond_rapier combo 0 120FPS equipped registered item
+PASS [27] simplyswords:diamond_rapier combo 0 120FPS loaded actual Better Combat combo
+PASS [27] simplyswords:diamond_rapier combo 0 120FPS uses actual equipped attack cooldown
+PASS [27] simplyswords:diamond_rapier combo 0 120FPS animation provider starts current attack
+PASS [27] simplyswords:diamond_rapier combo 0 120FPS supplies strike interval
+PASS [27] simplyswords:diamond_rapier combo 0 120FPS uses selected combo hand
+PASS [27] simplyswords:diamond_rapier combo 0 120FPS all emitters have finite nonzero model spans
+PASS [27] simplyswords:diamond_rapier combo 0 120FPS observed actual rendered attack frames
+PASS [27] simplyswords:diamond_rapier combo 0 120FPS windup emits no trail
+PASS [27] simplyswords:diamond_rapier combo 0 120FPS recovery appends no samples
+PASS [27] simplyswords:diamond_rapier combo 0 120FPS every base and elemental pose stays in strike interval
+PASS [27] simplyswords:diamond_rapier combo 0 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [27] simplyswords:diamond_rapier combo 0 120FPS every weapon end or rim segment emits a base trail
+PASS [27] simplyswords:diamond_rapier combo 0 120FPS emitter 0 exists
+PASS [27] simplyswords:diamond_rapier combo 0 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [27] simplyswords:diamond_rapier combo 0 120FPS emitter 0 retains at least half of complete striking motion
+PASS [27] simplyswords:diamond_rapier combo 0 120FPS emitter 0 reaches end of strike
+PASS [27] simplyswords:diamond_rapier combo 0 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [27] simplyswords:diamond_rapier combo 0 120FPS emitter 0 remains one continuous strike
+PASS [28] simplyswords:diamond_sai combo 0 120FPS equipped registered item
+PASS [28] simplyswords:diamond_sai combo 0 120FPS loaded actual Better Combat combo
+PASS [28] simplyswords:diamond_sai combo 0 120FPS uses actual equipped attack cooldown
+PASS [28] simplyswords:diamond_sai combo 0 120FPS animation provider starts current attack
+PASS [28] simplyswords:diamond_sai combo 0 120FPS supplies strike interval
+PASS [28] simplyswords:diamond_sai combo 0 120FPS uses selected combo hand
+PASS [28] simplyswords:diamond_sai combo 0 120FPS all emitters have finite nonzero model spans
+PASS [28] simplyswords:diamond_sai combo 0 120FPS observed actual rendered attack frames
+PASS [28] simplyswords:diamond_sai combo 0 120FPS windup emits no trail
+PASS [28] simplyswords:diamond_sai combo 0 120FPS recovery appends no samples
+PASS [28] simplyswords:diamond_sai combo 0 120FPS every base and elemental pose stays in strike interval
+PASS [28] simplyswords:diamond_sai combo 0 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [28] simplyswords:diamond_sai combo 0 120FPS every weapon end or rim segment emits a base trail
+PASS [28] simplyswords:diamond_sai combo 0 120FPS emitter 0 exists
+PASS [28] simplyswords:diamond_sai combo 0 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [28] simplyswords:diamond_sai combo 0 120FPS emitter 0 retains at least half of complete striking motion
+PASS [28] simplyswords:diamond_sai combo 0 120FPS emitter 0 reaches end of strike
+PASS [28] simplyswords:diamond_sai combo 0 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [28] simplyswords:diamond_sai combo 0 120FPS emitter 0 remains one continuous strike
+PASS [29] simplymore:diamond_backhand_blade combo 0 120FPS equipped registered item
+PASS [29] simplymore:diamond_backhand_blade combo 0 120FPS loaded actual Better Combat combo
+PASS [29] simplymore:diamond_backhand_blade combo 0 120FPS uses actual equipped attack cooldown
+PASS [29] simplymore:diamond_backhand_blade combo 0 120FPS animation provider starts current attack
+PASS [29] simplymore:diamond_backhand_blade combo 0 120FPS supplies strike interval
+PASS [29] simplymore:diamond_backhand_blade combo 0 120FPS uses selected combo hand
+PASS [29] simplymore:diamond_backhand_blade combo 0 120FPS all emitters have finite nonzero model spans
+PASS [29] simplymore:diamond_backhand_blade combo 0 120FPS observed actual rendered attack frames
+PASS [29] simplymore:diamond_backhand_blade combo 0 120FPS windup emits no trail
+PASS [29] simplymore:diamond_backhand_blade combo 0 120FPS recovery appends no samples
+PASS [29] simplymore:diamond_backhand_blade combo 0 120FPS every base and elemental pose stays in strike interval
+PASS [29] simplymore:diamond_backhand_blade combo 0 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [29] simplymore:diamond_backhand_blade combo 0 120FPS every weapon end or rim segment emits a base trail
+PASS [29] simplymore:diamond_backhand_blade combo 0 120FPS emitter 0 exists
+PASS [29] simplymore:diamond_backhand_blade combo 0 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [29] simplymore:diamond_backhand_blade combo 0 120FPS emitter 0 retains at least half of complete striking motion
+PASS [29] simplymore:diamond_backhand_blade combo 0 120FPS emitter 0 reaches end of strike
+PASS [29] simplymore:diamond_backhand_blade combo 0 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [29] simplymore:diamond_backhand_blade combo 0 120FPS emitter 0 remains one continuous strike
+PASS [30] simplymore:diamond_dagger combo 0 120FPS equipped registered item
+PASS [30] simplymore:diamond_dagger combo 0 120FPS loaded actual Better Combat combo
+PASS [30] simplymore:diamond_dagger combo 0 120FPS uses actual equipped attack cooldown
+PASS [30] simplymore:diamond_dagger combo 0 120FPS animation provider starts current attack
+PASS [30] simplymore:diamond_dagger combo 0 120FPS supplies strike interval
+PASS [30] simplymore:diamond_dagger combo 0 120FPS uses selected combo hand
+PASS [30] simplymore:diamond_dagger combo 0 120FPS all emitters have finite nonzero model spans
+PASS [30] simplymore:diamond_dagger combo 0 120FPS observed actual rendered attack frames
+PASS [30] simplymore:diamond_dagger combo 0 120FPS windup emits no trail
+PASS [30] simplymore:diamond_dagger combo 0 120FPS recovery appends no samples
+PASS [30] simplymore:diamond_dagger combo 0 120FPS every base and elemental pose stays in strike interval
+PASS [30] simplymore:diamond_dagger combo 0 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [30] simplymore:diamond_dagger combo 0 120FPS every weapon end or rim segment emits a base trail
+PASS [30] simplymore:diamond_dagger combo 0 120FPS emitter 0 exists
+PASS [30] simplymore:diamond_dagger combo 0 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [30] simplymore:diamond_dagger combo 0 120FPS emitter 0 retains at least half of complete striking motion
+PASS [30] simplymore:diamond_dagger combo 0 120FPS emitter 0 reaches end of strike
+PASS [30] simplymore:diamond_dagger combo 0 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [30] simplymore:diamond_dagger combo 0 120FPS emitter 0 remains one continuous strike
+PASS [31] simplymore:diamond_deer_horns combo 0 120FPS equipped registered item
+PASS [31] simplymore:diamond_deer_horns combo 0 120FPS loaded actual Better Combat combo
+PASS [31] simplymore:diamond_deer_horns combo 0 120FPS uses actual equipped attack cooldown
+PASS [31] simplymore:diamond_deer_horns combo 0 120FPS animation provider starts current attack
+PASS [31] simplymore:diamond_deer_horns combo 0 120FPS supplies strike interval
+PASS [31] simplymore:diamond_deer_horns combo 0 120FPS uses selected combo hand
+PASS [31] simplymore:diamond_deer_horns combo 0 120FPS all emitters have finite nonzero model spans
+PASS [31] simplymore:diamond_deer_horns combo 0 120FPS observed actual rendered attack frames
+PASS [31] simplymore:diamond_deer_horns combo 0 120FPS windup emits no trail
+PASS [31] simplymore:diamond_deer_horns combo 0 120FPS recovery appends no samples
+PASS [31] simplymore:diamond_deer_horns combo 0 120FPS every base and elemental pose stays in strike interval
+PASS [31] simplymore:diamond_deer_horns combo 0 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [31] simplymore:diamond_deer_horns combo 0 120FPS every weapon end or rim segment emits a base trail
+PASS [31] simplymore:diamond_deer_horns combo 0 120FPS emitter 0 exists
+PASS [31] simplymore:diamond_deer_horns combo 0 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [31] simplymore:diamond_deer_horns combo 0 120FPS emitter 0 retains at least half of complete striking motion
+PASS [31] simplymore:diamond_deer_horns combo 0 120FPS emitter 0 reaches end of strike
+PASS [31] simplymore:diamond_deer_horns combo 0 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [31] simplymore:diamond_deer_horns combo 0 120FPS emitter 0 remains one continuous strike
+PASS [31] simplymore:diamond_deer_horns combo 0 120FPS emitter 1 exists
+PASS [31] simplymore:diamond_deer_horns combo 0 120FPS emitter 1 generates finite visible mesh at 120 FPS
+PASS [31] simplymore:diamond_deer_horns combo 0 120FPS emitter 1 retains at least half of complete striking motion
+PASS [31] simplymore:diamond_deer_horns combo 0 120FPS emitter 1 reaches end of strike
+PASS [31] simplymore:diamond_deer_horns combo 0 120FPS emitter 1 starts promptly when weapon reaches configured speed
+PASS [31] simplymore:diamond_deer_horns combo 0 120FPS emitter 1 remains one continuous strike
+PASS [32] simplymore:diamond_grandsword combo 0 120FPS equipped registered item
+PASS [32] simplymore:diamond_grandsword combo 0 120FPS loaded actual Better Combat combo
+PASS [32] simplymore:diamond_grandsword combo 0 120FPS uses actual equipped attack cooldown
+PASS [32] simplymore:diamond_grandsword combo 0 120FPS animation provider starts current attack
+PASS [32] simplymore:diamond_grandsword combo 0 120FPS supplies strike interval
+PASS [32] simplymore:diamond_grandsword combo 0 120FPS uses selected combo hand
+PASS [32] simplymore:diamond_grandsword combo 0 120FPS all emitters have finite nonzero model spans
+PASS [32] simplymore:diamond_grandsword combo 0 120FPS observed actual rendered attack frames
+PASS [32] simplymore:diamond_grandsword combo 0 120FPS windup emits no trail
+PASS [32] simplymore:diamond_grandsword combo 0 120FPS recovery appends no samples
+PASS [32] simplymore:diamond_grandsword combo 0 120FPS every base and elemental pose stays in strike interval
+PASS [32] simplymore:diamond_grandsword combo 0 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [32] simplymore:diamond_grandsword combo 0 120FPS every weapon end or rim segment emits a base trail
+PASS [32] simplymore:diamond_grandsword combo 0 120FPS emitter 0 exists
+PASS [32] simplymore:diamond_grandsword combo 0 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [32] simplymore:diamond_grandsword combo 0 120FPS emitter 0 retains at least half of complete striking motion
+PASS [32] simplymore:diamond_grandsword combo 0 120FPS emitter 0 reaches end of strike
+PASS [32] simplymore:diamond_grandsword combo 0 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [32] simplymore:diamond_grandsword combo 0 120FPS emitter 0 remains one continuous strike
+PASS [33] simplymore:diamond_great_katana combo 0 120FPS equipped registered item
+PASS [33] simplymore:diamond_great_katana combo 0 120FPS loaded actual Better Combat combo
+PASS [33] simplymore:diamond_great_katana combo 0 120FPS uses actual equipped attack cooldown
+PASS [33] simplymore:diamond_great_katana combo 0 120FPS animation provider starts current attack
+PASS [33] simplymore:diamond_great_katana combo 0 120FPS supplies strike interval
+PASS [33] simplymore:diamond_great_katana combo 0 120FPS uses selected combo hand
+PASS [33] simplymore:diamond_great_katana combo 0 120FPS all emitters have finite nonzero model spans
+PASS [33] simplymore:diamond_great_katana combo 0 120FPS observed actual rendered attack frames
+PASS [33] simplymore:diamond_great_katana combo 0 120FPS windup emits no trail
+PASS [33] simplymore:diamond_great_katana combo 0 120FPS recovery appends no samples
+PASS [33] simplymore:diamond_great_katana combo 0 120FPS every base and elemental pose stays in strike interval
+PASS [33] simplymore:diamond_great_katana combo 0 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [33] simplymore:diamond_great_katana combo 0 120FPS every weapon end or rim segment emits a base trail
+PASS [33] simplymore:diamond_great_katana combo 0 120FPS emitter 0 exists
+PASS [33] simplymore:diamond_great_katana combo 0 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [33] simplymore:diamond_great_katana combo 0 120FPS emitter 0 retains at least half of complete striking motion
+PASS [33] simplymore:diamond_great_katana combo 0 120FPS emitter 0 reaches end of strike
+PASS [33] simplymore:diamond_great_katana combo 0 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [33] simplymore:diamond_great_katana combo 0 120FPS emitter 0 remains one continuous strike
+PASS [34] simplymore:diamond_great_spear combo 0 120FPS equipped registered item
+PASS [34] simplymore:diamond_great_spear combo 0 120FPS loaded actual Better Combat combo
+PASS [34] simplymore:diamond_great_spear combo 0 120FPS uses actual equipped attack cooldown
+PASS [34] simplymore:diamond_great_spear combo 0 120FPS animation provider starts current attack
+PASS [34] simplymore:diamond_great_spear combo 0 120FPS supplies strike interval
+PASS [34] simplymore:diamond_great_spear combo 0 120FPS uses selected combo hand
+PASS [34] simplymore:diamond_great_spear combo 0 120FPS all emitters have finite nonzero model spans
+PASS [34] simplymore:diamond_great_spear combo 0 120FPS observed actual rendered attack frames
+PASS [34] simplymore:diamond_great_spear combo 0 120FPS windup emits no trail
+PASS [34] simplymore:diamond_great_spear combo 0 120FPS recovery appends no samples
+PASS [34] simplymore:diamond_great_spear combo 0 120FPS every base and elemental pose stays in strike interval
+PASS [34] simplymore:diamond_great_spear combo 0 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [34] simplymore:diamond_great_spear combo 0 120FPS every weapon end or rim segment emits a base trail
+PASS [34] simplymore:diamond_great_spear combo 0 120FPS emitter 0 exists
+PASS [34] simplymore:diamond_great_spear combo 0 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [34] simplymore:diamond_great_spear combo 0 120FPS emitter 0 retains at least half of complete striking motion
+PASS [34] simplymore:diamond_great_spear combo 0 120FPS emitter 0 reaches end of strike
+PASS [34] simplymore:diamond_great_spear combo 0 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [34] simplymore:diamond_great_spear combo 0 120FPS emitter 0 remains one continuous strike
+PASS [35] simplymore:diamond_khopesh combo 0 120FPS equipped registered item
+PASS [35] simplymore:diamond_khopesh combo 0 120FPS loaded actual Better Combat combo
+PASS [35] simplymore:diamond_khopesh combo 0 120FPS uses actual equipped attack cooldown
+PASS [35] simplymore:diamond_khopesh combo 0 120FPS animation provider starts current attack
+PASS [35] simplymore:diamond_khopesh combo 0 120FPS supplies strike interval
+PASS [35] simplymore:diamond_khopesh combo 0 120FPS uses selected combo hand
+PASS [35] simplymore:diamond_khopesh combo 0 120FPS all emitters have finite nonzero model spans
+PASS [35] simplymore:diamond_khopesh combo 0 120FPS observed actual rendered attack frames
+PASS [35] simplymore:diamond_khopesh combo 0 120FPS windup emits no trail
+PASS [35] simplymore:diamond_khopesh combo 0 120FPS recovery appends no samples
+PASS [35] simplymore:diamond_khopesh combo 0 120FPS every base and elemental pose stays in strike interval
+PASS [35] simplymore:diamond_khopesh combo 0 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [35] simplymore:diamond_khopesh combo 0 120FPS every weapon end or rim segment emits a base trail
+PASS [35] simplymore:diamond_khopesh combo 0 120FPS emitter 0 exists
+PASS [35] simplymore:diamond_khopesh combo 0 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [35] simplymore:diamond_khopesh combo 0 120FPS emitter 0 retains at least half of complete striking motion
+PASS [35] simplymore:diamond_khopesh combo 0 120FPS emitter 0 reaches end of strike
+PASS [35] simplymore:diamond_khopesh combo 0 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [35] simplymore:diamond_khopesh combo 0 120FPS emitter 0 remains one continuous strike
+PASS [36] simplymore:diamond_lance combo 0 120FPS equipped registered item
+PASS [36] simplymore:diamond_lance combo 0 120FPS loaded actual Better Combat combo
+PASS [36] simplymore:diamond_lance combo 0 120FPS uses actual equipped attack cooldown
+PASS [36] simplymore:diamond_lance combo 0 120FPS animation provider starts current attack
+PASS [36] simplymore:diamond_lance combo 0 120FPS supplies strike interval
+PASS [36] simplymore:diamond_lance combo 0 120FPS uses selected combo hand
+PASS [36] simplymore:diamond_lance combo 0 120FPS all emitters have finite nonzero model spans
+PASS [36] simplymore:diamond_lance combo 0 120FPS observed actual rendered attack frames
+PASS [36] simplymore:diamond_lance combo 0 120FPS windup emits no trail
+PASS [36] simplymore:diamond_lance combo 0 120FPS recovery appends no samples
+PASS [36] simplymore:diamond_lance combo 0 120FPS every base and elemental pose stays in strike interval
+PASS [36] simplymore:diamond_lance combo 0 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [36] simplymore:diamond_lance combo 0 120FPS every weapon end or rim segment emits a base trail
+PASS [36] simplymore:diamond_lance combo 0 120FPS emitter 0 exists
+PASS [36] simplymore:diamond_lance combo 0 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [36] simplymore:diamond_lance combo 0 120FPS emitter 0 retains at least half of complete striking motion
+PASS [36] simplymore:diamond_lance combo 0 120FPS emitter 0 reaches end of strike
+PASS [36] simplymore:diamond_lance combo 0 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [36] simplymore:diamond_lance combo 0 120FPS emitter 0 remains one continuous strike
+PASS [37] simplymore:diamond_pernach combo 0 120FPS equipped registered item
+PASS [37] simplymore:diamond_pernach combo 0 120FPS loaded actual Better Combat combo
+PASS [37] simplymore:diamond_pernach combo 0 120FPS uses actual equipped attack cooldown
+PASS [37] simplymore:diamond_pernach combo 0 120FPS animation provider starts current attack
+PASS [37] simplymore:diamond_pernach combo 0 120FPS supplies strike interval
+PASS [37] simplymore:diamond_pernach combo 0 120FPS uses selected combo hand
+PASS [37] simplymore:diamond_pernach combo 0 120FPS all emitters have finite nonzero model spans
+PASS [37] simplymore:diamond_pernach combo 0 120FPS observed actual rendered attack frames
+PASS [37] simplymore:diamond_pernach combo 0 120FPS windup emits no trail
+PASS [37] simplymore:diamond_pernach combo 0 120FPS recovery appends no samples
+PASS [37] simplymore:diamond_pernach combo 0 120FPS every base and elemental pose stays in strike interval
+PASS [37] simplymore:diamond_pernach combo 0 120FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [37] simplymore:diamond_pernach combo 0 120FPS every weapon end or rim segment emits a base trail
+PASS [37] simplymore:diamond_pernach combo 0 120FPS emitter 0 exists
+PASS [37] simplymore:diamond_pernach combo 0 120FPS emitter 0 generates finite visible mesh at 120 FPS
+PASS [37] simplymore:diamond_pernach combo 0 120FPS emitter 0 retains at least half of complete striking motion
+PASS [37] simplymore:diamond_pernach combo 0 120FPS emitter 0 reaches end of strike
+PASS [37] simplymore:diamond_pernach combo 0 120FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [37] simplymore:diamond_pernach combo 0 120FPS emitter 0 remains one continuous strike
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect equipped registered item
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect loaded actual Better Combat combo
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect uses actual equipped attack cooldown
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect animation provider starts current attack
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect supplies strike interval
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect uses selected combo hand
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect resolves 2 weapon emitters
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect classifies SLASH
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect all emitters have finite nonzero model spans
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect emitter geometry comes from actual baked model
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect two emitters extend toward opposing ends
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect outer ends are separated across the weapon
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect Fire Aspect resolves fire overlay
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect observed actual rendered attack frames
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect windup emits no trail
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect recovery appends no samples
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect every base and elemental pose stays in strike interval
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect every weapon end or rim segment emits a base trail
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect emitter 0 exists
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect emitter 0 generates finite visible mesh at 20 FPS
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect emitter 0 retains at least half of complete striking motion
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect emitter 0 reaches end of strike
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect emitter 0 starts promptly when weapon reaches configured speed
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect emitter 0 remains one continuous strike
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect emitter 1 exists
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect emitter 1 generates finite visible mesh at 20 FPS
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect emitter 1 retains at least half of complete striking motion
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect emitter 1 reaches end of strike
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect emitter 1 starts promptly when weapon reaches configured speed
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect emitter 1 remains one continuous strike
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect every end or rim segment receives elemental overlay
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect Fire Aspect shares base motion, geometry and timing with its own color
+PASS [38] simplyswords:diamond_twinblade combo 2 20FPS FireAspect all elemental strips render throughout the striking motion
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect equipped registered item
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect loaded actual Better Combat combo
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect uses actual equipped attack cooldown
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect animation provider starts current attack
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect supplies strike interval
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect uses selected combo hand
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect resolves 2 weapon emitters
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect classifies BLUNT
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect all emitters have finite nonzero model spans
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect emitter geometry comes from actual baked model
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect blunt end caps lie at separate shaft ends
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect Fire Aspect resolves fire overlay
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect observed actual rendered attack frames
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect windup emits no trail
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect recovery appends no samples
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect every base and elemental pose stays in strike interval
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect every weapon end or rim segment emits a base trail
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect emitter 0 exists
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect emitter 0 generates finite visible mesh at 20 FPS
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect emitter 0 retains at least half of complete striking motion
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect emitter 0 reaches end of strike
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect emitter 0 starts promptly when weapon reaches configured speed
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect emitter 0 remains one continuous strike
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect emitter 1 exists
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect emitter 1 generates finite visible mesh at 20 FPS
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect emitter 1 retains at least half of complete striking motion
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect emitter 1 reaches end of strike
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect emitter 1 starts promptly when weapon reaches configured speed
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect emitter 1 remains one continuous strike
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect every end or rim segment receives elemental overlay
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect Fire Aspect shares base motion, geometry and timing with its own color
+PASS [39] simplymore:diamond_quarterstaff combo 3 20FPS FireAspect all elemental strips render throughout the striking motion
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect equipped registered item
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect loaded actual Better Combat combo
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect uses actual equipped attack cooldown
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect animation provider starts current attack
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect supplies strike interval
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect uses selected combo hand
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect resolves 2 weapon emitters
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect classifies SLASH
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect all emitters have finite nonzero model spans
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect emitter geometry comes from actual baked model
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect two emitters extend toward opposing ends
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect outer ends are separated across the weapon
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect Fire Aspect resolves fire overlay
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect observed actual rendered attack frames
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect windup emits no trail
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect recovery appends no samples
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect every base and elemental pose stays in strike interval
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect every weapon end or rim segment emits a base trail
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect emitter 0 exists
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect emitter 0 generates finite visible mesh at 20 FPS
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect emitter 0 retains at least half of complete striking motion
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect emitter 0 reaches end of strike
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect emitter 0 starts promptly when weapon reaches configured speed
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect emitter 0 remains one continuous strike
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect emitter 1 exists
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect emitter 1 generates finite visible mesh at 20 FPS
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect emitter 1 retains at least half of complete striking motion
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect emitter 1 reaches end of strike
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect emitter 1 starts promptly when weapon reaches configured speed
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect emitter 1 remains one continuous strike
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect every end or rim segment receives elemental overlay
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect Fire Aspect shares base motion, geometry and timing with its own color
+PASS [40] simplyswords:diamond_warglaive combo 2 dual 20FPS FireAspect all elemental strips render throughout the striking motion
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson equipped registered item
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson loaded actual Better Combat combo
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson uses actual equipped attack cooldown
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson animation provider starts current attack
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson supplies strike interval
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson uses selected combo hand
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson resolves 2 weapon emitters
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson classifies SLASH
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson all emitters have finite nonzero model spans
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson emitter geometry comes from actual baked model
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson two emitters extend toward opposing ends
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson outer ends are separated across the weapon
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson Fire Aspect resolves fire overlay
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson observed actual rendered attack frames
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson windup emits no trail
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson recovery appends no samples
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson every base and elemental pose stays in strike interval
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson every weapon end or rim segment emits a base trail
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson emitter 0 exists
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson emitter 0 generates finite visible mesh at 20 FPS
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson emitter 0 retains at least half of complete striking motion
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson emitter 0 reaches end of strike
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson emitter 0 starts promptly when weapon reaches configured speed
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson emitter 0 remains one continuous strike
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson emitter 1 exists
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson emitter 1 generates finite visible mesh at 20 FPS
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson emitter 1 retains at least half of complete striking motion
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson emitter 1 reaches end of strike
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson emitter 1 starts promptly when weapon reaches configured speed
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson emitter 1 remains one continuous strike
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson every end or rim segment receives elemental overlay
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson Fire Aspect shares base motion, geometry and timing with its own color
+PASS [41] simplyswords:diamond_warglaive combo 3 dual 20FPS FireAspect firstPerson all elemental strips render throughout the striking motion
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect equipped registered item
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect loaded actual Better Combat combo
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect uses actual equipped attack cooldown
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect animation provider starts current attack
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect supplies strike interval
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect uses selected combo hand
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect resolves 8 weapon emitters
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect classifies SLASH
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect all emitters have finite nonzero model spans
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter geometry comes from actual baked model
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect circular segments join into a closed rim
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect rim has eight distinct boundary points
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect Fire Aspect resolves fire overlay
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect observed actual rendered attack frames
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect windup emits no trail
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect recovery appends no samples
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect every base and elemental pose stays in strike interval
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect every weapon end or rim segment emits a base trail
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 0 exists
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 0 generates finite visible mesh at 20 FPS
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 0 retains at least half of complete striking motion
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 0 reaches end of strike
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 0 starts promptly when weapon reaches configured speed
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 0 remains one continuous strike
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 1 exists
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 1 generates finite visible mesh at 20 FPS
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 1 retains at least half of complete striking motion
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 1 reaches end of strike
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 1 starts promptly when weapon reaches configured speed
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 1 remains one continuous strike
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 2 exists
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 2 generates finite visible mesh at 20 FPS
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 2 retains at least half of complete striking motion
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 2 reaches end of strike
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 2 starts promptly when weapon reaches configured speed
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 2 remains one continuous strike
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 3 exists
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 3 generates finite visible mesh at 20 FPS
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 3 retains at least half of complete striking motion
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 3 reaches end of strike
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 3 starts promptly when weapon reaches configured speed
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 3 remains one continuous strike
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 4 exists
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 4 generates finite visible mesh at 20 FPS
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 4 retains at least half of complete striking motion
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 4 reaches end of strike
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 4 starts promptly when weapon reaches configured speed
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 4 remains one continuous strike
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 5 exists
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 5 generates finite visible mesh at 20 FPS
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 5 retains at least half of complete striking motion
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 5 reaches end of strike
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 5 starts promptly when weapon reaches configured speed
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 5 remains one continuous strike
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 6 exists
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 6 generates finite visible mesh at 20 FPS
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 6 retains at least half of complete striking motion
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 6 reaches end of strike
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 6 starts promptly when weapon reaches configured speed
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 6 remains one continuous strike
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 7 exists
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 7 generates finite visible mesh at 20 FPS
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 7 retains at least half of complete striking motion
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 7 reaches end of strike
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 7 starts promptly when weapon reaches configured speed
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect emitter 7 remains one continuous strike
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect every end or rim segment receives elemental overlay
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect Fire Aspect shares base motion, geometry and timing with its own color
+PASS [42] simplyswords:diamond_chakram combo 2 dual 20FPS FireAspect all elemental strips render throughout the striking motion
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson equipped registered item
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson loaded actual Better Combat combo
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson uses actual equipped attack cooldown
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson animation provider starts current attack
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson supplies strike interval
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson uses selected combo hand
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson resolves 8 weapon emitters
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson classifies SLASH
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson all emitters have finite nonzero model spans
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter geometry comes from actual baked model
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson circular segments join into a closed rim
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson rim has eight distinct boundary points
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson Fire Aspect resolves fire overlay
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson observed actual rendered attack frames
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson windup emits no trail
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson recovery appends no samples
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson every base and elemental pose stays in strike interval
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson every weapon end or rim segment emits a base trail
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 0 exists
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 0 generates finite visible mesh at 20 FPS
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 0 retains at least half of complete striking motion
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 0 reaches end of strike
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 0 starts promptly when weapon reaches configured speed
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 0 remains one continuous strike
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 1 exists
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 1 generates finite visible mesh at 20 FPS
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 1 retains at least half of complete striking motion
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 1 reaches end of strike
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 1 starts promptly when weapon reaches configured speed
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 1 remains one continuous strike
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 2 exists
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 2 generates finite visible mesh at 20 FPS
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 2 retains at least half of complete striking motion
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 2 reaches end of strike
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 2 starts promptly when weapon reaches configured speed
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 2 remains one continuous strike
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 3 exists
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 3 generates finite visible mesh at 20 FPS
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 3 retains at least half of complete striking motion
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 3 reaches end of strike
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 3 starts promptly when weapon reaches configured speed
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 3 remains one continuous strike
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 4 exists
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 4 generates finite visible mesh at 20 FPS
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 4 retains at least half of complete striking motion
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 4 reaches end of strike
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 4 starts promptly when weapon reaches configured speed
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 4 remains one continuous strike
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 5 exists
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 5 generates finite visible mesh at 20 FPS
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 5 retains at least half of complete striking motion
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 5 reaches end of strike
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 5 starts promptly when weapon reaches configured speed
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 5 remains one continuous strike
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 6 exists
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 6 generates finite visible mesh at 20 FPS
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 6 retains at least half of complete striking motion
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 6 reaches end of strike
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 6 starts promptly when weapon reaches configured speed
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 6 remains one continuous strike
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 7 exists
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 7 generates finite visible mesh at 20 FPS
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 7 retains at least half of complete striking motion
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 7 reaches end of strike
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 7 starts promptly when weapon reaches configured speed
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson emitter 7 remains one continuous strike
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson every end or rim segment receives elemental overlay
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson Fire Aspect shares base motion, geometry and timing with its own color
+PASS [43] simplyswords:diamond_chakram combo 3 dual 20FPS FireAspect firstPerson all elemental strips render throughout the striking motion
+PASS [44] simplyswords:diamond_longsword combo 0 20FPS equipped registered item
+PASS [44] simplyswords:diamond_longsword combo 0 20FPS loaded actual Better Combat combo
+PASS [44] simplyswords:diamond_longsword combo 0 20FPS uses actual equipped attack cooldown
+PASS [44] simplyswords:diamond_longsword combo 0 20FPS animation provider starts current attack
+PASS [44] simplyswords:diamond_longsword combo 0 20FPS supplies strike interval
+PASS [44] simplyswords:diamond_longsword combo 0 20FPS uses selected combo hand
+PASS [44] simplyswords:diamond_longsword combo 0 20FPS resolves 1 weapon emitters
+PASS [44] simplyswords:diamond_longsword combo 0 20FPS classifies SLASH
+PASS [44] simplyswords:diamond_longsword combo 0 20FPS all emitters have finite nonzero model spans
+PASS [44] simplyswords:diamond_longsword combo 0 20FPS observed actual rendered attack frames
+PASS [44] simplyswords:diamond_longsword combo 0 20FPS windup emits no trail
+PASS [44] simplyswords:diamond_longsword combo 0 20FPS recovery appends no samples
+PASS [44] simplyswords:diamond_longsword combo 0 20FPS every base and elemental pose stays in strike interval
+PASS [44] simplyswords:diamond_longsword combo 0 20FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [44] simplyswords:diamond_longsword combo 0 20FPS every weapon end or rim segment emits a base trail
+PASS [44] simplyswords:diamond_longsword combo 0 20FPS emitter 0 exists
+PASS [44] simplyswords:diamond_longsword combo 0 20FPS emitter 0 generates finite visible mesh at 20 FPS
+PASS [44] simplyswords:diamond_longsword combo 0 20FPS emitter 0 retains at least half of complete striking motion
+PASS [44] simplyswords:diamond_longsword combo 0 20FPS emitter 0 reaches end of strike
+PASS [44] simplyswords:diamond_longsword combo 0 20FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [44] simplyswords:diamond_longsword combo 0 20FPS emitter 0 remains one continuous strike
+PASS [45] simplyswords:diamond_spear combo 0 20FPS equipped registered item
+PASS [45] simplyswords:diamond_spear combo 0 20FPS loaded actual Better Combat combo
+PASS [45] simplyswords:diamond_spear combo 0 20FPS uses actual equipped attack cooldown
+PASS [45] simplyswords:diamond_spear combo 0 20FPS animation provider starts current attack
+PASS [45] simplyswords:diamond_spear combo 0 20FPS supplies strike interval
+PASS [45] simplyswords:diamond_spear combo 0 20FPS uses selected combo hand
+PASS [45] simplyswords:diamond_spear combo 0 20FPS resolves 1 weapon emitters
+PASS [45] simplyswords:diamond_spear combo 0 20FPS classifies PIERCE
+PASS [45] simplyswords:diamond_spear combo 0 20FPS all emitters have finite nonzero model spans
+PASS [45] simplyswords:diamond_spear combo 0 20FPS observed actual rendered attack frames
+PASS [45] simplyswords:diamond_spear combo 0 20FPS windup emits no trail
+PASS [45] simplyswords:diamond_spear combo 0 20FPS recovery appends no samples
+PASS [45] simplyswords:diamond_spear combo 0 20FPS every base and elemental pose stays in strike interval
+PASS [45] simplyswords:diamond_spear combo 0 20FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [45] simplyswords:diamond_spear combo 0 20FPS every weapon end or rim segment emits a base trail
+PASS [45] simplyswords:diamond_spear combo 0 20FPS emitter 0 exists
+PASS [45] simplyswords:diamond_spear combo 0 20FPS emitter 0 generates finite visible mesh at 20 FPS
+PASS [45] simplyswords:diamond_spear combo 0 20FPS emitter 0 retains at least half of complete striking motion
+PASS [45] simplyswords:diamond_spear combo 0 20FPS emitter 0 reaches end of strike
+PASS [45] simplyswords:diamond_spear combo 0 20FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [45] simplyswords:diamond_spear combo 0 20FPS emitter 0 remains one continuous strike
+PASS [46] simplymore:diamond_grandsword combo 1 20FPS equipped registered item
+PASS [46] simplymore:diamond_grandsword combo 1 20FPS loaded actual Better Combat combo
+PASS [46] simplymore:diamond_grandsword combo 1 20FPS uses actual equipped attack cooldown
+PASS [46] simplymore:diamond_grandsword combo 1 20FPS animation provider starts current attack
+PASS [46] simplymore:diamond_grandsword combo 1 20FPS supplies strike interval
+PASS [46] simplymore:diamond_grandsword combo 1 20FPS uses selected combo hand
+PASS [46] simplymore:diamond_grandsword combo 1 20FPS all emitters have finite nonzero model spans
+PASS [46] simplymore:diamond_grandsword combo 1 20FPS observed actual rendered attack frames
+PASS [46] simplymore:diamond_grandsword combo 1 20FPS windup emits no trail
+PASS [46] simplymore:diamond_grandsword combo 1 20FPS recovery appends no samples
+PASS [46] simplymore:diamond_grandsword combo 1 20FPS every base and elemental pose stays in strike interval
+PASS [46] simplymore:diamond_grandsword combo 1 20FPS depth-dominant attacks keep stabs and blunt weapons keep blunt geometry
+PASS [46] simplymore:diamond_grandsword combo 1 20FPS every weapon end or rim segment emits a base trail
+PASS [46] simplymore:diamond_grandsword combo 1 20FPS emitter 0 exists
+PASS [46] simplymore:diamond_grandsword combo 1 20FPS emitter 0 generates finite visible mesh at 20 FPS
+PASS [46] simplymore:diamond_grandsword combo 1 20FPS emitter 0 retains at least half of complete striking motion
+PASS [46] simplymore:diamond_grandsword combo 1 20FPS emitter 0 reaches end of strike
+PASS [46] simplymore:diamond_grandsword combo 1 20FPS emitter 0 starts promptly when weapon reaches configured speed
+PASS [46] simplymore:diamond_grandsword combo 1 20FPS emitter 0 remains one continuous strike

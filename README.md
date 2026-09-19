@@ -2,19 +2,21 @@
 
 Combat Traces adds weapon trails and directional hit effects that follow the motion of the weapon you are actually swinging.
 
-Rather than defining a trail path for every attack animation, the mod samples the rendered item transform and builds a ribbon from that motion. With Better Combat, this means custom Player Animator attacks can usually produce trails without a Combat Traces-specific animation file.
+Rather than defining a trail path for every attack animation, the mod samples the rendered item transform and builds pixel-stepped sweeps from that motion, including diagonal and overhead cuts. With Better Combat, this means custom Player Animator attacks can usually produce trails without a Combat Traces-specific animation file.
 
 Built for Minecraft 1.21.1 / NeoForge 21.1.248+.
 
 ## What it adds
 
-- Motion-following weapon ribbons for swords, axes, hammers, polearms, twinblades, and other custom models.
+- Motion-following weapon trails for swords, axes, hammers, polearms, twinblades, and other custom models.
+- Separate trails for both striking ends of twinblades, warglaives, and quarterstaffs, plus chakram rim trails.
+- Strike-phase trails with a configurable starting speed that remain continuous as the weapon slows.
 - Geometry-based blade/head inference with datapack overrides when automatic detection is not enough.
 - Directional slash, cleave, blunt, pierce, claw, whip, and generic/magic impact styles.
-- Element overlays for fire, frost, lightning, poison, arcane, holy, and shadow.
+- Element overlays for fire, frost, lightning, poison, arcane, holy, and shadow that follow the same generated geometry as the weapon trail.
 - Material/armor responses for entity impacts, including shields.
 - First- and third-person rendering with configurable width/opacity and distance LOD.
-- Resource-packable trail/impact textures.
+- Resource-packable impact textures and optional textured ribbon styles.
 - Datapack-driven weapon, material, element, and effect mappings.
 - A public API for other animation/combat systems to provide motion and impact data.
 
@@ -42,7 +44,7 @@ Clients without Combat Traces can still join a server that has it. Weapon transf
 
 For ordinary models, Combat Traces can infer useful emitter lines from the visible item geometry. Swords can trace the blade, while hammer-like weapons can use the head rather than treating the entire item as a blade.
 
-Packs can override the automatic result or define multiple emitters for unusual weapons.
+Twinblade, warglaive, and quarterstaff types infer both striking ends; chakrams infer eight segments around the model silhouette. Packs can override the automatic result or define multiple emitters for unusual weapons.
 
 This is especially useful for twinblades, double-ended weapons, asymmetric models, or items whose visual shape does not match their registry/category name.
 
@@ -91,7 +93,7 @@ examples/combattraces-example-datapack.zip
 examples/combattraces-example-resourcepack.zip
 ```
 
-They demonstrate a double-ended emitter, combined elements, a custom trail style, material mapping, and texture replacement. They are examples only and are not installed automatically.
+They demonstrate a double-ended emitter, combined elements, a custom trail style, material mapping, and texture replacement for styles using `trail_geometry: "textured"`. Generated trails do not sample ribbon textures. They are examples only and are not installed automatically.
 
 The source art for the bundled pixel-style effects is kept under `art/` so the shipped textures can be reproduced or replaced without treating the PNGs as unexplained generated assets.
 
@@ -113,7 +115,9 @@ Better Combat itself is optional if another mod registers a motion provider thro
 .\gradlew.bat runGameTestServer -PwithoutBetterCombat
 ```
 
-The release jar is written to `build/libs/`.
+The 1.1.0 release JAR is written to `build/libs/combattraces-1.1.0.jar`.
+
+Local `runClient` launches are muted and block mouse capture. These development controls are excluded from the release JAR.
 
 Development validation tasks and third-party development dependencies are not bundled in the release artifact.
 

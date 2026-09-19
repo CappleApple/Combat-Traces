@@ -1,11 +1,12 @@
 {
   "texture": "combattraces:textures/vfx/trails/arcane.png",
   "render_mode": "additive",
-  "lifetime_ms": 220,
+  "lifetime_ms": 300,
   "width_multiplier": 1.04,
   "opacity": 0.55,
   "uv_scroll_speed": 0.8,
-  "fade_curve": "ease_out",
+  "fade_curve": "smoothstep",
   "particle": "minecraft:enchanted_hit",
-  "particle_rate": 0.15
+  "particle_rate": 0.15,
+  "trail_geometry": "swept"
 }

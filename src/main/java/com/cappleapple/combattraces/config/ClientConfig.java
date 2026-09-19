@@ -6,6 +6,7 @@ import net.neoforged.neoforge.common.ModConfigSpec;
 public final class ClientConfig {
   public static final ModConfigSpec SPEC;
   public static final ModConfigSpec.BooleanValue TRAILS,
+      REPLACE_BETTER_COMBAT,
       IMPACTS,
       IMPACT_DEPTH_PRIORITY,
       PARTICLES,
@@ -44,6 +45,13 @@ public final class ClientConfig {
   static {
     var b = new ModConfigSpec.Builder();
     TRAILS = b.define("enable_trails", true);
+    REPLACE_BETTER_COMBAT =
+        b.comment(
+                "Replace Better Combat's authored slash particles while Combat Traces can capture"
+                    + " the attack.",
+                "Disable to show both effects. Disabling Combat Traces trails restores Better"
+                    + " Combat's particles.")
+            .define("replace_better_combat_trails", true);
     IMPACTS = b.define("enable_impacts", true);
     IMPACT_DEPTH_PRIORITY =
         b.comment(
@@ -75,10 +83,9 @@ public final class ClientConfig {
     DISCONTINUITY = b.defineInRange("discontinuity_distance", 5d, 1, 12);
     SPEED_THRESHOLD =
         b.comment(
-                "Minimum measured weapon speed in blocks/second to emit ribbons and trail accents.",
-                "Applies during attacks, including custom animation windows. Existing trails fade"
-                    + " normally.",
-                "Automatic timing also suppresses early windup. Set to 0 to disable only the speed"
+                "Minimum measured endpoint speed in blocks/second to start a strike trail.",
+                "A started trail continues through strike deceleration, then fades" + " normally.",
+                "Base and elemental layers share the gate. Set to 0 to disable only the speed"
                     + " gate.")
             .defineInRange("trail_velocity_threshold", 4d, 0, 100);
     SUBDIVISIONS = b.defineInRange("max_subdivisions_per_frame", 6, 1, 12);

@@ -12,7 +12,7 @@ public final class ClientState {
 
   public static void clearEffects() {
     DebugState.clear();
-    HeldItemCapture.LATEST.clear();
+    HeldItemCapture.clear();
     WeaponMotionTracker.clear();
     TrailManager.clear();
     com.cappleapple.combattraces.client.trail.TrailAccents.clear();

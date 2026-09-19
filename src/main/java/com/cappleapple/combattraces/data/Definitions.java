@@ -161,7 +161,8 @@ public record Definitions(
         (int) number(j, "frames", 1, 1, 64),
         (float) number(j, "fps", 20, 1, 120),
         optionalId(j, "particle"),
-        (float) number(j, "particle_rate", 0, 0, 4));
+        (float) number(j, "particle_rate", 0, 0, 4),
+        trail && string(j, "trail_geometry", "textured").equals("swept"));
   }
 
   public EffectStyle trail(ResourceLocation id) {

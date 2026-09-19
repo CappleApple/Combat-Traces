@@ -16,12 +16,47 @@ public record EffectStyle(
     int frames,
     float fps,
     ResourceLocation particle,
-    float particleRate) {
+    float particleRate,
+    boolean swept) {
+  /** Existing API styles remain textured unless they opt into generated geometry. */
+  public EffectStyle(
+      ResourceLocation texture,
+      boolean additive,
+      double lifetime,
+      float width,
+      float opacity,
+      float scroll,
+      String fade,
+      float scale,
+      float cameraBias,
+      int color,
+      int frames,
+      float fps,
+      ResourceLocation particle,
+      float particleRate) {
+    this(
+        texture,
+        additive,
+        lifetime,
+        width,
+        opacity,
+        scroll,
+        fade,
+        scale,
+        cameraBias,
+        color,
+        frames,
+        fps,
+        particle,
+        particleRate,
+        false);
+  }
+
   public static EffectStyle trail() {
     return new EffectStyle(
         ResourceLocation.fromNamespaceAndPath("combattraces", "textures/vfx/trails/slash.png"),
         false,
-        0.18,
+        0.30,
         1,
         0.7f,
         0,
@@ -32,7 +67,8 @@ public record EffectStyle(
         1,
         20,
         null,
-        0);
+        0,
+        true);
   }
 
   public EffectStyle tinted(int tint) {
@@ -50,7 +86,8 @@ public record EffectStyle(
         frames,
         fps,
         particle,
-        particleRate);
+        particleRate,
+        swept);
   }
 
   public float alpha(double age) {

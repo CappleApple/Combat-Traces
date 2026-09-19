@@ -36,6 +36,21 @@ class DefinitionsTest {
   }
 
   @Test
+  void generatedStyleSurvivesWireRoundTripAndTint() {
+    var data = raw("trails/generated", "{\"trail_geometry\":\"swept\",\"lifetime_ms\":300}");
+    var decoded = Definitions.compile(DefinitionWire.decode(DefinitionWire.encode(data)));
+    var style = decoded.trails().values().iterator().next();
+    assertTrue(style.swept());
+    assertTrue(style.tinted(0x123456).swept());
+    assertEquals(.3, style.lifetime());
+    assertFalse(Definitions.style(new JsonObject(), true).swept());
+    assertFalse(
+        Definitions.style(
+                JsonParser.parseString("{\"trail_geometry\":\"swept\"}").getAsJsonObject(), false)
+            .swept());
+  }
+
+  @Test
   void unknownConditionFailsClosed() {
     assertThrows(
         JsonParseException.class,

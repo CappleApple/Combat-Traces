@@ -1,272 +1,506 @@
 diamond_longsword combo 0 animation=bettercombat:one_handed_slash_horizontal_right hitbox=HORIZONTAL_PLANE
+diamond_longsword combo 0 damaging interval=SwingWindow[start=0.4, end=0.75]
 model=class net.minecraft.client.resources.model.SimpleBakedModel gui3d=false
 diamond_longsword combo 0 model emitter=TrailEmitter[origin=(-0.07044982910156253, -0.0704498291015625, -3.231444544229996E-19), tip=(0.28179931640625, 0.28179931640625, 1.6178015466506519E-19)]
-diamond_longsword combo 0 p=0.042 type=HORIZONTAL speed=4.21 shape=SWEEP
-diamond_longsword combo 0 p=0.105 type=HORIZONTAL speed=9.22 shape=SWEEP
-diamond_longsword combo 0 p=0.167 type=DIAGONAL_UP speed=13.85 shape=SWEEP
-diamond_longsword combo 0 p=0.230 type=HORIZONTAL speed=13.98 shape=SWEEP
-diamond_longsword combo 0 p=0.292 type=HORIZONTAL speed=9.56 shape=SWEEP
-diamond_longsword combo 0 p=0.355 type=DIAGONAL_DOWN speed=3.98 shape=SWEEP
-diamond_longsword combo 0 p=0.417 type=HORIZONTAL speed=18.01 shape=SWEEP
-diamond_longsword combo 0 p=0.481 type=SPIN speed=43.52 shape=SWEEP
-diamond_longsword combo 0 p=0.509 type=SPIN speed=18.45 shape=SWEEP
-diamond_longsword combo 0 p=0.533 type=SPIN speed=10.88 shape=SWEEP
-diamond_longsword combo 0 p=0.556 type=SPIN speed=8.54 shape=SWEEP
-diamond_longsword combo 0 p=0.579 type=SPIN speed=7.25 shape=SWEEP
-diamond_longsword combo 0 p=0.603 type=SPIN speed=6.36 shape=SWEEP
-diamond_longsword combo 0 p=0.626 type=SPIN speed=5.32 shape=SWEEP
-diamond_longsword combo 0 p=0.650 type=SPIN speed=4.19 shape=SWEEP
-diamond_longsword combo 0 p=0.673 type=SPIN speed=3.32 shape=SWEEP
-diamond_longsword combo 0 p=0.697 type=SPIN speed=2.34 shape=SWEEP
-diamond_longsword combo 0 p=0.721 type=SPIN speed=1.32 shape=SWEEP
-diamond_longsword combo 0 hitbox size=(10.2, 1.7, 5.1) kind=HORIZONTAL variation=-0.1112323742577932
-diamond_longsword combo 0 contact direction=(-0.9510505864850767, 0.0, 0.30903524385802966) hitY=-58.649999988079074 expectedHitboxY=-58.649999988079074 screenDirection=(-0.9166895331853664, -0.004450571207361778, 0.399575389838167)
+diamond_longsword combo 0 p=0.050 type=HORIZONTAL speed=5.09 shape=SWEEP
+diamond_longsword combo 0 p=0.112 type=HORIZONTAL speed=9.62 shape=SWEEP
+diamond_longsword combo 0 p=0.175 type=DIAGONAL_UP speed=12.43 shape=SWEEP
+diamond_longsword combo 0 p=0.237 type=HORIZONTAL speed=13.30 shape=SWEEP
+diamond_longsword combo 0 p=0.300 type=DIAGONAL_DOWN speed=8.95 shape=SWEEP
+diamond_longsword combo 0 p=0.362 type=DIAGONAL_DOWN speed=3.34 shape=SWEEP
+diamond_longsword combo 0 p=0.426 type=HORIZONTAL speed=33.12 shape=SWEEP
+diamond_longsword combo 0 p=0.485 type=SPIN speed=48.67 shape=SWEEP
+diamond_longsword combo 0 p=0.511 type=SPIN speed=19.72 shape=SWEEP
+diamond_longsword combo 0 p=0.533 type=SPIN speed=13.55 shape=SWEEP
+diamond_longsword combo 0 p=0.556 type=SPIN speed=9.06 shape=SWEEP
+diamond_longsword combo 0 p=0.579 type=SPIN speed=6.91 shape=SWEEP
+diamond_longsword combo 0 p=0.606 type=SPIN speed=7.04 shape=SWEEP
+diamond_longsword combo 0 p=0.629 type=SPIN speed=5.28 shape=SWEEP
+diamond_longsword combo 0 p=0.653 type=SPIN speed=4.27 shape=SWEEP
+diamond_longsword combo 0 p=0.676 type=SPIN speed=3.24 shape=SWEEP
+diamond_longsword combo 0 p=0.697 type=SPIN speed=2.28 shape=SWEEP
+diamond_longsword combo 0 p=0.722 type=SPIN speed=1.28 shape=SWEEP
+diamond_longsword combo 0 hitbox size=(10.2, 1.7, 5.1) kind=HORIZONTAL variation=-3.480234937309964
+diamond_longsword combo 0 contact direction=(-0.9510505864850767, 0.0, 0.30903524385802966) hitY=-58.649999988079074 expectedHitboxY=-58.649999988079074 screenDirection=(-0.9166895293638092, -0.004450571630705018, 0.39957539860071195)
 diamond_longsword combo 0 hit motion=HORIZONTAL texture=combattraces:textures/vfx/impacts/slash.png
-diamond_longsword combo 0 p=0.743 type=SPIN speed=0.40 shape=SWEEP
-diamond_longsword combo 0 p=0.766 type=SPIN speed=0.00 shape=SWEEP
-diamond_longsword combo 0 p=0.790 type=SPIN speed=0.00 shape=SWEEP
-diamond_longsword combo 0 p=0.813 type=SPIN speed=0.00 shape=SWEEP
-diamond_longsword combo 0 p=0.837 type=SPIN speed=0.00 shape=SWEEP
+diamond_longsword combo 0 p=0.745 type=SPIN speed=0.28 shape=SWEEP
+diamond_longsword combo 0 p=0.769 type=SPIN speed=0.00 shape=SWEEP
+diamond_longsword combo 0 p=0.792 type=SPIN speed=0.00 shape=SWEEP
+diamond_longsword combo 0 p=0.816 type=SPIN speed=0.00 shape=SWEEP
+diamond_longsword combo 0 p=0.835 type=SPIN speed=0.00 shape=SWEEP
 diamond_longsword combo 0 p=0.860 type=SPIN speed=0.00 shape=SWEEP
 diamond_longsword combo 0 p=0.884 type=SPIN speed=0.00 shape=SWEEP
 diamond_longsword combo 0 p=0.907 type=SPIN speed=0.00 shape=SWEEP
 diamond_longsword combo 0 p=0.931 type=SPIN speed=0.00 shape=SWEEP
 diamond_longsword combo 0 p=0.954 type=SPIN speed=0.00 shape=SWEEP
 diamond_longsword combo 0 p=0.977 type=SPIN speed=0.00 shape=SWEEP
-diamond_longsword combo 0 p=1.000 type=SPIN speed=1.10 shape=SWEEP
-diamond_longsword combo 0 p=1.000 type=SPIN speed=5.20 shape=SWEEP
-diamond_longsword combo 0 p=1.000 type=SPIN speed=4.69 shape=SWEEP
+diamond_longsword combo 0 p=1.001 type=SPIN speed=1.10 shape=SWEEP
+diamond_longsword combo 0 p=1.024 type=SPIN speed=4.51 shape=SWEEP
+diamond_longsword combo 0 p=1.048 type=SPIN speed=4.15 shape=SWEEP
+diamond_longsword combo 0 p=1.078 type=SPIN speed=4.93 shape=SWEEP
+diamond_longsword combo 0 p=1.109 type=SPIN speed=4.10 shape=SWEEP
+diamond_longsword combo 0 p=1.140 type=SPIN speed=3.42 shape=SWEEP
+diamond_longsword combo 0 p=1.172 type=SPIN speed=2.75 shape=SWEEP
+diamond_longsword combo 0 p=1.204 type=SPIN speed=2.73 shape=SWEEP
+diamond_longsword combo 0 p=1.235 type=SPIN speed=2.23 shape=SWEEP
+diamond_longsword combo 0 emitted progress=0.40474996..0.75 damaging interval=SwingWindow[start=0.4, end=0.75]
 diamond_longsword combo 2 animation=bettercombat:one_handed_stab hitbox=FORWARD_BOX
+diamond_longsword combo 2 damaging interval=SwingWindow[start=0.4, end=0.55]
 model=class net.minecraft.client.resources.model.SimpleBakedModel gui3d=false
 diamond_longsword combo 2 model emitter=TrailEmitter[origin=(-0.07044982910156253, -0.0704498291015625, -3.231444544229996E-19), tip=(0.28179931640625, 0.28179931640625, 1.6178015466506519E-19)]
-diamond_longsword combo 2 p=0.016 type=DIAGONAL_DOWN speed=0.62 shape=FORWARD
-diamond_longsword combo 2 p=0.078 type=HORIZONTAL speed=2.06 shape=FORWARD
-diamond_longsword combo 2 p=0.141 type=HORIZONTAL speed=2.51 shape=FORWARD
-diamond_longsword combo 2 p=0.203 type=DIAGONAL_DOWN speed=1.37 shape=FORWARD
-diamond_longsword combo 2 p=0.266 type=DIAGONAL_UP speed=3.21 shape=FORWARD
-diamond_longsword combo 2 p=0.329 type=DIAGONAL_UP speed=2.96 shape=FORWARD
-diamond_longsword combo 2 p=0.391 type=HORIZONTAL speed=0.48 shape=FORWARD
-diamond_longsword combo 2 p=0.455 type=HORIZONTAL speed=22.62 shape=FORWARD
-diamond_longsword combo 2 p=0.482 type=THRUST speed=7.03 shape=FORWARD
-diamond_longsword combo 2 p=0.506 type=HORIZONTAL speed=16.23 shape=FORWARD
-diamond_longsword combo 2 p=0.529 type=DIAGONAL_UP speed=8.63 shape=FORWARD
-diamond_longsword combo 2 p=0.552 type=DIAGONAL_UP speed=0.08 shape=FORWARD
+diamond_longsword combo 2 p=0.017 type=DIAGONAL_DOWN speed=0.55 shape=FORWARD
+diamond_longsword combo 2 p=0.079 type=HORIZONTAL speed=1.86 shape=FORWARD
+diamond_longsword combo 2 p=0.142 type=HORIZONTAL speed=2.22 shape=FORWARD
+diamond_longsword combo 2 p=0.204 type=DIAGONAL_DOWN speed=1.23 shape=FORWARD
+diamond_longsword combo 2 p=0.267 type=DIAGONAL_UP speed=2.93 shape=FORWARD
+diamond_longsword combo 2 p=0.329 type=DIAGONAL_UP speed=3.01 shape=FORWARD
+diamond_longsword combo 2 p=0.392 type=HORIZONTAL speed=0.46 shape=FORWARD
+diamond_longsword combo 2 p=0.454 type=HORIZONTAL speed=20.11 shape=FORWARD
+diamond_longsword combo 2 p=0.481 type=THRUST speed=5.97 shape=FORWARD
+diamond_longsword combo 2 p=0.505 type=HORIZONTAL speed=14.64 shape=FORWARD
+diamond_longsword combo 2 p=0.528 type=DIAGONAL_UP speed=7.66 shape=FORWARD
+diamond_longsword combo 2 p=0.552 type=DIAGONAL_UP speed=0.17 shape=FORWARD
 diamond_longsword combo 2 p=0.576 type=DIAGONAL_UP speed=0.03 shape=FORWARD
-diamond_longsword combo 2 p=0.599 type=DIAGONAL_UP speed=0.06 shape=FORWARD
-diamond_longsword combo 2 p=0.623 type=DIAGONAL_UP speed=0.09 shape=FORWARD
-diamond_longsword combo 2 p=0.646 type=DIAGONAL_UP speed=0.12 shape=FORWARD
-diamond_longsword combo 2 p=0.670 type=DIAGONAL_UP speed=0.15 shape=FORWARD
-diamond_longsword combo 2 p=0.693 type=DIAGONAL_UP speed=0.18 shape=FORWARD
-diamond_longsword combo 2 hitbox size=(2.55, 2.55, 5.1) kind=STAB variation=1.6357665585888388
-diamond_longsword combo 2 contact direction=(0.30228510159264466, -0.2078657321901854, 0.9302771386722145) hitY=-59.180057605164045 expectedHitboxY=-59.180057605164045 screenDirection=(0.09675018785357599, 0.9666172941276716, 0.23725599643338036)
+diamond_longsword combo 2 p=0.599 type=DIAGONAL_UP speed=0.07 shape=FORWARD
+diamond_longsword combo 2 p=0.623 type=DIAGONAL_UP speed=0.10 shape=FORWARD
+diamond_longsword combo 2 p=0.646 type=DIAGONAL_UP speed=0.13 shape=FORWARD
+diamond_longsword combo 2 p=0.669 type=DIAGONAL_UP speed=0.17 shape=FORWARD
+diamond_longsword combo 2 p=0.693 type=DIAGONAL_UP speed=0.20 shape=FORWARD
+diamond_longsword combo 2 hitbox size=(2.55, 2.55, 5.1) kind=STAB variation=-3.2786008217826694
+diamond_longsword combo 2 contact direction=(0.30228510159264466, -0.2078657321901854, 0.9302771386722145) hitY=-59.180057605164045 expectedHitboxY=-59.180057605164045 screenDirection=(0.10094122003413453, 0.9665672133268007, 0.23570891417102421)
 diamond_longsword combo 2 hit motion=THRUST texture=combattraces:textures/vfx/impacts/pierce.png
-diamond_longsword combo 2 p=0.717 type=DIAGONAL_UP speed=0.20 shape=FORWARD
-diamond_longsword combo 2 p=0.741 type=DIAGONAL_UP speed=0.24 shape=FORWARD
-diamond_longsword combo 2 p=0.765 type=DIAGONAL_UP speed=0.29 shape=FORWARD
-diamond_longsword combo 2 p=0.785 type=DIAGONAL_UP speed=0.27 shape=FORWARD
-diamond_longsword combo 2 p=0.809 type=DIAGONAL_UP speed=0.25 shape=FORWARD
-diamond_longsword combo 2 p=0.833 type=DIAGONAL_UP speed=0.21 shape=FORWARD
-diamond_longsword combo 2 p=0.856 type=DIAGONAL_UP speed=0.18 shape=FORWARD
-diamond_longsword combo 2 p=0.881 type=DIAGONAL_UP speed=0.16 shape=FORWARD
-diamond_longsword combo 2 p=0.904 type=DIAGONAL_UP speed=0.13 shape=FORWARD
-diamond_longsword combo 2 p=0.928 type=DIAGONAL_UP speed=0.10 shape=FORWARD
+diamond_longsword combo 2 p=0.716 type=DIAGONAL_UP speed=0.21 shape=FORWARD
+diamond_longsword combo 2 p=0.740 type=DIAGONAL_UP speed=0.23 shape=FORWARD
+diamond_longsword combo 2 p=0.764 type=DIAGONAL_UP speed=0.29 shape=FORWARD
+diamond_longsword combo 2 p=0.787 type=DIAGONAL_UP speed=0.31 shape=FORWARD
+diamond_longsword combo 2 p=0.811 type=DIAGONAL_UP speed=0.27 shape=FORWARD
+diamond_longsword combo 2 p=0.834 type=DIAGONAL_UP speed=0.23 shape=FORWARD
+diamond_longsword combo 2 p=0.857 type=DIAGONAL_UP speed=0.20 shape=FORWARD
+diamond_longsword combo 2 p=0.881 type=DIAGONAL_UP speed=0.15 shape=FORWARD
+diamond_longsword combo 2 p=0.904 type=DIAGONAL_UP speed=0.12 shape=FORWARD
+diamond_longsword combo 2 p=0.928 type=DIAGONAL_UP speed=0.09 shape=FORWARD
 diamond_longsword combo 2 p=0.952 type=DIAGONAL_UP speed=0.07 shape=FORWARD
-diamond_longsword combo 2 p=0.976 type=DIAGONAL_UP speed=0.03 shape=FORWARD
-diamond_longsword combo 2 p=0.996 type=UNKNOWN speed=0.01 shape=FORWARD
-diamond_longsword combo 2 p=1.000 type=DIAGONAL_DOWN speed=0.14 shape=FORWARD
-diamond_longsword combo 2 p=1.000 type=DIAGONAL_DOWN speed=0.65 shape=FORWARD
+diamond_longsword combo 2 p=0.975 type=DIAGONAL_UP speed=0.03 shape=FORWARD
+diamond_longsword combo 2 p=0.998 type=UNKNOWN speed=0.00 shape=FORWARD
+diamond_longsword combo 2 p=1.022 type=DIAGONAL_DOWN speed=0.17 shape=FORWARD
+diamond_longsword combo 2 p=1.053 type=DIAGONAL_DOWN speed=0.72 shape=FORWARD
+diamond_longsword combo 2 p=1.084 type=DIAGONAL_DOWN speed=1.18 shape=FORWARD
+diamond_longsword combo 2 p=1.115 type=DIAGONAL_DOWN speed=1.60 shape=FORWARD
+diamond_longsword combo 2 p=1.147 type=DIAGONAL_DOWN speed=1.89 shape=FORWARD
+diamond_longsword combo 2 p=1.178 type=DIAGONAL_DOWN speed=2.04 shape=FORWARD
+diamond_longsword combo 2 p=1.209 type=HORIZONTAL speed=2.18 shape=FORWARD
+diamond_longsword combo 2 emitted progress=0.40162498..0.55 damaging interval=SwingWindow[start=0.4, end=0.55]
 diamond_claymore combo 0 animation=bettercombat:two_handed_slash_horizontal_right hitbox=HORIZONTAL_PLANE
+diamond_claymore combo 0 damaging interval=SwingWindow[start=0.45, end=0.7]
 model=class net.minecraft.client.resources.model.SimpleBakedModel gui3d=false
 diamond_claymore combo 0 model emitter=TrailEmitter[origin=(-0.14583333333333348, -0.1458333333333331, 1.095412985572934E-19), tip=(0.5000000000000002, 0.4999999999999998, -1.5820782962858962E-19)]
-diamond_claymore combo 0 p=0.023 type=DIAGONAL_UP speed=1.30 shape=SWEEP
-diamond_claymore combo 0 p=0.085 type=HORIZONTAL speed=5.76 shape=SWEEP
-diamond_claymore combo 0 p=0.148 type=DIAGONAL_DOWN speed=7.02 shape=SWEEP
-diamond_claymore combo 0 p=0.210 type=HORIZONTAL speed=17.31 shape=SWEEP
-diamond_claymore combo 0 p=0.273 type=HORIZONTAL speed=19.61 shape=SWEEP
-diamond_claymore combo 0 p=0.335 type=DIAGONAL_DOWN speed=11.39 shape=SWEEP
-diamond_claymore combo 0 p=0.398 type=VERTICAL_DOWN speed=4.36 shape=SWEEP
-diamond_claymore combo 0 p=0.460 type=DIAGONAL_UP speed=4.57 shape=SWEEP
-diamond_claymore combo 0 p=0.485 type=DIAGONAL_UP speed=13.85 shape=SWEEP
-diamond_claymore combo 0 p=0.508 type=HORIZONTAL speed=21.90 shape=SWEEP
-diamond_claymore combo 0 p=0.531 type=SPIN speed=50.11 shape=SWEEP
-diamond_claymore combo 0 p=0.555 type=SPIN speed=0.27 shape=SWEEP
-diamond_claymore combo 0 p=0.575 type=SPIN speed=2.00 shape=SWEEP
-diamond_claymore combo 0 p=0.598 type=SPIN speed=4.13 shape=SWEEP
-diamond_claymore combo 0 p=0.621 type=SPIN speed=6.08 shape=SWEEP
-diamond_claymore combo 0 p=0.645 type=SPIN speed=8.13 shape=SWEEP
-diamond_claymore combo 0 p=0.668 type=SPIN speed=10.10 shape=SWEEP
-diamond_claymore combo 0 p=0.692 type=SPIN speed=13.63 shape=SWEEP
-diamond_claymore combo 0 hitbox size=(12.0, 2.0, 6.0) kind=HORIZONTAL variation=-3.690261467988801
-diamond_claymore combo 0 contact direction=(-0.9510505846376723, 1.4693420924477943E-9, 0.309035249543384) hitY=-58.12918133995656 expectedHitboxY=-58.12918133995656 screenDirection=(-0.8930123797605133, 0.023713667540321382, 0.4494068886501984)
+diamond_claymore combo 0 p=0.018 type=DIAGONAL_UP speed=0.91 shape=SWEEP
+diamond_claymore combo 0 p=0.081 type=HORIZONTAL speed=6.32 shape=SWEEP
+diamond_claymore combo 0 p=0.144 type=DIAGONAL_DOWN speed=7.36 shape=SWEEP
+diamond_claymore combo 0 p=0.206 type=HORIZONTAL speed=16.70 shape=SWEEP
+diamond_claymore combo 0 p=0.269 type=HORIZONTAL speed=19.92 shape=SWEEP
+diamond_claymore combo 0 p=0.331 type=DIAGONAL_DOWN speed=11.97 shape=SWEEP
+diamond_claymore combo 0 p=0.394 type=VERTICAL_DOWN speed=4.53 shape=SWEEP
+diamond_claymore combo 0 p=0.456 type=DIAGONAL_UP speed=1.31 shape=SWEEP
+diamond_claymore combo 0 p=0.485 type=DIAGONAL_UP speed=15.98 shape=SWEEP
+diamond_claymore combo 0 p=0.509 type=HORIZONTAL speed=23.94 shape=SWEEP
+diamond_claymore combo 0 p=0.533 type=SPIN speed=48.71 shape=SWEEP
+diamond_claymore combo 0 p=0.556 type=SPIN speed=0.37 shape=SWEEP
+diamond_claymore combo 0 p=0.580 type=SPIN speed=2.44 shape=SWEEP
+diamond_claymore combo 0 p=0.603 type=SPIN speed=4.48 shape=SWEEP
+diamond_claymore combo 0 p=0.626 type=SPIN speed=6.41 shape=SWEEP
+diamond_claymore combo 0 p=0.650 type=SPIN speed=8.50 shape=SWEEP
+diamond_claymore combo 0 p=0.673 type=SPIN speed=10.48 shape=SWEEP
+diamond_claymore combo 0 p=0.697 type=SPIN speed=14.28 shape=SWEEP
+diamond_claymore combo 0 hitbox size=(12.0, 2.0, 6.0) kind=HORIZONTAL variation=-0.7855050082483523
+diamond_claymore combo 0 contact direction=(-0.9510505846376723, 1.4693420924477943E-9, 0.309035249543384) hitY=-58.12918133995656 expectedHitboxY=-58.12918133995656 screenDirection=(-0.8910406028820278, 0.024615664110130445, 0.45325568181331144)
 diamond_claymore combo 0 hit motion=HORIZONTAL texture=combattraces:textures/vfx/impacts/cleave.png
-diamond_claymore combo 0 p=0.716 type=SPIN speed=1.95 shape=SWEEP
-diamond_claymore combo 0 p=0.739 type=SPIN speed=1.80 shape=SWEEP
-diamond_claymore combo 0 p=0.763 type=SPIN speed=1.63 shape=SWEEP
-diamond_claymore combo 0 p=0.786 type=SPIN speed=1.48 shape=SWEEP
-diamond_claymore combo 0 p=0.809 type=SPIN speed=1.32 shape=SWEEP
-diamond_claymore combo 0 p=0.833 type=SPIN speed=1.16 shape=SWEEP
-diamond_claymore combo 0 p=0.856 type=SPIN speed=1.00 shape=SWEEP
-diamond_claymore combo 0 p=0.880 type=SPIN speed=0.84 shape=SWEEP
-diamond_claymore combo 0 p=0.903 type=SPIN speed=0.68 shape=SWEEP
-diamond_claymore combo 0 p=0.927 type=SPIN speed=0.52 shape=SWEEP
-diamond_claymore combo 0 p=0.950 type=SPIN speed=0.36 shape=SWEEP
-diamond_claymore combo 0 p=0.973 type=SPIN speed=0.20 shape=SWEEP
-diamond_claymore combo 0 p=0.997 type=SPIN speed=0.04 shape=SWEEP
-diamond_claymore combo 0 p=1.000 type=SPIN speed=3.64 shape=SWEEP
-diamond_claymore combo 0 p=1.000 type=SPIN speed=4.94 shape=SWEEP
+diamond_claymore combo 0 p=0.721 type=SPIN speed=1.90 shape=SWEEP
+diamond_claymore combo 0 p=0.744 type=SPIN speed=1.57 shape=SWEEP
+diamond_claymore combo 0 p=0.768 type=SPIN speed=1.43 shape=SWEEP
+diamond_claymore combo 0 p=0.791 type=SPIN speed=1.27 shape=SWEEP
+diamond_claymore combo 0 p=0.814 type=SPIN speed=1.14 shape=SWEEP
+diamond_claymore combo 0 p=0.838 type=SPIN speed=1.00 shape=SWEEP
+diamond_claymore combo 0 p=0.861 type=SPIN speed=0.85 shape=SWEEP
+diamond_claymore combo 0 p=0.885 type=SPIN speed=0.72 shape=SWEEP
+diamond_claymore combo 0 p=0.909 type=SPIN speed=0.63 shape=SWEEP
+diamond_claymore combo 0 p=0.932 type=SPIN speed=0.47 shape=SWEEP
+diamond_claymore combo 0 p=0.956 type=SPIN speed=0.32 shape=SWEEP
+diamond_claymore combo 0 p=0.979 type=SPIN speed=0.14 shape=SWEEP
+diamond_claymore combo 0 p=1.002 type=SPIN speed=1.85 shape=SWEEP
+diamond_claymore combo 0 p=1.026 type=SPIN speed=3.32 shape=SWEEP
+diamond_claymore combo 0 p=1.057 type=SPIN speed=5.26 shape=SWEEP
+diamond_claymore combo 0 p=1.088 type=SPIN speed=5.99 shape=SWEEP
+diamond_claymore combo 0 p=1.119 type=SPIN speed=6.59 shape=SWEEP
+diamond_claymore combo 0 p=1.150 type=SPIN speed=7.13 shape=SWEEP
+diamond_claymore combo 0 p=1.182 type=SPIN speed=8.47 shape=SWEEP
+diamond_claymore combo 0 p=1.214 type=SPIN speed=8.99 shape=SWEEP
+diamond_claymore combo 0 emitted progress=0.456..0.7 damaging interval=SwingWindow[start=0.45, end=0.7]
 diamond_greathammer combo 0 animation=bettercombat:two_handed_slash_horizontal_left hitbox=HORIZONTAL_PLANE
+diamond_greathammer combo 0 damaging interval=SwingWindow[start=0.45, end=0.7]
 model=class net.minecraft.client.resources.model.SimpleBakedModel gui3d=true
 diamond_greathammer combo 0 model emitter=TrailEmitter[origin=(-1.5577499690298793, 0.7941051579997886, 3.0374807467038456E-18), tip=(-1.0235972777419513, 1.3311215739234572, -3.0065374949153088E-18)]
-diamond_greathammer combo 0 p=0.020 type=HORIZONTAL speed=0.72 shape=SWEEP
-diamond_greathammer combo 0 p=0.082 type=HORIZONTAL speed=3.55 shape=SWEEP
-diamond_greathammer combo 0 p=0.145 type=HORIZONTAL speed=5.55 shape=SWEEP
-diamond_greathammer combo 0 p=0.207 type=HORIZONTAL speed=6.22 shape=SWEEP
-diamond_greathammer combo 0 p=0.271 type=DIAGONAL_DOWN speed=6.27 shape=SWEEP
-diamond_greathammer combo 0 p=0.333 type=DIAGONAL_DOWN speed=4.48 shape=SWEEP
-diamond_greathammer combo 0 p=0.396 type=DIAGONAL_DOWN speed=2.20 shape=SWEEP
-diamond_greathammer combo 0 p=0.458 type=HORIZONTAL speed=4.69 shape=SWEEP
-diamond_greathammer combo 0 p=0.487 type=HORIZONTAL speed=21.92 shape=SWEEP
-diamond_greathammer combo 0 p=0.510 type=HORIZONTAL speed=28.33 shape=SWEEP
-diamond_greathammer combo 0 p=0.533 type=HORIZONTAL speed=12.80 shape=SWEEP
-diamond_greathammer combo 0 p=0.557 type=HORIZONTAL speed=0.70 shape=SWEEP
-diamond_greathammer combo 0 p=0.580 type=HORIZONTAL speed=3.94 shape=SWEEP
-diamond_greathammer combo 0 p=0.604 type=HORIZONTAL speed=7.26 shape=SWEEP
-diamond_greathammer combo 0 p=0.627 type=HORIZONTAL speed=10.73 shape=SWEEP
-diamond_greathammer combo 0 p=0.651 type=SPIN speed=14.02 shape=SWEEP
-diamond_greathammer combo 0 p=0.674 type=SPIN speed=17.37 shape=SWEEP
-diamond_greathammer combo 0 p=0.698 type=SPIN speed=21.04 shape=SWEEP
-diamond_greathammer combo 0 hitbox size=(12.0, 2.0, 6.0) kind=HORIZONTAL variation=4.729195865139694
-diamond_greathammer combo 0 contact direction=(-0.35955515962867257, -0.2393033180005632, -0.9019168526967002) hitY=-58.649999988079074 expectedHitboxY=-58.649999988079074 screenDirection=(-0.43940943939549554, -0.8960385503386643, 0.06351583170455312)
+diamond_greathammer combo 0 p=0.017 type=HORIZONTAL speed=0.54 shape=SWEEP
+diamond_greathammer combo 0 p=0.080 type=HORIZONTAL speed=3.44 shape=SWEEP
+diamond_greathammer combo 0 p=0.142 type=HORIZONTAL speed=5.50 shape=SWEEP
+diamond_greathammer combo 0 p=0.205 type=HORIZONTAL speed=6.06 shape=SWEEP
+diamond_greathammer combo 0 p=0.269 type=DIAGONAL_DOWN speed=6.13 shape=SWEEP
+diamond_greathammer combo 0 p=0.331 type=DIAGONAL_DOWN speed=4.63 shape=SWEEP
+diamond_greathammer combo 0 p=0.394 type=DIAGONAL_DOWN speed=2.01 shape=SWEEP
+diamond_greathammer combo 0 p=0.456 type=HORIZONTAL speed=5.37 shape=SWEEP
+diamond_greathammer combo 0 p=0.485 type=HORIZONTAL speed=18.49 shape=SWEEP
+diamond_greathammer combo 0 p=0.508 type=HORIZONTAL speed=25.82 shape=SWEEP
+diamond_greathammer combo 0 p=0.532 type=HORIZONTAL speed=11.91 shape=SWEEP
+diamond_greathammer combo 0 p=0.555 type=HORIZONTAL speed=0.46 shape=SWEEP
+diamond_greathammer combo 0 p=0.579 type=HORIZONTAL speed=3.77 shape=SWEEP
+diamond_greathammer combo 0 p=0.602 type=HORIZONTAL speed=7.03 shape=SWEEP
+diamond_greathammer combo 0 p=0.626 type=HORIZONTAL speed=10.38 shape=SWEEP
+diamond_greathammer combo 0 p=0.649 type=SPIN speed=13.56 shape=SWEEP
+diamond_greathammer combo 0 p=0.672 type=SPIN speed=16.95 shape=SWEEP
+diamond_greathammer combo 0 p=0.696 type=SPIN speed=20.90 shape=SWEEP
+diamond_greathammer combo 0 hitbox size=(12.0, 2.0, 6.0) kind=HORIZONTAL variation=-5.870475513736156
+diamond_greathammer combo 0 contact direction=(0.5058379965342285, 0.015371588384960796, 0.8624915278034685) hitY=-58.649999988079074 expectedHitboxY=-58.649999988079074 screenDirection=(0.9554365646724976, 0.19738827424801478, -0.219496788304993)
 diamond_greathammer combo 0 hit motion=HORIZONTAL texture=combattraces:textures/vfx/impacts/blunt.png
-diamond_greathammer combo 0 p=0.721 type=SPIN speed=1.87 shape=SWEEP
-diamond_greathammer combo 0 p=0.744 type=SPIN speed=1.74 shape=SWEEP
-diamond_greathammer combo 0 p=0.768 type=SPIN speed=1.57 shape=SWEEP
-diamond_greathammer combo 0 p=0.791 type=SPIN speed=1.49 shape=SWEEP
-diamond_greathammer combo 0 p=0.815 type=SPIN speed=1.36 shape=SWEEP
-diamond_greathammer combo 0 p=0.839 type=SPIN speed=1.38 shape=SWEEP
-diamond_greathammer combo 0 p=0.862 type=SPIN speed=1.20 shape=SWEEP
-diamond_greathammer combo 0 p=0.886 type=SPIN speed=1.01 shape=SWEEP
-diamond_greathammer combo 0 p=0.910 type=SPIN speed=0.71 shape=SWEEP
-diamond_greathammer combo 0 p=0.933 type=SPIN speed=0.53 shape=SWEEP
-diamond_greathammer combo 0 p=0.956 type=SPIN speed=0.39 shape=SWEEP
+diamond_greathammer combo 0 p=0.720 type=SPIN speed=2.11 shape=SWEEP
+diamond_greathammer combo 0 p=0.743 type=SPIN speed=1.73 shape=SWEEP
+diamond_greathammer combo 0 p=0.767 type=SPIN speed=1.58 shape=SWEEP
+diamond_greathammer combo 0 p=0.790 type=SPIN speed=1.49 shape=SWEEP
+diamond_greathammer combo 0 p=0.814 type=SPIN speed=1.35 shape=SWEEP
+diamond_greathammer combo 0 p=0.837 type=SPIN speed=1.22 shape=SWEEP
+diamond_greathammer combo 0 p=0.860 type=SPIN speed=1.08 shape=SWEEP
+diamond_greathammer combo 0 p=0.884 type=SPIN speed=0.90 shape=SWEEP
+diamond_greathammer combo 0 p=0.908 type=SPIN speed=0.73 shape=SWEEP
+diamond_greathammer combo 0 p=0.931 type=SPIN speed=0.54 shape=SWEEP
+diamond_greathammer combo 0 p=0.955 type=SPIN speed=0.41 shape=SWEEP
 diamond_greathammer combo 0 p=0.979 type=SPIN speed=0.20 shape=SWEEP
-diamond_greathammer combo 0 p=1.000 type=SPIN speed=2.02 shape=SWEEP
-diamond_greathammer combo 0 p=1.000 type=SPIN speed=3.61 shape=SWEEP
-diamond_greathammer combo 0 p=1.000 type=SPIN speed=4.66 shape=SWEEP
+diamond_greathammer combo 0 p=1.002 type=SPIN speed=1.42 shape=SWEEP
+diamond_greathammer combo 0 p=1.025 type=SPIN speed=3.17 shape=SWEEP
+diamond_greathammer combo 0 p=1.056 type=SPIN speed=4.73 shape=SWEEP
+diamond_greathammer combo 0 p=1.087 type=SPIN speed=5.46 shape=SWEEP
+diamond_greathammer combo 0 p=1.118 type=SPIN speed=5.93 shape=SWEEP
+diamond_greathammer combo 0 p=1.150 type=SPIN speed=6.75 shape=SWEEP
+diamond_greathammer combo 0 p=1.181 type=SPIN speed=7.19 shape=SWEEP
+diamond_greathammer combo 0 p=1.212 type=SPIN speed=7.91 shape=SWEEP
+diamond_greathammer combo 0 emitted progress=0.45..0.7 damaging interval=SwingWindow[start=0.45, end=0.7]
 diamond_greathammer combo 2 animation=bettercombat:two_handed_slam hitbox=FORWARD_BOX
+diamond_greathammer combo 2 damaging interval=SwingWindow[start=0.35, end=0.5]
 model=class net.minecraft.client.resources.model.SimpleBakedModel gui3d=true
 diamond_greathammer combo 2 model emitter=TrailEmitter[origin=(-1.5577499690298793, 0.7941051579997886, 3.0374807467038456E-18), tip=(-1.0235972777419513, 1.3311215739234572, -3.0065374949153088E-18)]
-diamond_greathammer combo 2 p=0.026 type=DIAGONAL_UP speed=3.95 shape=FORWARD
-diamond_greathammer combo 2 p=0.088 type=THRUST speed=16.57 shape=FORWARD
-diamond_greathammer combo 2 p=0.151 type=THRUST speed=26.40 shape=FORWARD
-diamond_greathammer combo 2 p=0.213 type=THRUST speed=28.28 shape=FORWARD
-diamond_greathammer combo 2 p=0.276 type=THRUST speed=18.39 shape=FORWARD
-diamond_greathammer combo 2 p=0.338 type=THRUST speed=3.22 shape=FORWARD
-diamond_greathammer combo 2 p=0.401 type=VERTICAL_UP speed=59.50 shape=FORWARD
-diamond_greathammer combo 2 p=0.463 type=SPIN speed=72.04 shape=FORWARD
-diamond_greathammer combo 2 p=0.490 type=SPIN speed=7.14 shape=FORWARD
-diamond_greathammer combo 2 p=0.513 type=SPIN speed=1.38 shape=FORWARD
-diamond_greathammer combo 2 p=0.537 type=SPIN speed=3.78 shape=FORWARD
-diamond_greathammer combo 2 p=0.560 type=SPIN speed=2.37 shape=FORWARD
-diamond_greathammer combo 2 p=0.584 type=SPIN speed=4.44 shape=FORWARD
-diamond_greathammer combo 2 p=0.607 type=SPIN speed=0.00 shape=FORWARD
-diamond_greathammer combo 2 p=0.631 type=SPIN speed=0.00 shape=FORWARD
-diamond_greathammer combo 2 p=0.654 type=SPIN speed=0.00 shape=FORWARD
-diamond_greathammer combo 2 p=0.678 type=SPIN speed=0.00 shape=FORWARD
-diamond_greathammer combo 2 p=0.701 type=SPIN speed=0.00 shape=FORWARD
-diamond_greathammer combo 2 hitbox size=(3.0, 3.0, 6.0) kind=STAB variation=-2.1147083942225566
-diamond_greathammer combo 2 contact direction=(0.23802714368305203, 0.05837431175788231, 0.9695027171683849) hitY=-59.42629048772014 expectedHitboxY=-59.42629048772014 screenDirection=(-0.055586789260080906, 0.9285516089379297, 0.36701773580923525)
+diamond_greathammer combo 2 p=0.027 type=DIAGONAL_UP speed=4.01 shape=FORWARD
+diamond_greathammer combo 2 p=0.089 type=THRUST speed=16.60 shape=FORWARD
+diamond_greathammer combo 2 p=0.152 type=THRUST speed=26.49 shape=FORWARD
+diamond_greathammer combo 2 p=0.214 type=THRUST speed=27.97 shape=FORWARD
+diamond_greathammer combo 2 p=0.277 type=THRUST speed=15.99 shape=FORWARD
+diamond_greathammer combo 2 p=0.339 type=THRUST speed=2.57 shape=FORWARD
+diamond_greathammer combo 2 p=0.402 type=VERTICAL_UP speed=55.35 shape=FORWARD
+diamond_greathammer combo 2 p=0.464 type=SPIN speed=58.94 shape=FORWARD
+diamond_greathammer combo 2 p=0.488 type=SPIN speed=7.10 shape=FORWARD
+diamond_greathammer combo 2 p=0.512 type=SPIN speed=1.06 shape=FORWARD
+diamond_greathammer combo 2 p=0.536 type=SPIN speed=4.05 shape=FORWARD
+diamond_greathammer combo 2 p=0.559 type=SPIN speed=2.30 shape=FORWARD
+diamond_greathammer combo 2 p=0.583 type=SPIN speed=5.24 shape=FORWARD
+diamond_greathammer combo 2 p=0.606 type=SPIN speed=0.00 shape=FORWARD
+diamond_greathammer combo 2 p=0.629 type=SPIN speed=0.00 shape=FORWARD
+diamond_greathammer combo 2 p=0.653 type=SPIN speed=0.00 shape=FORWARD
+diamond_greathammer combo 2 p=0.676 type=SPIN speed=0.00 shape=FORWARD
+diamond_greathammer combo 2 p=0.700 type=SPIN speed=0.00 shape=FORWARD
+diamond_greathammer combo 2 hitbox size=(3.0, 3.0, 6.0) kind=STAB variation=-4.027541370110924
+diamond_greathammer combo 2 contact direction=(0.2789657389787389, -0.4211549739106387, 0.8630217867622899) hitY=-59.42629048772014 expectedHitboxY=-59.42629048772014 screenDirection=(-0.035717083088785996, -0.9389777690914148, -0.34211845774196153)
 diamond_greathammer combo 2 hit motion=THRUST texture=combattraces:textures/vfx/impacts/blunt.png
-diamond_greathammer combo 2 p=0.724 type=SPIN speed=0.00 shape=FORWARD
-diamond_greathammer combo 2 p=0.748 type=SPIN speed=0.00 shape=FORWARD
-diamond_greathammer combo 2 p=0.771 type=SPIN speed=0.00 shape=FORWARD
-diamond_greathammer combo 2 p=0.795 type=SPIN speed=0.00 shape=FORWARD
-diamond_greathammer combo 2 p=0.818 type=SPIN speed=0.00 shape=FORWARD
-diamond_greathammer combo 2 p=0.842 type=SPIN speed=0.00 shape=FORWARD
-diamond_greathammer combo 2 p=0.865 type=SPIN speed=0.00 shape=FORWARD
-diamond_greathammer combo 2 p=0.888 type=SPIN speed=0.00 shape=FORWARD
-diamond_greathammer combo 2 p=0.912 type=SPIN speed=0.00 shape=FORWARD
-diamond_greathammer combo 2 p=0.935 type=SPIN speed=0.00 shape=FORWARD
-diamond_greathammer combo 2 p=0.959 type=SPIN speed=0.00 shape=FORWARD
-diamond_greathammer combo 2 p=0.983 type=SPIN speed=0.00 shape=FORWARD
-diamond_greathammer combo 2 p=1.000 type=SPIN speed=1.15 shape=FORWARD
-diamond_greathammer combo 2 p=1.000 type=SPIN speed=2.73 shape=FORWARD
-diamond_greathammer combo 2 p=1.000 type=SPIN speed=4.83 shape=FORWARD
+diamond_greathammer combo 2 p=0.723 type=SPIN speed=0.00 shape=FORWARD
+diamond_greathammer combo 2 p=0.747 type=SPIN speed=0.00 shape=FORWARD
+diamond_greathammer combo 2 p=0.770 type=SPIN speed=0.00 shape=FORWARD
+diamond_greathammer combo 2 p=0.790 type=SPIN speed=0.00 shape=FORWARD
+diamond_greathammer combo 2 p=0.813 type=SPIN speed=0.00 shape=FORWARD
+diamond_greathammer combo 2 p=0.837 type=SPIN speed=0.00 shape=FORWARD
+diamond_greathammer combo 2 p=0.861 type=SPIN speed=0.00 shape=FORWARD
+diamond_greathammer combo 2 p=0.884 type=SPIN speed=0.00 shape=FORWARD
+diamond_greathammer combo 2 p=0.907 type=SPIN speed=0.00 shape=FORWARD
+diamond_greathammer combo 2 p=0.931 type=SPIN speed=0.00 shape=FORWARD
+diamond_greathammer combo 2 p=0.954 type=SPIN speed=0.00 shape=FORWARD
+diamond_greathammer combo 2 p=0.978 type=SPIN speed=0.00 shape=FORWARD
+diamond_greathammer combo 2 p=1.001 type=SPIN speed=0.26 shape=FORWARD
+diamond_greathammer combo 2 p=1.025 type=SPIN speed=2.12 shape=FORWARD
+diamond_greathammer combo 2 p=1.055 type=SPIN speed=5.25 shape=FORWARD
+diamond_greathammer combo 2 p=1.086 type=SPIN speed=7.73 shape=FORWARD
+diamond_greathammer combo 2 p=1.117 type=SPIN speed=9.99 shape=FORWARD
+diamond_greathammer combo 2 p=1.149 type=SPIN speed=9.29 shape=FORWARD
+diamond_greathammer combo 2 p=1.180 type=SPIN speed=6.10 shape=FORWARD
+diamond_greathammer combo 2 p=1.212 type=SPIN speed=3.65 shape=FORWARD
+diamond_greathammer combo 2 emitted progress=0.35..0.5 damaging interval=SwingWindow[start=0.35, end=0.5]
 diamond_claymore combo 2 animation=bettercombat:two_handed_slam hitbox=VERTICAL_PLANE
+diamond_claymore combo 2 damaging interval=SwingWindow[start=0.35, end=0.5]
 model=class net.minecraft.client.resources.model.SimpleBakedModel gui3d=false
 diamond_claymore combo 2 model emitter=TrailEmitter[origin=(-0.14583333333333348, -0.1458333333333331, 1.095412985572934E-19), tip=(0.5000000000000002, 0.4999999999999998, -1.5820782962858962E-19)]
-diamond_claymore combo 2 p=0.030 type=DIAGONAL_UP speed=4.68 shape=SWEEP
-diamond_claymore combo 2 p=0.092 type=HORIZONTAL speed=15.63 shape=SWEEP
-diamond_claymore combo 2 p=0.155 type=DIAGONAL_DOWN speed=19.65 shape=SWEEP
-diamond_claymore combo 2 p=0.217 type=VERTICAL_DOWN speed=18.73 shape=SWEEP
-diamond_claymore combo 2 p=0.280 type=VERTICAL_DOWN speed=11.96 shape=SWEEP
-diamond_claymore combo 2 p=0.342 type=DIAGONAL_DOWN speed=2.14 shape=SWEEP
-diamond_claymore combo 2 p=0.405 type=VERTICAL_UP speed=66.20 shape=SWEEP
-diamond_claymore combo 2 p=0.467 type=SPIN speed=58.66 shape=SWEEP
-diamond_claymore combo 2 p=0.492 type=SPIN speed=5.30 shape=SWEEP
-diamond_claymore combo 2 p=0.516 type=SPIN speed=1.55 shape=SWEEP
-diamond_claymore combo 2 p=0.540 type=SPIN speed=4.12 shape=SWEEP
-diamond_claymore combo 2 p=0.563 type=SPIN speed=2.87 shape=SWEEP
-diamond_claymore combo 2 p=0.586 type=SPIN speed=4.04 shape=SWEEP
-diamond_claymore combo 2 p=0.610 type=SPIN speed=0.00 shape=SWEEP
-diamond_claymore combo 2 p=0.633 type=SPIN speed=0.00 shape=SWEEP
-diamond_claymore combo 2 p=0.657 type=SPIN speed=0.00 shape=SWEEP
-diamond_claymore combo 2 p=0.680 type=SPIN speed=0.00 shape=SWEEP
-diamond_claymore combo 2 p=0.700 type=SPIN speed=0.00 shape=SWEEP
-diamond_claymore combo 2 hitbox size=(2.0, 12.0, 6.0) kind=VERTICAL variation=3.8187058817748594
+diamond_claymore combo 2 p=0.025 type=DIAGONAL_UP speed=3.40 shape=SWEEP
+diamond_claymore combo 2 p=0.089 type=HORIZONTAL speed=14.35 shape=SWEEP
+diamond_claymore combo 2 p=0.151 type=DIAGONAL_DOWN speed=21.76 shape=SWEEP
+diamond_claymore combo 2 p=0.214 type=VERTICAL_DOWN speed=21.17 shape=SWEEP
+diamond_claymore combo 2 p=0.276 type=VERTICAL_DOWN speed=14.08 shape=SWEEP
+diamond_claymore combo 2 p=0.339 type=DIAGONAL_DOWN speed=3.21 shape=SWEEP
+diamond_claymore combo 2 p=0.401 type=VERTICAL_UP speed=59.49 shape=SWEEP
+diamond_claymore combo 2 p=0.464 type=SPIN speed=64.94 shape=SWEEP
+diamond_claymore combo 2 p=0.490 type=SPIN speed=6.68 shape=SWEEP
+diamond_claymore combo 2 p=0.514 type=SPIN speed=1.26 shape=SWEEP
+diamond_claymore combo 2 p=0.537 type=SPIN speed=3.81 shape=SWEEP
+diamond_claymore combo 2 p=0.560 type=SPIN speed=2.35 shape=SWEEP
+diamond_claymore combo 2 p=0.584 type=SPIN speed=4.95 shape=SWEEP
+diamond_claymore combo 2 p=0.608 type=SPIN speed=0.00 shape=SWEEP
+diamond_claymore combo 2 p=0.631 type=SPIN speed=0.00 shape=SWEEP
+diamond_claymore combo 2 p=0.655 type=SPIN speed=0.00 shape=SWEEP
+diamond_claymore combo 2 p=0.678 type=SPIN speed=0.00 shape=SWEEP
+diamond_claymore combo 2 p=0.701 type=SPIN speed=0.00 shape=SWEEP
+diamond_claymore combo 2 hitbox size=(2.0, 12.0, 6.0) kind=VERTICAL variation=1.5824045286616395
 diamond_claymore combo 2 contact direction=(-0.0, 1.0, -0.0) hitY=-58.649999988079074 expectedHitboxY=-58.649999988079074 screenDirection=(0.011537844929768734, 0.9992689679092926, 0.03644733060010854)
 diamond_claymore combo 2 hit motion=VERTICAL_DOWN texture=combattraces:textures/vfx/impacts/cleave.png
-diamond_claymore combo 2 p=0.723 type=SPIN speed=0.00 shape=SWEEP
-diamond_claymore combo 2 p=0.747 type=SPIN speed=0.00 shape=SWEEP
-diamond_claymore combo 2 p=0.770 type=SPIN speed=0.00 shape=SWEEP
-diamond_claymore combo 2 p=0.794 type=SPIN speed=0.00 shape=SWEEP
-diamond_claymore combo 2 p=0.817 type=SPIN speed=0.00 shape=SWEEP
-diamond_claymore combo 2 p=0.841 type=SPIN speed=0.00 shape=SWEEP
-diamond_claymore combo 2 p=0.864 type=SPIN speed=0.00 shape=SWEEP
-diamond_claymore combo 2 p=0.888 type=SPIN speed=0.00 shape=SWEEP
-diamond_claymore combo 2 p=0.911 type=SPIN speed=0.00 shape=SWEEP
-diamond_claymore combo 2 p=0.935 type=SPIN speed=0.00 shape=SWEEP
-diamond_claymore combo 2 p=0.958 type=SPIN speed=0.00 shape=SWEEP
-diamond_claymore combo 2 p=0.982 type=SPIN speed=0.00 shape=SWEEP
-diamond_claymore combo 2 p=1.000 type=SPIN speed=0.29 shape=SWEEP
-diamond_claymore combo 2 p=1.000 type=SPIN speed=2.28 shape=SWEEP
-diamond_claymore combo 2 p=1.000 type=SPIN speed=5.47 shape=SWEEP
+diamond_claymore combo 2 p=0.725 type=SPIN speed=0.00 shape=SWEEP
+diamond_claymore combo 2 p=0.748 type=SPIN speed=0.00 shape=SWEEP
+diamond_claymore combo 2 p=0.772 type=SPIN speed=0.00 shape=SWEEP
+diamond_claymore combo 2 p=0.795 type=SPIN speed=0.00 shape=SWEEP
+diamond_claymore combo 2 p=0.819 type=SPIN speed=0.00 shape=SWEEP
+diamond_claymore combo 2 p=0.842 type=SPIN speed=0.00 shape=SWEEP
+diamond_claymore combo 2 p=0.866 type=SPIN speed=0.00 shape=SWEEP
+diamond_claymore combo 2 p=0.889 type=SPIN speed=0.00 shape=SWEEP
+diamond_claymore combo 2 p=0.912 type=SPIN speed=0.00 shape=SWEEP
+diamond_claymore combo 2 p=0.936 type=SPIN speed=0.00 shape=SWEEP
+diamond_claymore combo 2 p=0.959 type=SPIN speed=0.00 shape=SWEEP
+diamond_claymore combo 2 p=0.983 type=SPIN speed=0.00 shape=SWEEP
+diamond_claymore combo 2 p=1.007 type=SPIN speed=0.44 shape=SWEEP
+diamond_claymore combo 2 p=1.030 type=SPIN speed=2.69 shape=SWEEP
+diamond_claymore combo 2 p=1.061 type=SPIN speed=7.87 shape=SWEEP
+diamond_claymore combo 2 p=1.092 type=SPIN speed=10.54 shape=SWEEP
+diamond_claymore combo 2 p=1.124 type=SPIN speed=14.02 shape=SWEEP
+diamond_claymore combo 2 p=1.155 type=SPIN speed=12.07 shape=SWEEP
+diamond_claymore combo 2 p=1.186 type=SPIN speed=9.60 shape=SWEEP
+diamond_claymore combo 2 p=1.217 type=SPIN speed=7.41 shape=SWEEP
+diamond_claymore combo 2 emitted progress=0.35..0.5 damaging interval=SwingWindow[start=0.35, end=0.5]
 diamond_claymore combo 1 animation=bettercombat:two_handed_stab_left hitbox=FORWARD_BOX
+diamond_claymore combo 1 damaging interval=SwingWindow[start=0.45, end=0.55]
 model=class net.minecraft.client.resources.model.SimpleBakedModel gui3d=false
 diamond_claymore combo 1 model emitter=TrailEmitter[origin=(-0.14583333333333348, -0.1458333333333331, 1.095412985572934E-19), tip=(0.5000000000000002, 0.4999999999999998, -1.5820782962858962E-19)]
-diamond_claymore combo 1 p=0.028 type=DIAGONAL_DOWN speed=2.24 shape=FORWARD
-diamond_claymore combo 1 p=0.090 type=DIAGONAL_DOWN speed=8.27 shape=FORWARD
-diamond_claymore combo 1 p=0.153 type=DIAGONAL_DOWN speed=11.59 shape=FORWARD
-diamond_claymore combo 1 p=0.215 type=DIAGONAL_DOWN speed=12.68 shape=FORWARD
-diamond_claymore combo 1 p=0.278 type=DIAGONAL_DOWN speed=10.37 shape=FORWARD
-diamond_claymore combo 1 p=0.340 type=HORIZONTAL speed=6.37 shape=FORWARD
-diamond_claymore combo 1 p=0.403 type=HORIZONTAL speed=2.71 shape=FORWARD
-diamond_claymore combo 1 p=0.465 type=THRUST speed=7.39 shape=FORWARD
-diamond_claymore combo 1 p=0.494 type=THRUST speed=11.19 shape=FORWARD
-diamond_claymore combo 1 p=0.518 type=THRUST speed=9.86 shape=FORWARD
-diamond_claymore combo 1 p=0.541 type=DIAGONAL_UP speed=2.99 shape=FORWARD
-diamond_claymore combo 1 p=0.565 type=HORIZONTAL speed=0.27 shape=FORWARD
-diamond_claymore combo 1 p=0.588 type=HORIZONTAL speed=0.79 shape=FORWARD
-diamond_claymore combo 1 p=0.611 type=HORIZONTAL speed=1.28 shape=FORWARD
-diamond_claymore combo 1 p=0.635 type=HORIZONTAL speed=1.43 shape=FORWARD
-diamond_claymore combo 1 p=0.658 type=HORIZONTAL speed=0.93 shape=FORWARD
-diamond_claymore combo 1 p=0.682 type=HORIZONTAL speed=0.43 shape=FORWARD
-diamond_claymore combo 1 p=0.705 type=DIAGONAL_UP speed=0.05 shape=FORWARD
-diamond_claymore combo 1 hitbox size=(3.0, 3.0, 6.0) kind=STAB variation=1.9979226357353106
-diamond_claymore combo 1 contact direction=(0.30903524385802966, 0.0, 0.9510505864850767) hitY=-58.649999988079074 expectedHitboxY=-58.649999988079074 screenDirection=(0.6993526950869667, 0.6943781669073671, -0.1695428240798201)
+diamond_claymore combo 1 p=0.030 type=DIAGONAL_DOWN speed=2.27 shape=FORWARD
+diamond_claymore combo 1 p=0.093 type=DIAGONAL_DOWN speed=7.74 shape=FORWARD
+diamond_claymore combo 1 p=0.155 type=DIAGONAL_DOWN speed=11.82 shape=FORWARD
+diamond_claymore combo 1 p=0.218 type=DIAGONAL_DOWN speed=12.62 shape=FORWARD
+diamond_claymore combo 1 p=0.282 type=DIAGONAL_DOWN speed=11.28 shape=FORWARD
+diamond_claymore combo 1 p=0.344 type=HORIZONTAL speed=6.91 shape=FORWARD
+diamond_claymore combo 1 p=0.407 type=HORIZONTAL speed=2.86 shape=FORWARD
+diamond_claymore combo 1 p=0.469 type=THRUST speed=10.41 shape=FORWARD
+diamond_claymore combo 1 p=0.493 type=THRUST speed=11.95 shape=FORWARD
+diamond_claymore combo 1 p=0.516 type=THRUST speed=11.50 shape=FORWARD
+diamond_claymore combo 1 p=0.539 type=DIAGONAL_UP speed=3.49 shape=FORWARD
+diamond_claymore combo 1 p=0.563 type=HORIZONTAL speed=0.23 shape=FORWARD
+diamond_claymore combo 1 p=0.586 type=HORIZONTAL speed=0.74 shape=FORWARD
+diamond_claymore combo 1 p=0.610 type=HORIZONTAL speed=1.23 shape=FORWARD
+diamond_claymore combo 1 p=0.629 type=HORIZONTAL speed=1.50 shape=FORWARD
+diamond_claymore combo 1 p=0.653 type=HORIZONTAL speed=1.05 shape=FORWARD
+diamond_claymore combo 1 p=0.677 type=HORIZONTAL speed=0.62 shape=FORWARD
+diamond_claymore combo 1 p=0.700 type=HORIZONTAL speed=0.05 shape=FORWARD
+diamond_claymore combo 1 hitbox size=(3.0, 3.0, 6.0) kind=STAB variation=4.904425594177537
+diamond_claymore combo 1 contact direction=(0.30903524385802966, 0.0, 0.9510505864850767) hitY=-58.649999988079074 expectedHitboxY=-58.649999988079074 screenDirection=(0.6946793892027494, 0.6993201199904143, -0.16843965089457857)
 diamond_claymore combo 1 hit motion=THRUST texture=combattraces:textures/vfx/impacts/pierce.png
-diamond_claymore combo 1 p=0.729 type=DIAGONAL_UP speed=0.41 shape=FORWARD
-diamond_claymore combo 1 p=0.752 type=DIAGONAL_UP speed=0.76 shape=FORWARD
-diamond_claymore combo 1 p=0.776 type=DIAGONAL_UP speed=1.10 shape=FORWARD
-diamond_claymore combo 1 p=0.799 type=DIAGONAL_UP speed=1.41 shape=FORWARD
-diamond_claymore combo 1 p=0.822 type=DIAGONAL_UP speed=1.70 shape=FORWARD
-diamond_claymore combo 1 p=0.846 type=DIAGONAL_UP speed=1.95 shape=FORWARD
-diamond_claymore combo 1 p=0.869 type=DIAGONAL_UP speed=1.72 shape=FORWARD
-diamond_claymore combo 1 p=0.893 type=DIAGONAL_UP speed=1.37 shape=FORWARD
-diamond_claymore combo 1 p=0.916 type=DIAGONAL_UP speed=1.05 shape=FORWARD
-diamond_claymore combo 1 p=0.940 type=DIAGONAL_UP speed=0.75 shape=FORWARD
-diamond_claymore combo 1 p=0.963 type=DIAGONAL_UP speed=0.46 shape=FORWARD
-diamond_claymore combo 1 p=0.986 type=DIAGONAL_UP speed=0.18 shape=FORWARD
-diamond_claymore combo 1 p=1.000 type=DIAGONAL_UP speed=0.14 shape=FORWARD
-diamond_claymore combo 1 p=1.000 type=DIAGONAL_UP speed=0.57 shape=FORWARD
-diamond_claymore combo 1 p=1.000 type=DIAGONAL_UP speed=1.20 shape=FORWARD
+diamond_claymore combo 1 p=0.724 type=DIAGONAL_UP speed=0.36 shape=FORWARD
+diamond_claymore combo 1 p=0.747 type=DIAGONAL_UP speed=0.76 shape=FORWARD
+diamond_claymore combo 1 p=0.771 type=DIAGONAL_UP speed=1.15 shape=FORWARD
+diamond_claymore combo 1 p=0.794 type=DIAGONAL_UP speed=1.49 shape=FORWARD
+diamond_claymore combo 1 p=0.817 type=DIAGONAL_UP speed=1.83 shape=FORWARD
+diamond_claymore combo 1 p=0.841 type=DIAGONAL_UP speed=2.09 shape=FORWARD
+diamond_claymore combo 1 p=0.864 type=DIAGONAL_UP speed=2.02 shape=FORWARD
+diamond_claymore combo 1 p=0.889 type=DIAGONAL_UP speed=1.45 shape=FORWARD
+diamond_claymore combo 1 p=0.913 type=DIAGONAL_UP speed=1.23 shape=FORWARD
+diamond_claymore combo 1 p=0.936 type=DIAGONAL_UP speed=0.88 shape=FORWARD
+diamond_claymore combo 1 p=0.959 type=DIAGONAL_UP speed=0.59 shape=FORWARD
+diamond_claymore combo 1 p=0.982 type=DIAGONAL_UP speed=0.24 shape=FORWARD
+diamond_claymore combo 1 p=1.005 type=DIAGONAL_UP speed=0.06 shape=FORWARD
+diamond_claymore combo 1 p=1.029 type=DIAGONAL_UP speed=0.47 shape=FORWARD
+diamond_claymore combo 1 p=1.059 type=DIAGONAL_UP speed=1.37 shape=FORWARD
+diamond_claymore combo 1 p=1.090 type=DIAGONAL_UP speed=2.15 shape=FORWARD
+diamond_claymore combo 1 p=1.122 type=DIAGONAL_UP speed=2.95 shape=FORWARD
+diamond_claymore combo 1 p=1.153 type=DIAGONAL_UP speed=3.77 shape=FORWARD
+diamond_claymore combo 1 p=1.184 type=DIAGONAL_UP speed=4.54 shape=FORWARD
+diamond_claymore combo 1 p=1.215 type=DIAGONAL_UP speed=5.43 shape=FORWARD
+diamond_claymore combo 1 emitted progress=0.4578751..0.55 damaging interval=SwingWindow[start=0.45, end=0.55]
+diamond_longsword combo 0 Fire Aspect animation=bettercombat:one_handed_slash_horizontal_right hitbox=HORIZONTAL_PLANE
+diamond_longsword combo 0 Fire Aspect damaging interval=SwingWindow[start=0.4, end=0.75]
+model=class net.minecraft.client.resources.model.SimpleBakedModel gui3d=false
+diamond_longsword combo 0 Fire Aspect model emitter=TrailEmitter[origin=(-0.07044982910156253, -0.0704498291015625, -3.231444544229996E-19), tip=(0.28179931640625, 0.28179931640625, 1.6178015466506519E-19)]
+diamond_longsword combo 0 Fire Aspect p=0.029 type=HORIZONTAL speed=2.81 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=0.092 type=HORIZONTAL speed=9.58 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=0.154 type=DIAGONAL_UP speed=14.56 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=0.217 type=HORIZONTAL speed=15.31 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=0.279 type=HORIZONTAL speed=11.38 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=0.342 type=DIAGONAL_DOWN speed=5.55 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=0.404 type=HORIZONTAL speed=1.03 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=0.467 type=SPIN speed=25.30 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=0.494 type=SPIN speed=20.41 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=0.517 type=SPIN speed=16.86 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=0.541 type=SPIN speed=9.84 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=0.564 type=SPIN speed=8.79 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=0.587 type=SPIN speed=7.63 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=0.611 type=SPIN speed=5.83 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=0.634 type=SPIN speed=4.89 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=0.658 type=SPIN speed=4.00 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=0.681 type=SPIN speed=2.96 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=0.705 type=SPIN speed=1.97 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect hitbox size=(10.2, 1.7, 5.1) kind=HORIZONTAL variation=4.921911344701312
+diamond_longsword combo 0 Fire Aspect contact direction=(-0.9510505864850767, 0.0, 0.30903524385802966) hitY=-58.649999988079074 expectedHitboxY=-58.649999988079074 screenDirection=(-0.9149291949382317, -0.004644256819556029, 0.4035876597819526)
+diamond_longsword combo 0 Fire Aspect hit motion=HORIZONTAL texture=combattraces:textures/vfx/impacts/slash.png
+diamond_longsword combo 0 Fire Aspect p=0.728 type=SPIN speed=1.00 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=0.751 type=SPIN speed=0.03 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=0.775 type=SPIN speed=0.00 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=0.798 type=SPIN speed=0.00 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=0.822 type=SPIN speed=0.00 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=0.846 type=SPIN speed=0.00 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=0.869 type=SPIN speed=0.00 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=0.893 type=SPIN speed=0.00 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=0.916 type=SPIN speed=0.00 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=0.940 type=SPIN speed=0.00 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=0.963 type=SPIN speed=0.00 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=0.987 type=SPIN speed=0.00 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=1.010 type=SPIN speed=4.84 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=1.034 type=SPIN speed=4.42 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=1.065 type=SPIN speed=5.15 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=1.096 type=SPIN speed=4.39 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=1.127 type=SPIN speed=3.67 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=1.159 type=SPIN speed=3.43 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=1.190 type=SPIN speed=2.84 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect p=1.217 type=SPIN speed=1.99 shape=SWEEP
+diamond_longsword combo 0 Fire Aspect emitted progress=0.40412515..0.75 damaging interval=SwingWindow[start=0.4, end=0.75]
+diamond_claymore combo 1 Fire Aspect animation=bettercombat:two_handed_stab_left hitbox=FORWARD_BOX
+diamond_claymore combo 1 Fire Aspect damaging interval=SwingWindow[start=0.45, end=0.55]
+model=class net.minecraft.client.resources.model.SimpleBakedModel gui3d=false
+diamond_claymore combo 1 Fire Aspect model emitter=TrailEmitter[origin=(-0.14583333333333348, -0.1458333333333331, 1.095412985572934E-19), tip=(0.5000000000000002, 0.4999999999999998, -1.5820782962858962E-19)]
+diamond_claymore combo 1 Fire Aspect p=0.032 type=DIAGONAL_DOWN speed=2.14 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=0.095 type=DIAGONAL_DOWN speed=8.10 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=0.158 type=DIAGONAL_DOWN speed=10.85 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=0.220 type=DIAGONAL_DOWN speed=12.11 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=0.284 type=DIAGONAL_DOWN speed=10.13 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=0.347 type=HORIZONTAL speed=5.79 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=0.412 type=HORIZONTAL speed=2.53 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=0.474 type=THRUST speed=13.56 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=0.498 type=THRUST speed=12.32 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=0.517 type=THRUST speed=9.83 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=0.541 type=DIAGONAL_UP speed=3.10 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=0.565 type=HORIZONTAL speed=0.30 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=0.588 type=HORIZONTAL speed=0.85 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=0.611 type=HORIZONTAL speed=1.25 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=0.636 type=HORIZONTAL speed=1.40 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=0.659 type=HORIZONTAL speed=0.91 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=0.683 type=HORIZONTAL speed=0.46 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=0.707 type=DIAGONAL_UP speed=0.08 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect hitbox size=(3.0, 3.0, 6.0) kind=STAB variation=2.146828214024861
+diamond_claymore combo 1 Fire Aspect contact direction=(0.30903524385802966, 0.0, 0.9510505864850767) hitY=-58.649999988079074 expectedHitboxY=-58.649999988079074 screenDirection=(0.6973354348146662, 0.6965194120363096, -0.1690680336682068)
+diamond_claymore combo 1 Fire Aspect hit motion=THRUST texture=combattraces:textures/vfx/impacts/pierce.png
+diamond_claymore combo 1 Fire Aspect p=0.730 type=DIAGONAL_UP speed=0.47 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=0.754 type=DIAGONAL_UP speed=0.78 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=0.777 type=DIAGONAL_UP speed=1.08 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=0.800 type=DIAGONAL_UP speed=1.42 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=0.824 type=DIAGONAL_UP speed=1.70 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=0.847 type=DIAGONAL_UP speed=1.89 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=0.871 type=DIAGONAL_UP speed=1.89 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=0.895 type=DIAGONAL_UP speed=1.50 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=0.918 type=DIAGONAL_UP speed=1.14 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=0.941 type=DIAGONAL_UP speed=0.82 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=0.965 type=DIAGONAL_UP speed=0.43 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=0.988 type=DIAGONAL_UP speed=0.15 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=1.012 type=DIAGONAL_UP speed=0.18 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=1.035 type=DIAGONAL_UP speed=0.61 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=1.066 type=DIAGONAL_UP speed=1.52 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=1.097 type=DIAGONAL_UP speed=2.24 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=1.129 type=DIAGONAL_UP speed=3.09 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=1.160 type=DIAGONAL_UP speed=3.96 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=1.191 type=DIAGONAL_UP speed=4.80 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect p=1.222 type=DIAGONAL_UP speed=5.60 shape=FORWARD
+diamond_claymore combo 1 Fire Aspect emitted progress=0.45412517..0.55 damaging interval=SwingWindow[start=0.45, end=0.55]
+diamond_greathammer combo 0 Fire Aspect animation=bettercombat:two_handed_slash_horizontal_left hitbox=HORIZONTAL_PLANE
+diamond_greathammer combo 0 Fire Aspect damaging interval=SwingWindow[start=0.45, end=0.7]
+model=class net.minecraft.client.resources.model.SimpleBakedModel gui3d=true
+diamond_greathammer combo 0 Fire Aspect model emitter=TrailEmitter[origin=(-1.5577499690298793, 0.7941051579997886, 3.0374807467038456E-18), tip=(-1.0235972777419513, 1.3311215739234572, -3.0065374949153088E-18)]
+diamond_greathammer combo 0 Fire Aspect p=0.001 type=HORIZONTAL speed=0.19 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=0.064 type=HORIZONTAL speed=2.75 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=0.126 type=HORIZONTAL speed=5.05 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=0.190 type=HORIZONTAL speed=6.93 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=0.252 type=HORIZONTAL speed=5.84 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=0.315 type=DIAGONAL_DOWN speed=4.47 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=0.379 type=DIAGONAL_DOWN speed=2.86 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=0.441 type=DIAGONAL_DOWN speed=0.46 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=0.468 type=HORIZONTAL speed=9.64 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=0.492 type=HORIZONTAL speed=22.43 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=0.515 type=HORIZONTAL speed=22.17 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=0.539 type=HORIZONTAL speed=7.99 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=0.562 type=HORIZONTAL speed=1.42 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=0.586 type=HORIZONTAL speed=4.68 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=0.609 type=HORIZONTAL speed=7.99 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=0.633 type=HORIZONTAL speed=12.81 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=0.656 type=SPIN speed=14.86 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=0.680 type=SPIN speed=19.45 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect hitbox size=(12.0, 2.0, 6.0) kind=HORIZONTAL variation=-6.917689937990872
+diamond_greathammer combo 0 Fire Aspect contact direction=(0.2711764584061156, -0.011611833799275051, 0.9624596062807698) hitY=-58.649999988079074 expectedHitboxY=-58.649999988079074 screenDirection=(0.7766113612327261, 0.610553086122885, -0.1552408536116482)
+diamond_greathammer combo 0 Fire Aspect hit motion=HORIZONTAL texture=combattraces:textures/vfx/impacts/blunt.png
+diamond_greathammer combo 0 Fire Aspect p=0.704 type=SPIN speed=2.41 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=0.727 type=SPIN speed=1.80 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=0.751 type=SPIN speed=1.68 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=0.774 type=SPIN speed=1.57 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=0.798 type=SPIN speed=1.63 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=0.821 type=SPIN speed=1.48 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=0.845 type=SPIN speed=1.17 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=0.868 type=SPIN speed=1.02 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=0.892 type=SPIN speed=0.84 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=0.915 type=SPIN speed=0.67 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=0.939 type=SPIN speed=0.55 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=0.962 type=SPIN speed=0.34 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=0.986 type=SPIN speed=0.14 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=1.009 type=SPIN speed=3.21 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=1.040 type=SPIN speed=4.56 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=1.072 type=SPIN speed=5.18 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=1.103 type=SPIN speed=5.79 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=1.134 type=SPIN speed=6.35 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=1.165 type=SPIN speed=6.99 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect p=1.197 type=SPIN speed=7.62 shape=SWEEP
+diamond_greathammer combo 0 Fire Aspect emitted progress=0.45..0.7 damaging interval=SwingWindow[start=0.45, end=0.7]
+diamond_spear combo 0 animation=bettercombat:one_handed_stab hitbox=FORWARD_BOX
+diamond_spear combo 0 damaging interval=SwingWindow[start=0.4, end=0.55]
+model=class net.minecraft.client.resources.model.SimpleBakedModel gui3d=false
+diamond_spear combo 0 model emitter=TrailEmitter[origin=(-0.306221923828125, -0.3062219238281251, -2.684460117209902E-19), tip=(0.43835449218749994, 0.4383544921875, 2.5441744788574173E-19)]
+diamond_spear combo 0 p=0.005 type=VERTICAL_DOWN speed=0.08 shape=FORWARD
+diamond_spear combo 0 p=0.067 type=HORIZONTAL speed=2.93 shape=FORWARD
+diamond_spear combo 0 p=0.130 type=HORIZONTAL speed=4.15 shape=FORWARD
+diamond_spear combo 0 p=0.192 type=DIAGONAL_DOWN speed=2.68 shape=FORWARD
+diamond_spear combo 0 p=0.255 type=HORIZONTAL speed=3.82 shape=FORWARD
+diamond_spear combo 0 p=0.317 type=DIAGONAL_UP speed=4.24 shape=FORWARD
+diamond_spear combo 0 p=0.380 type=DIAGONAL_UP speed=1.52 shape=FORWARD
+diamond_spear combo 0 p=0.444 type=THRUST speed=14.67 shape=FORWARD
+diamond_spear combo 0 p=0.472 type=HORIZONTAL speed=7.82 shape=FORWARD
+diamond_spear combo 0 p=0.496 type=THRUST speed=11.43 shape=FORWARD
+diamond_spear combo 0 p=0.519 type=DIAGONAL_UP speed=9.79 shape=FORWARD
+diamond_spear combo 0 p=0.543 type=DIAGONAL_UP speed=2.80 shape=FORWARD
+diamond_spear combo 0 p=0.566 type=DIAGONAL_UP speed=0.02 shape=FORWARD
+diamond_spear combo 0 p=0.590 type=DIAGONAL_UP speed=0.05 shape=FORWARD
+diamond_spear combo 0 p=0.613 type=DIAGONAL_UP speed=0.08 shape=FORWARD
+diamond_spear combo 0 p=0.636 type=DIAGONAL_UP speed=0.11 shape=FORWARD
+diamond_spear combo 0 p=0.660 type=DIAGONAL_UP speed=0.15 shape=FORWARD
+diamond_spear combo 0 p=0.683 type=DIAGONAL_UP speed=0.18 shape=FORWARD
+diamond_spear combo 0 hitbox size=(3.0, 3.0, 6.0) kind=STAB variation=-4.675416215947673
+diamond_spear combo 0 contact direction=(0.30903524385802966, 0.0, 0.9510505864850767) hitY=-58.649999988079074 expectedHitboxY=-58.649999988079074 screenDirection=(0.12022639024084347, 0.9927460900257277, 9.032321330301916E-4)
+diamond_spear combo 0 hit motion=THRUST texture=combattraces:textures/vfx/impacts/pierce.png
+diamond_spear combo 0 p=0.707 type=DIAGONAL_UP speed=0.21 shape=FORWARD
+diamond_spear combo 0 p=0.730 type=DIAGONAL_UP speed=0.24 shape=FORWARD
+diamond_spear combo 0 p=0.754 type=DIAGONAL_UP speed=0.27 shape=FORWARD
+diamond_spear combo 0 p=0.778 type=DIAGONAL_UP speed=0.34 shape=FORWARD
+diamond_spear combo 0 p=0.801 type=DIAGONAL_UP speed=0.31 shape=FORWARD
+diamond_spear combo 0 p=0.824 type=DIAGONAL_UP speed=0.27 shape=FORWARD
+diamond_spear combo 0 p=0.848 type=DIAGONAL_UP speed=0.24 shape=FORWARD
+diamond_spear combo 0 p=0.871 type=DIAGONAL_UP speed=0.20 shape=FORWARD
+diamond_spear combo 0 p=0.895 type=DIAGONAL_UP speed=0.16 shape=FORWARD
+diamond_spear combo 0 p=0.918 type=DIAGONAL_UP speed=0.13 shape=FORWARD
+diamond_spear combo 0 p=0.942 type=DIAGONAL_UP speed=0.09 shape=FORWARD
+diamond_spear combo 0 p=0.965 type=DIAGONAL_UP speed=0.06 shape=FORWARD
+diamond_spear combo 0 p=0.989 type=DIAGONAL_UP speed=0.02 shape=FORWARD
+diamond_spear combo 0 p=1.012 type=VERTICAL_DOWN speed=0.16 shape=FORWARD
+diamond_spear combo 0 p=1.042 type=VERTICAL_DOWN speed=0.83 shape=FORWARD
+diamond_spear combo 0 p=1.074 type=DIAGONAL_DOWN speed=1.41 shape=FORWARD
+diamond_spear combo 0 p=1.105 type=DIAGONAL_DOWN speed=1.90 shape=FORWARD
+diamond_spear combo 0 p=1.136 type=DIAGONAL_DOWN speed=2.26 shape=FORWARD
+diamond_spear combo 0 p=1.167 type=DIAGONAL_DOWN speed=2.40 shape=FORWARD
+diamond_spear combo 0 p=1.199 type=HORIZONTAL speed=2.41 shape=FORWARD
+diamond_spear combo 0 emitted progress=0.40100032..0.55 damaging interval=SwingWindow[start=0.4, end=0.55]

@@ -1,6 +1,7 @@
 package com.cappleapple.combattraces.motion;
 
 import com.cappleapple.combattraces.api.CombatMotion;
+import com.cappleapple.combattraces.api.SwingWindow;
 import com.cappleapple.combattraces.data.AnimationRule;
 
 public final class TrailActivation {
@@ -8,11 +9,25 @@ public final class TrailActivation {
 
   public static boolean active(
       CombatMotion motion, AnimationRule window, double speed, double minimum) {
-    if (!Double.isFinite(speed) || speed < Math.max(.01, minimum) || motion.progress() >= 1)
-      return false;
-    // Explicit windows can refine timing, but never bypass the user's speed requirement.
-    return window.hasWindow()
-        ? window.active(motion.progress())
-        : motion.progress() >= Math.max(0, motion.hitProgress() - .12);
+    if (!Double.isFinite(speed)
+        || !Double.isFinite(minimum)
+        || speed < Math.max(.01, minimum)
+        || !Float.isFinite(motion.progress())
+        || motion.progress() < 0
+        || motion.progress() >= 1) return false;
+    var swing = window(motion, window);
+    return swing != null && swing.contains(motion.progress());
+  }
+
+  public static SwingWindow window(CombatMotion motion, AnimationRule rule) {
+    if (rule.hasWindow()) {
+      float start = rule.start(), end = rule.end();
+      if (!Float.isFinite(start) || !Float.isFinite(end) || start < 0 || end > 1 || start >= end)
+        return null;
+      return new SwingWindow(start, end);
+    }
+    return motion.swingWindow() == null
+        ? SwingWindow.around(motion.hitProgress())
+        : motion.swingWindow();
   }
 }

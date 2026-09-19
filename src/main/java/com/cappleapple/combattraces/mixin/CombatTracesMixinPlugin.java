@@ -21,6 +21,20 @@ public final class CombatTracesMixinPlugin implements IMixinConfigPlugin {
   public void acceptTargets(Set<String> mine, Set<String> others) {}
 
   public List<String> getMixins() {
+    // Validation guards are absent from the release JAR and never apply to production clients.
+    if (!FMLLoader.isProduction()
+        && FMLLoader.getDist() == net.neoforged.api.distmarker.Dist.CLIENT
+        && Boolean.getBoolean("combattraces.developmentSafeClient")
+        && getClass()
+                .getClassLoader()
+                .getResource(
+                    "com/cappleapple/combattraces/mixin/validation/DevelopmentMouseMixin.class")
+            != null) {
+      return List.of(
+          "validation.DevelopmentMouseMixin",
+          "validation.DevelopmentCursorMixin",
+          "validation.DevelopmentSoundMixin");
+    }
     return null;
   }
 

@@ -9,8 +9,15 @@ Covered weapons and combos:
 - Diamond longsword: horizontal slash and stab finisher.
 - Diamond claymore: inherited Better Combat cut, stab, and overhead slam.
 - Diamond greathammer: horizontal swing and downward slam.
+- Diamond spear: thrust.
 
 No Simply Swords item IDs, model coordinates, or animation paths are built into production emitter inference. Its models are validation fixtures only. Generated items use their extruded alpha-silhouette edges; transparent front/back texture corners are excluded. Crossguard detection locates the blade base, and a separate distal-head profile identifies hammer/mace heads. Explicit pack and provider emitters still take precedence.
+
+## Simply More and additional weapon shapes
+
+The expanded development client loads **Simply More 1.3.0_alpha** together with Simply Swords 1.70.2 and their actual dependencies. It exercises all 24 installed diamond weapon families, all twinblade/quarterstaff/warglaive/chakram combo paths selected by the harness, and additional offhand, Fire Aspect, and 20 FPS cases.
+
+Geometry is fitted to loaded models. Item tags and model parents distinguish twinblade-style `battlestaff` attacks from blunt quarterstaffs, and single backhand blades from double-ended warglaives sharing the same attack category. Unique or custom models use the same inference path; the automated matrix does not cover every unique weapon individually.
 
 ## AsyncParticles
 
@@ -46,3 +53,11 @@ Results and recorded motions are written to run-client/simplyswords-validation.t
 The 1.0.2 rerun passed 109 checks with the same AsyncParticles settings. It also checks attack-volume height at three aim pitches, retained incoming rotation, entity-only impacts, and windup suppression at a 4-block/second trail threshold. See [saved results](../validation/README.md).
 
 The 1.0.3 rerun passed 126 checks with the same AsyncParticles settings. It verifies hitbox-proportion selection, dominant-axis orientation, bounded variation, and blunt exemptions alongside the earlier height, trail, depth, and reload checks. See [current results](../validation/README.md).
+
+
+The 1.0.4 run passed 171 checks, including generated-trail classification, native trail replacement and its fallbacks, and stroke retirement. Arc geometry stays on the render thread; the Better Combat hook cancels duplicate particles before they are constructed. Its client switch is documented under [generated trails](CONFIGURATION.md#generated-trails).
+
+
+The 1.0.5 run passed 256 checks. It compares emitted slash geometry with actual weapon samples and adds Fire Aspect slash/stab/hammer cases. All built-in elemental overlays use generated geometry; the AsyncParticles worker/GPU and resource-reload stress checks still pass.
+
+The 1.0.6 run passed 324 checks across 11 weapon/element cases. Base and elemental samples stay inside the inferred strike interval, windups create no ribbons, and recovery stops adding samples while existing geometry fades. The spear retains its stab effect. Worker/GPU and resource-reload stress checks pass with the same AsyncParticles settings.

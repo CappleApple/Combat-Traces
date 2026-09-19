@@ -21,11 +21,19 @@ public final class ElementEffects {
       TrailSample sample,
       List<ResourceLocation> elements,
       float density) {
-    if (!ClientConfig.TRAILS.get()
-        || ClientConfig.QUALITY.get() == 0
-        || !ClientConfig.ELEMENTS.get()
-        || entity.distanceToSqr(Minecraft.getInstance().gameRenderer.getMainCamera().getPosition())
-            > Math.pow(ClientConfig.FULL_DISTANCE.get(), 2)) return;
+    trails(entity, motion, emitter, first, sample, elements, density, true);
+  }
+
+  public static void trails(
+      LivingEntity entity,
+      CombatMotion motion,
+      int emitter,
+      boolean first,
+      TrailSample sample,
+      List<ResourceLocation> elements,
+      float density,
+      boolean emitAccents) {
+    if (!trailVisible(entity)) return;
     for (var id : elements) {
       var definition =
           ClientDefinitions.current.elements().stream()
@@ -35,9 +43,39 @@ public final class ElementEffects {
       if (definition == null || definition.trail() == null) continue;
       var style = ClientDefinitions.current.trail(definition.trail()).tinted(definition.color());
       TrailManager.sample(entity, motion, emitter, first, sample, style, id.toString(), density);
-      com.cappleapple.combattraces.client.trail.TrailAccents.emit(
-          entity, emitter, first, sample, style, id.toString());
+      if (emitAccents)
+        com.cappleapple.combattraces.client.trail.TrailAccents.emit(
+            entity, emitter, first, sample, style, id.toString());
     }
+  }
+
+  public static void accents(
+      LivingEntity entity,
+      int emitter,
+      boolean first,
+      TrailSample sample,
+      List<ResourceLocation> elements,
+      int emitterCount) {
+    if (!trailVisible(entity)) return;
+    for (var id : elements) {
+      var definition =
+          ClientDefinitions.current.elements().stream()
+              .filter(e -> e.id().equals(id))
+              .findFirst()
+              .orElse(null);
+      if (definition == null || definition.trail() == null) continue;
+      var style = ClientDefinitions.current.trail(definition.trail()).tinted(definition.color());
+      com.cappleapple.combattraces.client.trail.TrailAccents.emit(
+          entity, emitter, first, sample, style, id.toString(), emitterCount);
+    }
+  }
+
+  private static boolean trailVisible(LivingEntity entity) {
+    return ClientConfig.TRAILS.get()
+        && ClientConfig.QUALITY.get() > 0
+        && ClientConfig.ELEMENTS.get()
+        && entity.distanceToSqr(Minecraft.getInstance().gameRenderer.getMainCamera().getPosition())
+            <= Math.pow(ClientConfig.FULL_DISTANCE.get(), 2);
   }
 
   public static void impact(ImpactContext ctx, double now) {

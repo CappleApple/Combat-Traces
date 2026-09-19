@@ -6,7 +6,20 @@ import net.minecraft.world.phys.Vec3;
 
 /** Cached, model-space silhouette analysis; animation poses are never approximated here. */
 public final class EmitterAnalysis {
-  public record Shape(TrailEmitter emitter, double length, double aspect) {}
+  public record Shape(List<TrailEmitter> emitters, double length, double aspect) {
+    public Shape {
+      emitters = List.copyOf(emitters);
+    }
+
+    public Shape(TrailEmitter emitter, double length, double aspect) {
+      this(List.of(emitter), length, aspect);
+    }
+
+    /** The first emitter, retained for integrations that only inspect the main blade. */
+    public TrailEmitter emitter() {
+      return emitters.getFirst();
+    }
+  }
 
   private static final int SECTIONS = 48;
 
@@ -131,6 +144,12 @@ public final class EmitterAnalysis {
                 bladeCenter.add(bladeAxis.scale(base)), bladeCenter.add(bladeAxis.scale(tip))),
             length,
             length / Math.max(.02, maxWidth)));
+  }
+
+  public static Optional<Shape> analyze(
+      List<Vec3> vertices, WeaponClass family, WeaponTopology topology) {
+    if (topology == WeaponTopology.SINGLE) return analyze(vertices, family);
+    return MultiEmitterGeometry.analyze(vertices, family, topology);
   }
 
   private static double median(double[] values, int from, int to) {

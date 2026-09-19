@@ -32,7 +32,12 @@ import net.neoforged.neoforge.client.event.ClientTickEvent;
  */
 @EventBusSubscriber(modid = "combattraces", value = Dist.CLIENT)
 public final class SimplySwordsValidation {
-  private record Case(String weapon, int combo, WeaponClass family, String impact) {}
+  private record Case(
+      String weapon, int combo, WeaponClass family, String impact, boolean enchanted) {
+    Case(String weapon, int combo, WeaponClass family, String impact) {
+      this(weapon, combo, family, impact, false);
+    }
+  }
 
   private static final Case[] CASES = {
     new Case("diamond_longsword", 0, WeaponClass.SLASH, "slash"),
@@ -41,9 +46,18 @@ public final class SimplySwordsValidation {
     new Case("diamond_greathammer", 0, WeaponClass.BLUNT, "blunt"),
     new Case("diamond_greathammer", 2, WeaponClass.BLUNT, "blunt"),
     new Case("diamond_claymore", 2, WeaponClass.CLEAVE, "cleave"),
-    new Case("diamond_claymore", 1, WeaponClass.CLEAVE, "pierce")
+    new Case("diamond_claymore", 1, WeaponClass.CLEAVE, "pierce"),
+    new Case("diamond_longsword", 0, WeaponClass.SLASH, "slash", true),
+    new Case("diamond_claymore", 1, WeaponClass.CLEAVE, "pierce", true),
+    new Case("diamond_greathammer", 0, WeaponClass.BLUNT, "blunt", true),
+    new Case("diamond_spear", 0, WeaponClass.PIERCE, "pierce")
   };
-  private static boolean started, shot, gotImpact, quietWindup;
+  private static final boolean REFERENCE = Boolean.getBoolean("combattraces.referenceBetterCombat");
+  private static boolean started, shot, gotImpact, quietWindup, quietRecovery;
+  private static boolean sawWindup, sawSwing, sawRecovery, samplesWithinSwing;
+  private static SwingWindow swingWindow;
+  private static float emittedStart, emittedEnd;
+  private static final Map<TrailInstance, Double> recoveryTouched = new IdentityHashMap<>();
   private static double expectedHitHeight;
   private static int ticks, maxRibbonSamples, hitShotTick;
   private static volatile int targetId;
@@ -66,7 +80,8 @@ public final class SimplySwordsValidation {
       mc.options.renderDistance().set(4);
       mc.options.framerateLimit().set(120);
       mc.options.fov().set(70);
-      DebugRenderer.enabled = true;
+      DebugRenderer.enabled = false;
+      ClientConfig.DEBUG.set(false);
       mc.createWorldOpenFlows()
           .createFreshLevel(
               "ct-simplyswords-" + System.currentTimeMillis(),
@@ -118,7 +133,18 @@ public final class SimplySwordsValidation {
       mc.player.setYRot(-18);
       mc.player.setXRot(index == 1 ? 12 : index == 2 ? -10 : index == 4 ? 15 : 0);
       ClientConfig.SPEED_THRESHOLD.set(4d);
+      ClientConfig.TRAILS.set(!REFERENCE);
+      ClientConfig.REPLACE_BETTER_COMBAT.set(!REFERENCE);
       quietWindup = true;
+      quietRecovery = true;
+      samplesWithinSwing = true;
+      sawWindup = false;
+      sawSwing = false;
+      sawRecovery = false;
+      swingWindow = null;
+      emittedStart = Float.POSITIVE_INFINITY;
+      emittedEnd = Float.NEGATIVE_INFINITY;
+      recoveryTouched.clear();
       observations.clear();
       TrailManager.clear();
       ImpactManager.clear();
@@ -137,6 +163,16 @@ public final class SimplySwordsValidation {
                     new ItemStack(
                         BuiltInRegistries.ITEM.get(
                             ResourceLocation.parse("simplyswords:" + current.weapon))));
+                if (current.enchanted)
+                  player
+                      .getMainHandItem()
+                      .enchant(
+                          player
+                              .registryAccess()
+                              .registryOrThrow(Registries.ENCHANTMENT)
+                              .getHolderOrThrow(
+                                  net.minecraft.world.item.enchantment.Enchantments.FIRE_ASPECT),
+                          1);
                 player.setItemInHand(InteractionHand.OFF_HAND, ItemStack.EMPTY);
               });
     }
@@ -163,6 +199,11 @@ public final class SimplySwordsValidation {
               32,
               (float) attack.upswingRate());
       var motion = CombatTracesApi.motion(mc.player, 0).orElseThrow();
+      swingWindow = motion.swingWindow();
+      check(
+          swingWindow != null && swingWindow.start() < swingWindow.end(),
+          label() + " supplies damaging keyframe interval");
+      detail.add(label() + " damaging interval=" + swingWindow);
       float pitch = mc.player.getXRot();
       boolean heightMatches = true;
       for (float aim : new float[] {-30, 0, 30}) {
@@ -243,6 +284,15 @@ public final class SimplySwordsValidation {
             emitter.origin().distanceTo(emitter.tip()) > .55
                 && emitter.origin().distanceTo(emitter.tip()) < 1,
             label() + " ribbon spans head width");
+      } else if (current.family == WeaponClass.PIERCE) {
+        check(
+            ModelEmitters.analyze(mc.player.getMainHandItem(), model, current.family).isPresent(),
+            label() + " detects spear emitter from actual model silhouette");
+        check(
+            emitter.tip().x > emitter.origin().x
+                && emitter.tip().y > emitter.origin().y
+                && emitter.origin().distanceTo(emitter.tip()) > .6,
+            label() + " spear emitter spans shaft toward its tip");
       } else {
         check(
             emitter
@@ -266,8 +316,21 @@ public final class SimplySwordsValidation {
           && (observations.isEmpty()
               || observations.getLast().sample().time() != o.sample().time())) {
         observations.add(o);
-        if (o.motion().progress() < o.motion().hitProgress() - .13)
+        float progress = o.motion().progress();
+        if (progress < swingWindow.start()) {
+          sawWindup = true;
           quietWindup &= TrailManager.trails().isEmpty();
+        } else if (swingWindow.contains(progress)) sawSwing = true;
+        else if (progress >= swingWindow.end()) {
+          for (var trail : TrailManager.trails()) {
+            if (sawRecovery)
+              quietRecovery &=
+                  recoveryTouched.containsKey(trail)
+                      && recoveryTouched.get(trail).doubleValue() == trail.touched;
+            recoveryTouched.put(trail, trail.touched);
+          }
+          sawRecovery = true;
+        }
         detail.add(
             String.format(
                 Locale.ROOT,
@@ -278,9 +341,17 @@ public final class SimplySwordsValidation {
                 o.state().speed(),
                 o.motion().shape()));
       }
-      for (var trail : TrailManager.trails())
+      for (var trail : TrailManager.trails()) {
         maxRibbonSamples = Math.max(maxRibbonSamples, trail.history.size());
-      if (!shot && step > 18 && o != null && o.state().speed() > 4 && maxRibbonSamples >= 3) {
+        for (int sample = 0; sample < trail.history.size(); sample++) {
+          float progress = trail.history.get(sample).progress();
+          samplesWithinSwing &= swingWindow.contains(progress);
+          emittedStart = Math.min(emittedStart, progress);
+          emittedEnd = Math.max(emittedEnd, progress);
+        }
+      }
+      if (!shot && maxRibbonSamples >= 3) {
+        validateTrailGeometry(mc);
         screenshot("ss-" + index + "-ribbon.png");
         shot = true;
       }
@@ -360,6 +431,46 @@ public final class SimplySwordsValidation {
           }
         }
     }
+    if (step >= 18 && step <= 25 && !REFERENCE)
+      screenshot("swept-motion-" + index + "-" + step + ".png");
+    if (step == 25) {
+      if (!REFERENCE) {
+        screenshot("ss-" + index + "-swept.png");
+        check(
+            com.cappleapple.combattraces.compat.bettercombat.BetterCombatTrails.replaces(
+                mc.player, false),
+            label() + " native trails replaced for captured attack");
+        ClientConfig.REPLACE_BETTER_COMBAT.set(false);
+        check(
+            !com.cappleapple.combattraces.compat.bettercombat.BetterCombatTrails.replaces(
+                mc.player, false),
+            label() + " opt-out restores native trails");
+        ClientConfig.REPLACE_BETTER_COMBAT.set(true);
+        ClientConfig.TRAILS.set(false);
+        check(
+            !com.cappleapple.combattraces.compat.bettercombat.BetterCombatTrails.replaces(
+                mc.player, false),
+            label() + " disabling trails restores native effects");
+        ClientConfig.TRAILS.set(true);
+      }
+      var attack = PlayerAttackHelper.getCurrentAttack(mc.player, current.combo);
+      long before =
+          com.cappleapple.combattraces.compat.bettercombat.BetterCombatTrails.suppressedSpawns;
+      net.bettercombat.client.BetterCombatClientMod.config.isShowingWeaponTrails = true;
+      net.bettercombat.client.particle.SlashParticleUtil.spawnParticles(
+          mc.player,
+          false,
+          (float) PlayerAttackHelper.getRangeForItem(mc.player, mc.player.getMainHandItem()),
+          net.bettercombat.client.particle.SlashParticleUtil.trailParticlesFromAttack(attack),
+          net.bettercombat.client.particle.SlashParticleUtil.appearanceFor(
+              mc.player, mc.player.getMainHandItem()));
+      if (!REFERENCE)
+        check(
+            com.cappleapple.combattraces.compat.bettercombat.BetterCombatTrails.suppressedSpawns
+                > before,
+            label() + " actual native particle spawn intercepted");
+    }
+    if (step == 28) screenshot((REFERENCE ? "bc-reference-" : "ss-swept-peak-") + index + ".png");
     if (step == 26) {
       var uuid = mc.player.getUUID();
       mc.getSingleplayerServer()
@@ -375,9 +486,24 @@ public final class SimplySwordsValidation {
               });
     }
     if (step == 50) {
+      detail.add(
+          label()
+              + " emitted progress="
+              + emittedStart
+              + ".."
+              + emittedEnd
+              + " damaging interval="
+              + swingWindow);
       check(observations.size() >= 8, label() + " samples real rendered animation");
-      check(quietWindup, label() + " early windup has no ribbon");
-      check(maxRibbonSamples >= 3, label() + " produces ribbon geometry");
+      check(sawWindup && quietWindup, label() + " complete observed windup has no ribbon");
+      check(sawSwing, label() + " observes the damaging keyframe interval");
+      check(
+          sawRecovery && quietRecovery,
+          label() + " recovery appends no samples and permits completed trails to fade");
+      check(
+          REFERENCE || (maxRibbonSamples >= 3 && samplesWithinSwing),
+          label() + " all physical and elemental trail samples stay inside damaging keyframes");
+      check(REFERENCE || maxRibbonSamples >= 3, label() + " produces ribbon geometry");
       check(
           ImpactController.receivedHits > hitsBefore && gotImpact,
           label() + " server-confirmed impact received");
@@ -391,6 +517,10 @@ public final class SimplySwordsValidation {
   }
 
   private static void depthTest(Minecraft mc, int phase, int step) {
+    if (REFERENCE) {
+      finish(mc);
+      return;
+    }
     if (phase > 0) {
       stressParticles(mc, phase, step);
       return;
@@ -398,6 +528,7 @@ public final class SimplySwordsValidation {
     var target = mc.level.getEntity(targetId);
     if (target == null) return;
     if (step == 0) {
+      retirementProbe(mc);
       DebugRenderer.enabled = false;
       mc.options.setCameraType(CameraType.FIRST_PERSON);
       mc.player.setYRot(-20);
@@ -504,6 +635,107 @@ public final class SimplySwordsValidation {
     }
   }
 
+  private static void validateTrailGeometry(Minecraft mc) {
+    var trails = TrailManager.trails().stream().filter(t -> t.history.size() >= 3).toList();
+    check(
+        !trails.isEmpty() && trails.stream().allMatch(t -> t.family == current.family),
+        label() + " generated geometry uses weapon family");
+    check(
+        trails.stream().allMatch(t -> t.thrust == current.impact.equals("pierce")),
+        label() + " generated thrust matches hitbox");
+    if (current.family != WeaponClass.BLUNT && !current.impact.equals("pierce")) {
+      check(
+          !trails.isEmpty()
+              && trails.stream()
+                  .allMatch(
+                      t ->
+                          TrailGeometryValidation.followsBlade(
+                              t, mc.gameRenderer.getMainCamera().getPosition())),
+          label() + " emitted slash vertices follow the captured 3D blade at both ends");
+    }
+    if (current.enchanted) {
+      var fire =
+          ClientDefinitions.current.elements().stream()
+              .filter(e -> e.id().equals(ResourceLocation.parse("combattraces:fire")))
+              .findFirst()
+              .orElseThrow();
+      var overlay =
+          trails.stream().filter(t -> t.style.color() == fire.color()).findFirst().orElseThrow();
+      check(
+          trails.stream().allMatch(t -> t.style.swept()),
+          label() + " physical and Fire Aspect layers both use generated geometry");
+      check(
+          overlay.family == current.family && overlay.thrust == current.impact.equals("pierce"),
+          label() + " elemental layer keeps the same slash, head, or stab shape");
+      check(
+          !overlay.enchanted && trails.stream().anyMatch(t -> t.enchanted),
+          label() + " elemental color is independent of the physical enchantment tint");
+      var mesh =
+          TrailGeometryValidation.mesh(overlay, mc.gameRenderer.getMainCamera().getPosition(), 1);
+      check(
+          mesh.colors().contains(fire.color()),
+          label() + " emitted elemental edge retains the configured fire color");
+    }
+  }
+
+  private static void retirementProbe(Minecraft mc) {
+    check(
+        ClientDefinitions.current.elements().stream()
+            .allMatch(e -> e.trail() == null || ClientDefinitions.current.trail(e.trail()).swept()),
+        "All built-in elemental styles use generated geometry after server synchronization");
+    TrailManager.clear();
+    double now = VisualClock.now();
+    var motion =
+        new CombatMotion(
+            999999,
+            mc.player.getMainHandItem(),
+            InteractionHand.MAIN_HAND,
+            ResourceLocation.parse("combattraces_validation:retirement"),
+            .5f,
+            .5f,
+            0,
+            1,
+            1,
+            "sword",
+            "");
+    var style = ClientDefinitions.current.trail(ResourceLocation.parse("combattraces:slash"));
+    Vec3 origin = mc.player.position().add(0, 1, 0);
+    for (int i = 0; i < 3; i++)
+      TrailManager.sample(
+          mc.player,
+          motion,
+          0,
+          false,
+          new TrailSample(origin.add(i * .3, 0, 0), origin.add(i * .3, 1, 0), now + i * .02, .5f),
+          style,
+          "base",
+          1);
+    var retired = TrailManager.trails().iterator().next();
+    int size = retired.history.size();
+    TrailManager.pause(mc.player, motion, 0, false);
+    TrailManager.sample(
+        mc.player,
+        motion,
+        0,
+        false,
+        new TrailSample(origin.add(1, 0, 0), origin.add(1, 1, 0), now + .08, .5f),
+        style,
+        "base",
+        1);
+    check(
+        TrailManager.trails().size() == 2 && retired.history.size() == size,
+        "Resuming a stroke preserves the earlier sweep without connecting across slow motion");
+    TrailManager.prune(now + .2);
+    check(
+        TrailManager.trails().contains(retired) && retired.history.size() == size,
+        "Completed sweep fades as a full shape");
+    TrailManager.prune(now + .5);
+    check(
+        TrailManager.trails().isEmpty(),
+        "All retired sweeps expire within the configured lifetime");
+    TrailManager.clear();
+  }
+
   private static void stressParticles(Minecraft mc, int phase, int step) {
     boolean async = net.neoforged.fml.ModList.get().isLoaded("asyncparticles");
     if (phase == 1 && step == 0) {
@@ -588,13 +820,15 @@ public final class SimplySwordsValidation {
   }
 
   private static String label() {
-    return current.weapon + " combo " + current.combo;
+    return current.weapon + " combo " + current.combo + (current.enchanted ? " Fire Aspect" : "");
   }
 
   private static void check(boolean value, String description) {
     if (!value) {
       try {
-        Files.writeString(Path.of("simplyswords-validation-detail.txt"), String.join("\n", detail));
+        Files.writeString(
+            Path.of(REFERENCE ? "bc-reference-detail.txt" : "simplyswords-validation-detail.txt"),
+            String.join("\n", detail));
       } catch (Exception ignored) {
       }
       throw new IllegalStateException("COMBAT TRACES SIMPLY SWORDS FAIL: " + description);
@@ -610,9 +844,12 @@ public final class SimplySwordsValidation {
 
   private static void finish(Minecraft mc) {
     try {
-      Files.writeString(Path.of("simplyswords-validation.txt"), String.join("\n", results) + "\n");
       Files.writeString(
-          Path.of("simplyswords-validation-detail.txt"), String.join("\n", detail) + "\n");
+          Path.of(REFERENCE ? "bc-reference-validation.txt" : "simplyswords-validation.txt"),
+          String.join("\n", results) + "\n");
+      Files.writeString(
+          Path.of(REFERENCE ? "bc-reference-detail.txt" : "simplyswords-validation-detail.txt"),
+          String.join("\n", detail) + "\n");
     } catch (Exception e) {
       throw new RuntimeException(e);
     }

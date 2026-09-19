@@ -10,7 +10,8 @@
     "HeldItemContextMixin",
     "bettercombat.BetterCombatPlayerMixin",
     "bettercombat.AnimationClockAccessor",
-    "bettercombat.AttackStackAccessor"
+    "bettercombat.AttackStackAccessor",
+    "bettercombat.BetterCombatTrailMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -3,6 +3,7 @@ package com.cappleapple.combattraces.client.weapon;
 import com.cappleapple.combattraces.api.*;
 import com.cappleapple.combattraces.data.JsonFields;
 import com.cappleapple.combattraces.motion.EmitterAnalysis;
+import com.cappleapple.combattraces.motion.WeaponTopology;
 import com.google.gson.JsonParser;
 import java.util.*;
 import net.minecraft.client.Minecraft;
@@ -15,14 +16,20 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.phys.Vec3;
 
 public final class ModelEmitters {
-  private record Key(net.minecraft.world.item.Item item, BakedModel model, WeaponClass family) {}
+  private record Key(
+      net.minecraft.world.item.Item item,
+      BakedModel model,
+      WeaponClass family,
+      WeaponTopology topology) {}
 
   private static final Map<Key, Optional<EmitterAnalysis.Shape>> GEOMETRY = new HashMap<>();
   private static final Map<ResourceLocation, List<TrailEmitter>> METADATA = new HashMap<>();
+  private static final Map<ResourceLocation, List<String>> MODEL_PARENTS = new HashMap<>();
 
   public static void clear() {
     GEOMETRY.clear();
     METADATA.clear();
+    MODEL_PARENTS.clear();
   }
 
   public static List<TrailEmitter> metadata(ItemStack stack, BakedModel model) {
@@ -48,15 +55,51 @@ public final class ModelEmitters {
         });
   }
 
+  public static WeaponTopology topology(ItemStack stack, String category) {
+    if (MODEL_PARENTS.size() > 2048) MODEL_PARENTS.clear();
+    var id = BuiltInRegistries.ITEM.getKey(stack.getItem());
+    var tags = stack.getTags().map(tag -> tag.location().getPath()).toList();
+    var parents = MODEL_PARENTS.computeIfAbsent(id, ModelEmitters::modelParents);
+    return WeaponTopology.detect(category, id.getPath(), tags, parents);
+  }
+
+  private static List<String> modelParents(ResourceLocation item) {
+    var parents = new ArrayList<String>();
+    ResourceLocation model =
+        ResourceLocation.fromNamespaceAndPath(item.getNamespace(), "item/" + item.getPath());
+    var visited = new HashSet<ResourceLocation>();
+    for (int depth = 0; depth < 8 && visited.add(model); depth++) {
+      var path =
+          ResourceLocation.fromNamespaceAndPath(
+              model.getNamespace(), "models/" + model.getPath() + ".json");
+      var resource = Minecraft.getInstance().getResourceManager().getResource(path);
+      if (resource.isEmpty()) break;
+      try (var reader = resource.get().openAsReader()) {
+        var json = JsonParser.parseReader(reader).getAsJsonObject();
+        if (!json.has("parent")) break;
+        model = ResourceLocation.parse(json.get("parent").getAsString());
+        parents.add(model.getPath());
+      } catch (RuntimeException | java.io.IOException e) {
+        break;
+      }
+    }
+    return List.copyOf(parents);
+  }
+
   public static Optional<EmitterAnalysis.Shape> analyze(ItemStack stack, BakedModel model) {
     return analyze(stack, model, WeaponClass.SLASH);
   }
 
   public static Optional<EmitterAnalysis.Shape> analyze(
       ItemStack stack, BakedModel model, WeaponClass family) {
+    return analyze(stack, model, family, topology(stack, ""));
+  }
+
+  public static Optional<EmitterAnalysis.Shape> analyze(
+      ItemStack stack, BakedModel model, WeaponClass family, WeaponTopology topology) {
     if (GEOMETRY.size() > 2048) GEOMETRY.clear();
     return GEOMETRY.computeIfAbsent(
-        new Key(stack.getItem(), model, family),
+        new Key(stack.getItem(), model, family, topology),
         key -> {
           if (model.isCustomRenderer()) return Optional.empty();
           try {
@@ -111,7 +154,9 @@ public final class ModelEmitters {
                 }
               }
             }
-            return EmitterAnalysis.analyze(new ArrayList<>(vertices), family);
+            var points = new ArrayList<>(vertices);
+            var multi = EmitterAnalysis.analyze(points, family, topology);
+            return multi.isPresent() ? multi : EmitterAnalysis.analyze(points, family);
           } catch (RuntimeException e) {
             return Optional.empty();
           }

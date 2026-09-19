@@ -3,6 +3,7 @@ package com.cappleapple.combattraces.client.weapon;
 import com.cappleapple.combattraces.api.*;
 import com.cappleapple.combattraces.client.ClientDefinitions;
 import com.cappleapple.combattraces.data.*;
+import com.cappleapple.combattraces.motion.WeaponTopology;
 import java.util.*;
 import net.minecraft.client.resources.model.BakedModel;
 import net.minecraft.resources.ResourceLocation;
@@ -41,8 +42,12 @@ public final class WeaponResolver {
     if (emitters.isEmpty()) emitters = ModelEmitters.metadata(motion.weapon(), model);
     if (emitters.isEmpty())
       emitters =
-          ModelEmitters.analyze(motion.weapon(), model, family)
-              .map(s -> List.of(s.emitter()))
+          ModelEmitters.analyze(
+                  motion.weapon(),
+                  model,
+                  family,
+                  ModelEmitters.topology(motion.weapon(), motion.category()))
+              .map(s -> s.emitters())
               .orElse(List.of());
     if (emitters.isEmpty()) emitters = List.of(fallback(family));
     ResourceLocation trail =
@@ -74,6 +79,10 @@ public final class WeaponResolver {
       var value = classifier.classify(entity, motion);
       if (value.isPresent()) return value.get();
     }
+    var topology = ModelEmitters.topology(stack, motion.category());
+    if (topology == WeaponTopology.DOUBLE_BLUNT) return WeaponClass.BLUNT;
+    if (topology == WeaponTopology.DOUBLE_BLADE || topology == WeaponTopology.CIRCULAR)
+      return WeaponClass.SLASH;
     String category = Objects.toString(motion.category(), "").toLowerCase(Locale.ROOT);
     if (category.contains("claymore") || category.contains("greatsword")) return WeaponClass.CLEAVE;
     if (category.contains("axe")) return WeaponClass.CLEAVE;

@@ -23,10 +23,26 @@ public final class TrailAccents {
       TrailSample sample,
       EffectStyle style,
       String layer) {
-    if (!ClientConfig.TRAILS.get()
-        || ClientConfig.QUALITY.get() == 0
-        || emitter != 0
-        || style.particleRate() <= 0) return;
+    emit(owner, emitter, first, sample, style, layer, 1);
+  }
+
+  public static void emit(
+      LivingEntity owner,
+      int emitter,
+      boolean first,
+      TrailSample sample,
+      EffectStyle style,
+      String layer,
+      int emitterCount) {
+    if (!ClientConfig.TRAILS.get() || ClientConfig.QUALITY.get() == 0 || style.particleRate() <= 0)
+      return;
+    // Share one cadence across the whole weapon, alternating tips/rim segments without multiplying
+    // the particle budget by emitter count.
+    int selected =
+        Math.floorMod(
+            (long) Math.floor(sample.time() * style.particleRate() * 20),
+            Math.max(1, emitterCount));
+    if (emitter != selected) return;
     String key = owner.getId() + ":" + layer;
     if (sample.time() >= NEXT.getOrDefault(key, 0d)) {
       NEXT.put(key, sample.time() + 1 / Math.max(.1, style.particleRate() * 20));

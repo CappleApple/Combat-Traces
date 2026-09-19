@@ -15,7 +15,7 @@ CombatTracesApi.registerMotionProvider(100, (entity, partialTick) -> {
 
 Providers with higher priority are queried first. Better Combat registers at priority 0.
 
-A `CombatMotion` contains an attack identity, held stack, hand, animation ID, normalized animation progress, hit-timing hint, combo information, damage multiplier, category, and pose metadata. Use a new attack ID for each distinct attack. Attack-end/cancel should return empty.
+A `CombatMotion` contains an attack identity, held stack, hand, animation ID, normalized animation progress, hit-timing hint in the same animation clock, combo information, damage multiplier, category, and pose metadata. Use a new attack ID for each distinct attack. Cancellation should return empty. A provider may briefly report progress above 1 during its final blend so the sampler can clip a frame that crosses the strike endpoint. Keep this clock un-clamped; new geometry and accents remain bounded by the strike window. Return empty once playback is inactive.
 
 The included renderer automatically captures held items rendered through Minecraft's `ItemInHandRenderer` / `ItemRenderer` path. Custom renderers with extra animated bones must supply suitable emitters or their own transform-aware integration.
 
@@ -54,3 +54,9 @@ submitImpact dispatches work onto the client thread and rejects stale-world cont
 CombatMotion additionally accepts an optional world-space `hitboxCenter`. Supply the center of the current attack volume for vertical impact placement. Both older constructors remain available and use null, preserving the existing contact-height fallback for providers without volume metadata. No additional hitbox data is sent in gameplay packets.
 
 The full constructor additionally accepts `AttackHitbox(center, size, widthAxis, heightAxis, depthAxis)`. Size is the full local width/height/depth in block units, while the center and unit axes use world space. Supply dimensions before yaw/pitch rotation. All three older constructors remain available and leave the full hitbox null. Invalid or missing geometry falls back to the previous motion inference; valid geometry governs non-blunt impact selection. Blunt weapon classification always wins.
+
+## Strike timing
+
+The full `CombatMotion` constructor additionally accepts an optional `SwingWindow(start, end)`. Both bounds use normalized animation progress and must satisfy `0 <= start < end <= 1`; invalid bounds throw `IllegalArgumentException`. The four earlier constructors remain available and leave this value null.
+
+Supply the interval occupied by the striking motion, excluding setup and recovery. The configured speed threshold starts base and elemental trails inside this interval; started trails remain continuous through deceleration until the interval ends. Rendered segments crossing either boundary are clipped to it, including strikes shorter than a rendered frame. A null interval falls back to `hitProgress - 0.12` through `hitProgress + 0.12`, clamped to the animation. Invalid contact hints suppress automatic emission. Explicit pack animation windows override the interval; impact sampling continues outside it.

@@ -5,6 +5,7 @@ File: `config/combattraces-client.toml`. Settings are also exposed in NeoForge's
 | Setting | Default | Purpose |
 |---|---:|---|
 | enable_trails / enable_impacts / enable_particles | true | Independent effect switches |
+| replace_better_combat_trails | true | Suppress Better Combat trail particles when Combat Traces can capture the attack; false shows both |
 | impact_depth_priority | true | Render hit flashes over struck objects |
 | enable_elemental_effects / enable_material_effects | true | Composition switches |
 | critical_modifier | true | Critical size/flash accents |
@@ -24,7 +25,7 @@ File: `config/combattraces-client.toml`. Settings are also exposed in NeoForge's
 | maximum_sample_distance | 0.16 | Target subdivision distance |
 | max_subdivisions_per_frame | 6 | Maximum adaptive subdivisions |
 | discontinuity_distance | 5 | Reset a strip after implausible movement |
-| trail_velocity_threshold | 4 | Minimum weapon speed for all ribbons and trail accents, 0-100 blocks/second |
+| trail_velocity_threshold | 4 | Minimum weapon speed to start a strike trail, 0-100 blocks/second |
 | max_simultaneous_trails | 64 | Includes elemental layers and multiple emitters |
 | max_trail_samples_total | 1536 | Hard total across all ribbons |
 | max_active_impacts | 96 | Hard limit on composed impact quads |
@@ -50,8 +51,24 @@ The default first-person ribbon width is now 1.0, matching the inferred blade/he
 
 ## Swing speed and windups
 
-`trail_velocity_threshold` controls the minimum measured weapon speed during an attack. Its default is 4 blocks/second, and it applies to base ribbons, elemental ribbons, and their accents, including explicit animation windows. Existing config values are preserved; set an older value to 4 to try the new default. Raising it makes trail emission more selective; 0 disables only the speed requirement.
+`trail_velocity_threshold` controls the minimum measured weapon speed needed to start a trail within the detected strike. Its default is 4 blocks/second. The fastest captured endpoint supplies the speed for the whole weapon, so both ends and elemental layers start together. Once started, the trail continues through strike deceleration and stops at the strike boundary. Existing config values are preserved. Raising the value makes starting more selective; 0 still requires motion.
 
-Automatic timing also waits until shortly before the provider's contact phase, suppressing fast early windups that a speed check alone would allow. Explicit pack windows can refine that timing but cannot bypass the speed requirement. When the weapon slows down, the existing strip fades; a later fast movement starts a fresh strip. Motion remains sampled for impacts even when no ribbon is emitted.
+Better Combat trails use a strike interval inferred from the loaded animation keyframes. Setup and recovery movements outside that interval do not become trail geometry or create trail accents. If a frame crosses an interval boundary, the geometry is clipped to that boundary. Base, enchantment, and elemental layers share this gate. Existing geometry and particles finish their normal fade. Motion remains sampled for impacts throughout the attack.
+
+Custom providers can supply a strike interval. Without one, automatic timing is limited to 0.12 animation progress before and after their contact hint. Pack animation windows override the automatic estimate for unusual animations; the speed requirement still applies. Better Combat has no explicit damaging-phase marker, so animations with multiple equally strong movements may need a pack window.
 
 Hit effects attach only to entities. Their height uses the Better Combat swing volume center, including aim pitch and reach. Horizontal contact remains approximate. For non-blunt weapons, a depth-dominant hitbox produces a stab. Otherwise its dominant width/height axis produces a horizontal/vertical slash with up to 7 degrees of fixed variation per hit. Blunt effects retain their existing behavior.
+
+## Generated trails
+
+All built-in trail styles use generated geometry with a 300 ms lifetime. Slash bands follow the captured blade positions in 3D, including diagonal and changing-plane motion. Hammer wakes follow the head, and detected stabs use crossed streaks behind the tip. The physical layer becomes cyan on enchanted weapons. Elemental layers retain their configured colors and use the same weapon/attack shape; their colors are not multiplied by the physical layer's blue enchantment tint.
+
+`replace_better_combat_trails` suppresses Better Combat's own trail particles only for visible, recently captured attacks in range. Disabling Combat Traces trails, setting quality to 0, or disabling the relevant camera/player visibility restores Better Combat's normal behavior and its own settings. An unsupported or uncaptured attack also keeps Better Combat's effect. The replacement does not alter attacks or hit detection.
+
+Pack authors can select `trail_geometry` per style; see [style configuration](DATAPACKS.md#trail-and-impact-styles).
+
+## Weapons with several striking edges
+
+Twinblades and warglaives use two blade emitters; quarterstaffs use two short terminal-cap emitters and keep blunt impacts. Chakrams use eight connected segments around the model silhouette. Item tags, model parents, and attack categories select the shape; the loaded model supplies its dimensions. Explicit pack/provider emitters still take precedence.
+
+Elemental ribbons use the same emitters and timing. Accent particles alternate between emitters while sharing one cadence per weapon layer. Each ribbon remains subject to the existing trail and sample budgets. Generated strokes preserve their beginning and endpoint by simplifying interior samples at capacity.

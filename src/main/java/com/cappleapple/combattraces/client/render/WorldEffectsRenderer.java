@@ -48,9 +48,7 @@ public final class WorldEffectsRenderer {
     TrailManager.prune(now);
     RibbonRenderer.render(BUFFERS, event.getCamera().getPosition(), now);
     com.cappleapple.combattraces.client.WeaponMotionTracker.prune(now);
-    com.cappleapple.combattraces.client.HeldItemCapture.LATEST
-        .entrySet()
-        .removeIf(e -> now - e.getValue().time() > 1);
+    com.cappleapple.combattraces.client.HeldItemCapture.prune(now);
     BUFFERS.endBatch();
     com.cappleapple.combattraces.client.particle.AccentParticles.drain(now);
   }

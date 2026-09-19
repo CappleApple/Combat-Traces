@@ -9,6 +9,30 @@ public final class VfxRenderTypes extends RenderType {
   private record Key(ResourceLocation texture, boolean additive, boolean priority) {}
 
   private static final Map<Key, RenderType> CACHE = new HashMap<>();
+  private static final RenderType SWEPT = generated(false), SWEPT_ADDITIVE = generated(true);
+
+  public static RenderType swept(boolean additive) {
+    return additive ? SWEPT_ADDITIVE : SWEPT;
+  }
+
+  private static RenderType generated(boolean additive) {
+    return create(
+        "combattraces_swept",
+        DefaultVertexFormat.POSITION_COLOR,
+        VertexFormat.Mode.QUADS,
+        16384,
+        false,
+        !additive,
+        CompositeState.builder()
+            .setShaderState(new ShaderStateShard(GameRenderer::getPositionColorShader))
+            .setTransparencyState(additive ? LIGHTNING_TRANSPARENCY : TRANSLUCENT_TRANSPARENCY)
+            .setCullState(NO_CULL)
+            .setLightmapState(NO_LIGHTMAP)
+            .setOverlayState(NO_OVERLAY)
+            .setWriteMaskState(COLOR_WRITE)
+            .setDepthTestState(LEQUAL_DEPTH_TEST)
+            .createCompositeState(false));
+  }
 
   private VfxRenderTypes(
       String n,

@@ -1,5 +1,52 @@
 # Changelog
 
+## 1.1.0 - 2026-09-19
+
+### Added
+- Separate trails for both striking ends of twinblades, warglaives, and quarterstaffs.
+- Circular rim trails fitted to chakram models.
+
+### Fixed
+- Trails starting late, ending early, or missing short attacks between rendered frames.
+- Multi-segment cuts, staff rotations, and chakram flight/spin animations losing parts of their trails.
+- Long strokes losing their starting geometry when the sample limit was reached.
+- Twinblades being treated as blunt weapons because of their Better Combat category.
+
+### Changed
+- Updated the bundled license and mod metadata to CC BY-NC-SA 4.0 with the Minecraft modpack/server additional permission.
+- The minimum weapon speed starts a trail; the trail then continues through the detected strike as the weapon slows.
+- Enchantment and elemental layers follow all striking ends, with accents sharing one particle cadence per weapon layer.
+
+## 1.0.6 - 2026-09-13
+
+### Fixed
+- Weapon trails continuing through animation windups, recovery, and transition movements.
+- Base, enchantment, and elemental trails now share the same strike interval and stop adding particles when it ends.
+
+### Changed
+- Infer strike timing from the loaded Better Combat animation keyframes while preserving the completed trail's fade.
+
+## 1.0.5 - 2026-09-13
+
+### Fixed
+- Sword and slashing trails being flattened onto the attack hitbox plane instead of following the animated blade.
+- Elemental trail overlays still using the older textured ribbon renderer.
+- Elemental colors being multiplied by the physical trail's blue enchantment tint.
+
+### Changed
+- Matched built-in elemental trails to the base trail's 300 ms lifetime and fade.
+
+
+## 1.0.4 - 2026-09-13
+
+### Changed
+- Replaced default thin ribbons with automatically generated, pixel-stepped slash crescents modeled on Better Combat trail placement and layering.
+- Derived arc size from weapon models and orientation from swing geometry, including custom animations.
+- Added crossed thrust streaks and layered wakes across detected blunt-weapon heads.
+- Kept completed sweeps visible during their short fade and separated resumed swings from earlier strokes.
+- Added a setting to replace Better Combat trail particles during captured attacks, preventing duplicate effects.
+- Kept textured trails available through the per-style `trail_geometry` option.
+
 ## 1.0.3 - 2026-09-09
 
 ### Changed

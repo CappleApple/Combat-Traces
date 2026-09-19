@@ -48,6 +48,30 @@ run-client/screenshots/
 
 The `validation/` directory contains retained release/regression artifacts.
 
+## Current release evidence
+
+Version 1.1.0 passed 123 unit tests, five GameTests with Better Combat and five without it, 19 base-client checks, and client startup without Better Combat.
+
+The Simply Swords / Simply More client passed **1,328 checks across 47 cases**, covering 24 diamond weapon families and 18 real animations at equipped weapon cooldowns. Tests include all selected twinblade, quarterstaff, warglaive, and chakram combos, Fire Aspect, offhand/first-person rendering, and 20 FPS. Both striking ends and all eight rim segments emit finite geometry with matching elemental samples.
+
+All recorded emitters reached the selected strike endpoint. The minimum retained fraction across 98 emitter cases was **93.3%**, with the configured starting speed still applied. No tested stroke split during deceleration. Generated geometry retains its first/current samples under the fixed history cap, and synthetic tests cover entry/exit falling between frames and recovery clocks beyond the authored endpoint.
+
+The existing **324-check** impact/AsyncParticles suite also passed with Simply More loaded, including entity-only hits, stab/blunt behavior, depth priority, worker/GPU operation, and 600 accent particles after resource reload. See [current evidence](../validation/README.md).
+
+The recorded client and GameTest runs were performed on September 13, 2026. The September 19 publication rebuild updates the license metadata and bundled license; runtime source is unchanged. Current server startup/restart evidence remains the 1.0.0 baseline.
+
+## Local client audio and input
+
+Every Gradle `runClient` launch starts muted and leaves the mouse uncaptured. The launcher updates only `run-client/options.txt`; development-only guards also block sound playback and cursor capture before they occur. A runtime monitor checks master volume zero and GLFW's normal cursor mode in menus and worlds. These guard classes are excluded from the release JAR.
+
+The expanded weapon suite runs with both installed weapon mods:
+
+```powershell
+.\gradlew.bat runClient -PvalidateMultiWeapons '-PsimplySwordsDir=.work/simplyswords-mods'
+```
+
+Add `simplymore-forge-1.3.0_alpha.jar` to the isolated dependency directory alongside the dependencies listed in [compatibility checks](COMPATIBILITY.md). Reports are written to `run-client/multi-weapon-validation.txt` and `run-client/multi-weapon-validation-detail.txt`; screenshots use the `mw-` prefix.
+
 ## Dedicated server smoke check
 
 Run:
@@ -95,7 +119,7 @@ If emitter inference is changed, include an asymmetric/custom model instead of t
 
 ### Optional-mod compatibility
 
-The maintained compatibility profiles include Better Combat, Simply Swords, and AsyncParticles. When changing hooks that touch these paths, rerun the relevant profile rather than assuming the generic path covers it.
+The maintained compatibility profiles include Better Combat, Simply Swords, Simply More, and AsyncParticles. When changing hooks that touch these paths, rerun the relevant profile rather than assuming the generic path covers it.
 
 Client startup without Better Combat should remain part of release QA.
 

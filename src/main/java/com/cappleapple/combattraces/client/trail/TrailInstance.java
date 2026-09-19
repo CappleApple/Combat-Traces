@@ -12,6 +12,10 @@ public final class TrailInstance {
   public final long attack;
   public double touched;
   public boolean paused;
+  public com.cappleapple.combattraces.api.WeaponClass family =
+      com.cappleapple.combattraces.api.WeaponClass.GENERIC;
+  public boolean thrust, enchanted;
+  public net.minecraft.world.phys.Vec3 thrustAxis = net.minecraft.world.phys.Vec3.ZERO;
 
   public TrailInstance(
       LivingEntity owner, long attack, boolean firstPerson, EffectStyle style, int capacity) {
